@@ -1,0 +1,25 @@
+section.rooms.section--inner-container
+    //- Section title
+    - var heading__mods = 'heading--df text-center'
+    - var heading__title3 = 'Space, Style, and Comfort'
+    - var heading__subtitle = 'Kick back and relax in large, well equipped rooms and suites'
+
+    include ../modules/heading
+    //- End section title
+
+    .rooms__slider-wrapper
+        .swiper.rooms__slider#roomsSlider
+            .swiper-wrapper
+                - var roomItem__parentClass = 'swiper-slide rooms__slide'
+
+                each slide in [1, 2, 3, 4, 1, 2, 3, 4, 1]
+                    - var roomItem__slide = slide
+
+                    include ../modules/room-item
+                //- End loop
+            //- End swiper wrapper
+
+            div.swiper-button-prev.rooms__slider-arrow.rooms__slider-arrow--prev
+            div.swiper-button-next.rooms__slider-arrow.rooms__slider-arrow--next
+        //- End swier
+    //- End wrapper

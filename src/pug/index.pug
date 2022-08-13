@@ -1,0 +1,31 @@
+extends template/main
+
+block variables
+	- var title = 'Home page'
+
+block content
+	//- include ./modules/preloader
+	include ./layout/header
+	main.page-wrapper
+		div(data-scroll-container)
+			.container--big
+				include ./sections/main-screen
+				include ./sections/clients
+				include ./sections/portfolio
+			include ./sections/video
+			.container--big
+				include ./sections/we-do
+			include ./sections/we-love
+			.container--big
+				include ./sections/we-know
+				include ./sections/we-offer
+				include ./sections/together
+				include ./sections/advantages
+				include ./sections/creative
+				include ./sections/reviews
+				include ./sections/our-blog
+				include ./sections/faq
+				include ./sections/lets-speak
+			include ./layout/footer
+	//- End scroll container
+	//- End main

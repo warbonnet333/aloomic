@@ -1,0 +1,14 @@
+.footer__subscribe-block.subscribe-block
+    .subscribe-block__heading-wprapper
+        h4.subscribe-block__title Join our newsletter
+        .subscribe-block__subtitle Receive special offers from us
+    //- ENd heading wrapper
+    form.subscribe-block__form(action="/", method="post")
+        .subscribe-block__field.reserve-input
+            .reserve-input__customize Enter your email
+            input.reserve-input__field(type="email", required)
+        button.subscribe-block__submit(type="submit")
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.99998 9.92822L14 13.9282L9.99998 17.9282" stroke="#FAB75C" stroke-width="2"/>
+            </svg>
+    //- End form

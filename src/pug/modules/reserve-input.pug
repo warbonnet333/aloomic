@@ -1,0 +1,12 @@
+mixin reserve-input(parentClass = '', mods = '', type='text', placeholder= '', label = '', id= '', dateIcon = false)
+    div(class= parentClass + ' reserve-input ' + mods)
+        label.reserve-input__label(for= id)= label
+        .reserve-input__field-wr
+            div
+            input.reserve-input__field(id= id, type= type, placeholder= placeholder)
+            if dateIcon
+                .reserve-input__icon-wr
+                    include ../../assets/devSvg/calendar.svg
+            //- End icon condition
+        //- End field wrapper
+    //- End field

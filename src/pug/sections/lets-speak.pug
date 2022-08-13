@@ -1,0 +1,11 @@
+.lets-speak(data-scroll-section)
+    div(data-scroll data-scroll-call="lets-speak" data-scroll-offset="30%" data-scroll-speed="1")
+        +heading--section('lets-speak__heading', 'letsSpeakHeading', 'left', ['Lets', 'speak'], 'fill', 'this', 'form')
+
+    form.lets-speak__form.custom-input.custom-input--type_form.custom-input--size_xxl(method="GET", action="/" data-scroll data-scroll-call="our-blog" data-scroll-offset="30%" data-scroll-speed="3")
+        input.custom-input__field(type="text", placeholder="your name")
+        button.custom-input__submit(type="submit")
+            <svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 13.0643V18.4398H29.7539L17.4875 30.7062H25.0638L36.2118 19.5582L40 15.7701L36.2118 11.9819L25.0638 0.797852H17.4875L29.7539 13.0643H1Z" stroke="white"/>
+            </svg>
+    //- End custom input

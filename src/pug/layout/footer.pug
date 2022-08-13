@@ -1,0 +1,67 @@
+.floating-panel(data-scroll-section)
+    div
+        marquee(behavior='scroll' direction='left' scrollamount='5' scrolldelay='0' style='position: relative;')
+            span lets work together
+            span.spot
+            span lets work together
+footer.footer(data-scroll-section)
+    .container--big
+        .footer__general
+            a.footer__general-item.footer__logo(href="/")
+                include ../../assets/devSvg/footer-logo.svg
+            //- End general-item
+            .footer__general-item.footer__nav-col
+                h5.footer__nav-title Navigation
+                ul
+                    each item in ['Home', 'Portfolio', 'About', 'Services', 'Blog', 'Contact']
+                        li
+                            a(href="/")= item
+                    //- end loop  
+            //- End general-item
+            .footer__general-item.footer__nav-col
+                h5.footer__nav-title Tell us your needs
+                ul
+                    each item in ['email@gmail.com', '+7 (916) 344-55-22', 'New yourk 11223 USA, NY']
+                        li
+                            a(href="/")= item
+                    //- end loop  
+            //- End general-item
+            .footer__general-item.footer__nav-col
+                h5.footer__nav-title Services
+                ul
+                    each item in ['Ui design', 'Web design', 'Branding', 'Branding', 'Branding', 'Branding', 'Web design', 'Ui design']
+                        li
+                            a(href="/")= item
+                    //- end loop  
+            //- End general-item
+            .footer__general-item.footer__form-wr
+                .footer__form-title Sign up to newsletter
+                form.footer__form.custom-input.custom-input--type_form.custom-input--size_sm(method="GET", action="/")
+                    input.custom-input__field(type="text", placeholder="your name")
+                    button.custom-input__submit(type="submit")
+                        <svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13.0643V18.4398H29.7539L17.4875 30.7062H25.0638L36.2118 19.5582L40 15.7701L36.2118 11.9819L25.0638 0.797852H17.4875L29.7539 13.0643H1Z" stroke="white"/>
+                        </svg>
+                //- End custom input
+            //- End general-item
+        //- End footer general
+        .footer__bottom-row
+            .footer__social-col
+                ul
+                    each item in ['Behance', 'Dribble', 'Pinterest']
+                        li
+                            a(href="/")= item
+                    //- End loop
+            //- End social col
+            .footer__terms-col
+                ul
+                    each item in ['Terms', 'Privacy', 'Policy']
+                        li
+                            a(href="/")= item
+                    //- End loop
+            //- End terms col
+            .footer__copyrigth Copyright  2021
+            //- End copyright
+        //- Bottom row
+    //- End container
+//- End footer

@@ -1,0 +1,7 @@
+mixin offer-item(parentClass, img, title, offer)
+    div(class= parentClass + ' offer-item')
+        h4.offer-item__title!= title
+        .offer-item__img-wr
+            +responsiveImage('offer-item__img', 'responsive-img', '/assets/pics/we-offer/' + img, 'jpg')
+        span.offer-item__offer= offer
+    //- End item

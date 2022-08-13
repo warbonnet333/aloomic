@@ -1,0 +1,88 @@
+.logo-title-item {
+    text-align: center;
+
+    &__icon-wrapper {
+        width: 2.4rem;
+        height: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    &__title {
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+    &__desc {
+        margin-top: 1.2rem;
+        color: var(--color-label);
+    }
+
+    &::after {
+        @include pseudo;
+        bottom: 0;
+        left: 50%;
+        height: 1px;
+        width: 0;
+        background: var(--color-logo);
+        transform: translate(-50%, -4rem);
+        // -webkit-transform: translate(-50%, -4rem);
+        opacity: 0;
+        transition: width .3s ease-in-out;
+    }
+}
+
+@include media-1199 {
+    .logo-title-item {
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__desc {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@include media-991 {
+    .logo-title-item {
+        &::after {
+            transform: translate(-50%, 0);
+            opacity: 1;
+            width: 144px;
+        }
+
+        &__desc {
+            opacity: 1;
+            visibility: visible;
+            max-width: 29rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &:hover {
+            transform: translateY(0);
+        }
+    }
+}
+
+@include media-767 {
+    .logo-title-item {
+        &__title {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        &__desc {
+            font-size: 1.6rem;
+        }
+
+        &__icon-wrapper {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}

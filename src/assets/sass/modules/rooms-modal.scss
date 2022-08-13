@@ -1,0 +1,276 @@
+.rooms-modal {
+    position: fixed;
+    @include push-full;
+    z-index: z('modal');
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: $transition--general;
+
+    &__inner {
+        position: absolute;
+        @include push--center-middle;
+        width: min(95vw, 167.6rem);
+        background: var(--color-bg);
+        box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+        padding: 5vw 8.3vw;
+        overflow-y: auto;
+        max-height: 100%;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 2.5vw;
+        right: 2.5vw;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+            transition: $transition--general;
+
+            path {
+                transition: $transition--general;
+            }
+        }
+
+        &:hover svg {
+            transform: rotate(180deg);
+
+            path {
+               stroke: var(--color-action);
+           }
+        }
+    }
+    // End close button
+
+    // Slider
+    &__slider {
+        width: 100%;
+    }
+
+    &__photo-wrapper {
+        position: relative;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 56%;
+        }
+    }
+
+    &__photo-inner {
+        position: absolute;
+        @include push-full;
+    }
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__slider-arrow {
+        transition: $transition--general;
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(#4B142B, .8);
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        svg path {
+            transition: $transition--general;
+        }
+
+
+        &::after {
+            display: none;
+        }
+
+        &--prev {
+            left: 0;
+        }
+
+        &--next {
+            right: 0;
+        }
+
+        &:hover {
+            svg path {
+                stroke: var(--color-action);
+            }
+        }
+    }
+    // End slider arrow
+    // End slider
+
+    &__content {
+        margin-top: 2.5vw;
+        display: grid;
+        grid-gap: 5vw 9.58vw;
+        grid-template-areas: "general-content amenities"
+            "form amenities";
+    }
+
+    &__general-content {
+        grid-area: general-content;
+        max-width: 90rem;
+    }
+
+    &__book-now {
+        grid-area: form;
+    }
+
+    &__amenities-wrapper {
+        grid-area: amenities;
+        width: 20rem;
+        color: var(--color-text);
+    }
+
+    &__title, &__amenities_title {
+        font-size: var(--fz-title);
+        line-height: var(--lh-title);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    &__desc, &__amenities_list {
+        margin-top: 1.25vw;
+    }
+
+    &__desc {
+        p {
+            margin: 0;
+        }
+
+        p:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+    }
+
+    // Form
+    &__book-now {
+        grid-gap: 1.25vw;
+        display: grid;
+        grid-template-columns: auto 20rem;
+        align-items: flex-end;
+        grid-gap: 1.25vw;
+        margin-bottom: 0;
+    }
+
+    &__fields-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.25vw;
+    }
+
+    &__form-submit {
+        padding: 0.8rem 4.2rem;
+        white-space: nowrap;
+    }
+    // End form
+
+    &__amenities {
+        &_list {
+            font-size: var(--fz-label);
+            line-height: var(--lh-label);
+        }
+
+        &_list-item {
+            padding-left: 2rem;
+            position: relative;
+
+            &::before {
+                @include pseudo;
+                left: .7rem;
+                top: .8rem;
+                width: 0.3rem;
+                height: 0.3rem;
+                border-radius: 50%;
+                background: var(--color-text);
+            }
+        }
+        // End list item
+    }
+    // End amenities
+}
+
+@include media-1614 {
+    .rooms-modal {
+        &__content {
+            grid-template-columns: 1fr;
+            grid-gap: 4vw;
+        }
+    }
+}
+
+@include media-1199 {
+    .rooms-modal {
+        &__content {
+            grid-template-areas: "general-content general-content"
+                "form amenities";
+        }
+
+        &__book-now {
+            grid-template-columns: 1fr;
+            grid-gap: 5rem;
+
+            button, a {
+                text-align: center;
+            }
+        }
+
+        &__fields-wrapper {
+            grid-template-columns: 1fr;
+            width: 100%;
+            grid-gap: 4rem;
+        }
+
+        &__amenities-wrapper {
+            width: 40rem;
+        }
+    }
+}
+
+@include media-991 {
+    .rooms-modal {
+        &__inner {
+            padding: 7vw 5vw 3vw;
+        }
+
+        // &__book-now {
+        //     grid-gap: 2rem;
+        // }
+
+        &__form-submit {
+            white-space: nowrap;
+        }
+    }
+}
+
+@include media-767 {
+    .rooms-modal {
+        &__inner {
+            padding: 13vw 5vw 5vw;
+        }
+
+        &__content {
+            grid-template-areas: "general-content"
+                "amenities"
+                "form";
+        }
+
+        &__general-content, &__book-now, &__amenities-wrapper {
+            width: 100%;
+        }
+    }
+}

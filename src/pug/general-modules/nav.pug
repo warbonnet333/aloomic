@@ -1,0 +1,10 @@
+- var navArray = [{href: '#', title: 'Lorem ipsum'}, {href: '#', title: 'Rooms'}]
+
+nav.header__nav.nav
+    ul
+        each navItem in navArray
+            li
+                a(href= navItem.href)= navItem.title
+        //- End loop
+    //- End nav list
+//- End navigation

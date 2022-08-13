@@ -1,0 +1,46 @@
+.stay-in {
+    padding-bottom: 5.05vw;
+
+    &__img {
+        margin-bottom: 7.5vw;
+        position: relative;
+    }
+
+    &__pic {
+        display: flex;
+    }
+
+    .heading {
+        &__title {
+            width: 65.1vw;
+            margin-inline: auto;
+        }
+
+        &__subtitle {
+            margin-top: 2.5vw;
+        }
+
+        &__desc {
+            margin-top: 1.25vw;
+            max-width: 122rem;
+        }
+    }
+}
+
+@include media-991 {
+    .stay-in {
+        &__content {
+            padding: 0 3.13vw;
+        }
+    }
+}
+
+@include media-575 {
+    .stay-in {
+        padding-bottom: 11vw;
+
+        &__img {
+            margin-bottom: 11.5vw;
+        }
+    }
+}

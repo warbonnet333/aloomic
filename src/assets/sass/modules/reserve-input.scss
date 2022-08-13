@@ -1,0 +1,117 @@
+.reserve-input {
+    position: relative;
+
+    &__label {
+        font-size: var(--fz-label);
+        line-height: var(--lh-label);
+        color: var(--color-label);
+    }
+
+    &__customize {
+        position: absolute;
+        color: var(--color-bg);
+        bottom: 3.2rem;
+        left: 0;
+    }
+
+    &__field-wr {
+        position: relative;
+    }
+
+    &__field {
+        position: relative;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        padding: 10px 0 6px 0;
+        background: transparent;
+        color: var(--color-bg);
+        border-bottom: 2px solid rgba(#fff, .5);
+        outline: none;
+        height: 100%;
+
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+
+        @include placeholder {
+            color: rgba(#FAB75C, .3);
+        }
+    }
+
+    // For bottom line animation
+    &::after {
+        @include pseudo;
+        @include push--center;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: #fff;
+        transition: $transition--general;
+    }
+
+    &__icon-wr {
+        width: 2.4rem;
+        height: 2.4rem;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &--focus::after {
+        width: 100%;
+    }
+}
+
+.reserve-input--color_action {
+    .reserve-input {
+        &__field {
+            color: var(--color-action);
+            border-bottom-color: var(--color-action);
+        }
+    }
+    // End inner
+}
+
+.reserve-input--color_gray {
+    .reserve-input {
+        &__field {
+            color: var(--color-label);
+            border-bottom-color: var(--color-bg-dark);
+
+            @include placeholder {
+                color: var(--color-label);
+            }
+        }
+    }
+    // End inner
+
+    &::after {
+        background: var(--color-label);
+    }
+}
+
+@include media-991 {
+    .reserve-input {
+        &__field {
+            font-size: 1.3rem;
+        }
+
+        &__customize {
+            font-size: 1.3rem;
+        }
+    }
+
+    .reserve-input--date {
+        .reserve-input {
+            &__customize {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

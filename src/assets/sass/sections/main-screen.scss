@@ -1,0 +1,19 @@
+.hero {
+    height: 100vh;
+
+    &__heading {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: .2s ease;
+        }
+    }
+}

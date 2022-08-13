@@ -1,0 +1,42 @@
+mixin heading--hero(parentClass, elId, colorWords, gradienFirsWord, gradiendSecondWord, gradientThirdWork)
+    div(id= elId && elId class= parentClass + ' heading heading--hero')
+        .heading__icon-wr
+            include ../../assets/devSvg/heading/hero-icon.svg
+        h1.heading__h1-title
+            if colorWords
+                each colorWord in colorWords
+                    .heading__words= colorWord
+                <br>
+            //- End first row
+            if gradienFirsWord
+                .heading__words.heading__words--gradient.heading__words--gradient-first
+                    span= gradienFirsWord
+            if gradiendSecondWord
+                .heading__words.heading__words--gradient.heading__words--gradient-second
+                    span= gradiendSecondWord
+            if gradientThirdWork
+                .heading__words.heading__words--gradient.heading__words--gradient-third
+                    span= gradientThirdWork
+
+mixin heading--section(parentClass, elId, position, colorWords, gradienFirsWord, gradiendSecondWord, gradientThirdWork)
+    div(id= elId && elId class= parentClass + ' heading heading--section heading--section-' + position)
+        .heading__icon-wr
+            if position == 'center'
+                include ../../assets/devSvg/heading/section-center-icon.svg
+            else
+                include ../../assets/devSvg/heading/section-left-icon.svg
+        h2.heading__h2-title
+            if colorWords
+                each colorWord in colorWords
+                    .heading__words= colorWord
+                <br>
+            //- End first row
+            if gradienFirsWord
+                .heading__words.heading__words--gradient.heading__words--gradient-first
+                    span= gradienFirsWord
+            if gradiendSecondWord
+                .heading__words.heading__words--gradient.heading__words--gradient-second
+                    span= gradiendSecondWord
+            if gradientThirdWork
+                .heading__words.heading__words--gradient.heading__words--gradient-third
+                    span= gradientThirdWork

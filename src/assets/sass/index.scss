@@ -1,0 +1,41 @@
+@import "utils/main";
+
+// Libs------------------
+@import "~swiper/swiper.scss";
+// @import "~swiper/modules/navigation/navigation.scss";
+
+// Modules---------------
+@import "utils/general-modules.scss";
+
+@import "modules/preloader.scss";
+
+@import "modules/heading.scss";
+@import "modules/portfolio-item.scss";
+@import "modules/we-do-item.scss";
+@import "modules/link.scss";
+@import "modules/offer-item.scss";
+@import "modules/advantages-tabs.scss";
+@import "modules/review-item.scss";
+@import "modules/blog-item.scss";
+@import "modules/faq-item.scss";
+@import "modules/custom-input.scss";
+@import "modules/adv-mob-item.scss";
+
+// Sections------------------
+@import "utils/general-sections.scss";
+
+@import "sections/main-screen.scss";
+@import "sections/clients.scss";
+@import "sections/portfolio.scss";
+@import "sections/video.scss";
+@import "sections/we-do.scss";
+@import "sections/we-love.scss";
+@import "sections/we-know.scss";
+@import "sections/we-offer.scss";
+@import "sections/together.scss";
+@import "sections/advantages.scss";
+@import "sections/creative.scss";
+@import "sections/reviews.scss";
+@import "sections/our-blog.scss";
+@import "sections/faq.scss";
+@import "sections/lets-speak.scss";

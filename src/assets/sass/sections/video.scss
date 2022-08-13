@@ -1,0 +1,36 @@
+.video {
+    &__video {
+        margin-top: 7.03vw;
+        width: 100%;
+    }
+
+    &__video-wr {
+        position: relative;
+    }
+
+    &__controls {
+        position: absolute;
+        @include push--center-middle;
+        width: 8.44vw;
+        height: 8.44vw;
+    }
+
+    &__control-btn {
+        position: absolute;
+        @include push-full;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        &--pause {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    // End control button
+}

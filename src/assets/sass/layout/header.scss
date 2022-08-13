@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.2rem 0;
+    z-index: z('content');
+    background: rgba(0,0,0,.3);
+    backdrop-filter: blur(.2rem);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 8.7rem;
+    }
+
+    &__hamburger {
+        width: 3.9rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: transparent;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

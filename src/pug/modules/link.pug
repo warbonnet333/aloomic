@@ -1,0 +1,16 @@
+mixin link--regular(parentClass, name)
+    a(class= parentClass + ' link--regular link--regular-hover-white' href="#")= name
+
+mixin link--tag(title)
+    a.link.link--tag(href="/")= title
+
+mixin link--back(parentClass, title)
+    a(class= parentClass + ' link link--type_back' href="/")
+        .link__icon
+            +icon('back-link-arrow')
+        span.link__name= title
+
+mixin link--regular_with-arrow(parentClass, name)
+    a(class= parentClass + ' link--regular link--with-arrow' href="#")
+        span= name
+        +icon('button-arrow')

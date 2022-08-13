@@ -1,0 +1,11 @@
+mixin tabs-vertical(parentClass, tabsArray)
+    ul(class= parentClass + " tabs tabs--vertical")
+        each tab, key in tabsArray
+            li.tabs__item
+                if key == 0
+                    a.tabs__link.link.link--line_on-active.active.link--color_gray.link--hover-color_gold(href="#" + tab, data-tab= tab)= tab
+                else
+                    a.tabs__link.link.link--line_on-active.link--color_gray.link--hover-color_gold(href="#" + tab, data-tab= tab)= tab
+            //- End item
+        //- End loop
+    //- End tab list

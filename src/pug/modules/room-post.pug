@@ -1,0 +1,13 @@
+mixin room-post(parentClass)
+    div(class= parentClass + " room-post") 
+        .room-post__img-wrapper
+            +responsiveImage('room-post__img', 'responsive-img', '/assets/pics/rooms-page/1', 'jpg')
+        .room-post__content-side
+            .room-post__title-wrapper
+                h4.room-post__title Lorem ipsum dolor sit amet, consectet adipiscing elitOdio
+            .room-post__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, id praesent adipiscing blandit nunc. Sodales ac gravida eget mauris tempor vel felis blandit. Sodales enim ut faucibus id a sodales. In sapien, turpis nunc fermentum odio.
+            .room-post__controls
+                button.btn.btn--bg-fill.room-post__check-btn(type="button", data-id="346") check availability
+                +dropdown--type_first('room-post__amenities', 'Amenities', '')
+        //- End content wrapper
+    //- End inner

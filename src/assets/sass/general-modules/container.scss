@@ -1,0 +1,18 @@
+.container {
+    // width: min(74.37vw, 952px);
+    width: 74.37vw;
+    margin-inline: auto;
+    // font-size: 1.8rem;
+}
+
+.container--big {
+    // width: min(81.25vw, 1040px);
+    width: 81.25vw;
+    margin-inline: auto;
+}
+
+@include media-767 {
+    .container, .container--big {
+        width: calc(100% - 3rem);
+    }
+}

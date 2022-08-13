@@ -1,0 +1,105 @@
+@import "./libs";
+@import "../utils/mixins";
+@import "../utils/fonts";
+
+@import "../utils/vars.scss";
+
+
+// General
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-general);
+    background: var(--color-bg);
+}
+
+// body {
+//     max-width: 100vw;
+//     overflow-x: hidden;
+// }
+
+main {
+    max-width: 100vw;
+    // overflow: hidden;
+    scroll-behavior: smooth;
+    // min-height: calc(100vh - 17.7rem);
+    color: var(--color-text);
+    font-size: var(--fz-text);
+    line-height: var(--lh-text);
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: $transition--general;
+    
+    &::before, &::after {
+        transition: $transition--general;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+button {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    position: relative;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.color-light {
+    color: var(--color-bg);
+}
+
+.responsive-img {
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.fade--first {
+    display: block !important;
+}
+
+.fade--second {
+    opacity: 1 !important;
+    visibility: visible !important;
+    // transition: .5s ease-in-out;
+}
+
+.section {
+    padding: 6.64vw 0;
+}

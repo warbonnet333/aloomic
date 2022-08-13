@@ -1,0 +1,21 @@
+.our-blog {
+    &__items {
+        margin-top: 7.81vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5.86vw;
+    }
+
+    &__item {
+        transform: translateY(3vw) scale(.7);
+        opacity: 0;
+    }
+}
+
+@include media-767 {
+    .our-blog {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

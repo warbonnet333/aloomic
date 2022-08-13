@@ -1,0 +1,12 @@
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    grid-gap: 1.6rem;
+    padding: 0 1.2rem;
+}
+
+@include media-991 {
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+}

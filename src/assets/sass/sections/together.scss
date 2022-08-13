@@ -1,0 +1,92 @@
+.together {
+    display: grid;
+    grid-template-columns: auto 44.53vw;
+    grid-gap: 5.47vw;
+
+    &__title {
+        font-size: 4.22vw;
+        line-height: 122%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        font-family: var(--font-secondary);
+        background: linear-gradient(98.12deg, #FFFFFF -12.48%, rgba(255, 255, 255, 0) 116.95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__text {
+        margin-top: 3.91vw;
+        font-size: 2.5vw;
+        line-height: 141%;
+        font-weight: 500;
+        background: linear-gradient(92.97deg, #FCFCFC 0%, rgba(252, 252, 252, 0) 125.8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__right-side {
+        padding-top: 2vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__words-line {
+        &:first-child {
+            align-self: flex-start;
+        }
+
+        &:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        &:last-child {
+            align-self: center;
+        }
+    }
+
+    &__word {
+        font-family: var(--font-secondary);
+        font-weight: 800;
+        font-size: 5.47vw;
+        line-height: 1;
+
+        &:not(:first-child):not(.together__word--dotted) {
+            margin-left: 1.33vw;
+        }
+
+        &--color {
+            color: #FCFCFC;
+        }
+
+        &--gradient {
+            background: linear-gradient(92.97deg, #FCFCFC 0%, rgba(252, 252, 252, 0) 125.8%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    // End word
+}
+
+@include media-767 {
+    .together {
+        grid-template-columns: 1fr;
+
+        &__title {
+            font-size: 7vw;
+        }
+
+        &__text {
+            font-size: 5vw;
+        }
+
+        &__word {
+            font-size: 10vw;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+section.about.section--inner-container
+    .about__title-bg
+        include ../../assets/devSvg/title-logo-2.svg
+
+    .about__heading
+        //- Heading
+        - var heading__mods = 'heading--size-xl heading--color-dark text-center'
+        - var heading__title2 = 'About Our Centrally Located Fresno Hotel'
+        - var heading__subtitle = ''
+        - var heading__desc = '<p>Fresno City Inn offers a friendly atmosphere and plenty of room to stretch out, whether you’re here for a weekend trip, an extended stay, or a family vacation to a national park. Rooms are spacious (boasting up to 300 square feet!) and have flat-screen TVs with cable channels. Select rooms come with a small refrigerator, microwave, and a coffee maker. Suites are equipped with kitchenettes, perfect for longer stays. You’ll feel right at home, no matter how long you’re in town!</p>'
+        //- - var heading__iconName = 'title-logo-2'
+        - var heading__topIconName = ''
+
+        include ../modules/heading
+        //- End heading
+
+    .about__pic-wrapper
+        +responsiveImage('about__pic', 'pic', '/assets/pics/about', 'jpg')
+    //- End picture wrapper
+
+    .about__content.bg--down-angle-in.bg--down-angle-in-gray.bg--gray
+        //- Heading
+        - var heading__title = ''
+        - var heading__mods = 'heading--color-dark'
+        - var heading__title2 = ''
+        - var heading__subtitle = 'Fresno is the perfect destination for a weekend trip or staycation'
+        - var heading__desc = '<p>Dozens of restaurants are located just steps away along Blackstone Ave. Also nearby are attractions like Blackbeard’s Family Entertainment, Club One Casino, Fresno Art Museum, and Wild Water Adventure Park. Golf courses, nature areas, hiking trails, theaters, and casual eateries dot the landscape. And downtown Fresno’s coffee shops, cocktail bars, and restaurants can be reached in about 15 minutes.</p>'
+
+        include ../modules/heading
+        //- End heading
+    //- End content

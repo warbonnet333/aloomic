@@ -1,0 +1,29 @@
+//- - var reserverNow__parentClass = 'hero__book-block'
+
+.hero__book-block.reserve-now
+    .reserve-now__pallet
+        .reserve-now__pallet-inner
+            form.reserve-now__form(action="/", method="GET")
+                .reserve-now__inputs-wrapper
+                    .reserve-now__field.reserve-input.reserve-input--date
+                        .reserve-input__customize Arrival Date
+                        input.reserve-input__field(type="date", required)
+                    //- End input
+                    .reserve-now__field.reserve-input.reserve-input--date
+                        .reserve-input__customize Departure Date
+                        input.reserve-input__field(type="date", required)
+                    //- End input
+                    .reserve-now__field.reserve-input
+                        .reserve-input__customize Adults
+                        input.reserve-input__field(type="number", min="0", required)
+                    //- End input
+                    .reserve-now__field.reserve-input
+                        .reserve-input__customize Children
+                        input.reserve-input__field(type="number", min="0", required)
+                    //- End input
+                //- End inputs wrapper
+                button.reserve-now__btn.btn.btn--bg-transparent-border(type="submit") check availability
+            //- End form
+        //- End pallet
+    //- End pallet iner
+//- End reserve now section 

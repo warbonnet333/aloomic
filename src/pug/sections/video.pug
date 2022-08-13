@@ -1,0 +1,16 @@
+section.section.video(data-scroll-section)
+    .container--big(data-scroll data-scroll-call="video" data-scroll-offset="30%" data-scroll-speed="1")
+        +heading--section('video__heading', 'videoHeading', 'left', ['watch', 'our'], '', '', 'showreel')
+    //- End container
+    
+    .video__video-wr
+        video.video__video(id="vid" loop autoplay muted playsinline poster="https://aloomic.com.au/wp-content/themes/aloomic/assets/img/video-banner.jpg")
+            source(src="https://aloomic.com.au/wp-content/uploads/2022/03/alomic.mp4" type="video/mp4")
+
+        .video__controls
+            button.video__control-btn.video__control-btn--play(type="button")
+                include ../../assets/devSvg/play-btn.svg
+            button.video__control-btn.video__control-btn--pause(type="button")
+                include ../../assets/devSvg/pause-btn.svg
+        //- End controls
+    //- End wrapper

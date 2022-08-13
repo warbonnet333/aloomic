@@ -1,0 +1,35 @@
+.review-item {
+    text-align: center;
+
+    &__text p {
+        margin: 0;
+        font-size: 1.88vw;
+        line-height: 192%;
+        color: #88888D;
+    }
+
+    &__name {
+        margin-top: 3.28vw;
+        font-size: 1.88vw;
+        line-height: 133%;
+        font-weight: 600;
+    }
+
+    &__position {
+        margin-top: 0.8rem;
+        font-size: 1.4rem;
+        line-height: 143%;
+    }
+}
+
+@include media-767 {
+    .review-item {
+        &__text p {
+            font-size: 13px;
+        }
+
+        &__name {
+            font-size: 3.3vw;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+mixin portfolioItem(parentClass, mod, imgPath, title, cat)
+    a(class= parentClass + " portfolio-item " + mod, href="/", data-scroll, data-scroll-call="portfolio", data-scroll-offset="30%")
+        .portfolio-item__img-wr
+            +responsiveImage("portfolio-item__img", "responsive-img", imgPath, '.jpg')
+        //- End image wrapper
+        .portfolio-item__content
+            h4.portfolio-item__title= title
+            p.portfolio-item__cat= cat
+        //- End content
+    //- End item

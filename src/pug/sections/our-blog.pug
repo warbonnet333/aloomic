@@ -1,0 +1,9 @@
+section.section.our-blog(data-scroll-section)
+    div(data-scroll data-scroll-call="our-blog" data-scroll-offset="30%" data-scroll-speed="1")
+        +heading--section('our-blog__heading', 'ourBlogHeading', 'left', ['Check', 'out'], '', 'our', 'blogs')
+
+    .our-blog__items
+        - var blogItems = [{img: '1', title: 'Best interactive web design strategies that you need to use in 2022 lorem lorem lorem lorem lorem'}, {img: '2', title: 'The role of expert digital strategy partners in business growth'}, {img: '3', title: 'What programming language is used for mobile app development?'}]
+        each item in blogItems
+            +blog-item('our-blog__item', item.img, item.title)
+    //- End items

@@ -1,0 +1,7 @@
+mixin list-of-links(parentClass, listArray)
+    ul(class= parentClass + ' list')
+        each item in listArray
+            li.list__item
+                a.list__link(href="/")= item
+        //- End loop
+    //- End list

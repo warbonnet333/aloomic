@@ -1,0 +1,10 @@
+mixin blog-post-preview(parentClass)
+    article(class= parentClass + ' blog-preview')
+        +responsiveImage('blog-preview__bg', 'responsive-img', '/assets/pics/blog-posts/1', 'jpg')
+        .blog-preview__inner
+            +post-date('blog-preview__top-row')
+            //- End top row
+            h3.blog-preview__title Lorem ipsum dolor sit amet, consectetur adipiscing elit urna id praesent
+            +link--regular_with-arrow('blog-preview__link', 'Read more')
+        //- End inner
+    //- End blog preview

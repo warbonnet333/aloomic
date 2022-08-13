@@ -1,0 +1,15 @@
+section.stay-in
+    .stay-in__img.bg--down-angle.bg--down-angle-white
+        +responsiveImage('stay-in__pic', 'pic', '/assets/pics/stay-in', 'jpg')
+    //- End image
+
+    .stay-in__content
+        //- Heading
+        - var heading__mods = 'heading--size-xl heading--color-dark text-center'
+        - var heading__title2 = 'Stay in the Heart of the San Joaquin Valley'
+        - var heading__desc = '<p>From our Fresno hotel, you can reach Yosemite’s marvelous cascades and vast pine forests in just over an hour. And if you’re looking for a place to stay near Sequoia National Park, you’re in luck: it’s just an hour and a half drive from here to the home of the world’s largest trees.</p>'
+        - var heading__subtitle = 'Easy highway access makes getting around a breeze'
+
+        include ../modules/heading
+        //- End heading
+    //- End content

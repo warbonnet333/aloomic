@@ -1,0 +1,52 @@
+.rooms-modal#roomsModal
+    .rooms-modal__inner
+        button.rooms-modal__close-btn
+            include ../../assets/devSvg/close-modal.svg
+        //- End close modal button
+
+        .rooms-modal__slider-wrapper
+            .swiper.rooms-modal__slider#roomsModalSlider
+                .swiper-wrapper.rooms-modal__swiper-wrapper
+                    each slide in [1, 2, 3, 4, 1, 2, 3, 4, 1]
+                        .swiper-slide.rooms-modal__photo-wrapper
+                            .rooms-modal__photo-inner
+                                img.rooms-modal__photo(src="/assets/pics/rooms/1.jpg" alt="alt")
+                            //- End picture
+                    //- End loop
+                //- End swiper wrapper
+
+                button.swiper-button-prev.rooms-modal__slider-arrow.rooms-modal__slider-arrow--prev#roomsModalPrev
+                    include ../../assets/devSvg/prev-rooms-slider.svg
+                button.swiper-button-next.rooms-modal__slider-arrow.rooms-modal__slider-arrow--next#roomsModalNext
+                    include ../../assets/devSvg/next-rooms-slider.svg
+            //- End swier
+        //- End slider-wrapper
+
+        .rooms-modal__content
+            //- .rooms-modal__left-side-content
+            .rooms-modal__general-content
+                h3.rooms-modal__title Title
+                .rooms-modal__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, id praesent adipiscing blandit nunc. Sodales ac gravida eget mauris tempor vel felis blandit. Sodales enim ut faucibus id a sodales. In sapien, turpis nunc fermentum odio.
+            form.rooms-modal__book-now
+                .rooms-modal__fields-wrapper
+                    +reserve-input('rooms-modal__field', 'reserve-input--color_action reserve-input--date', 'date', '', 'Arrival Date', 'dateFrom', true)
+                    +reserve-input('rooms-modal__field', 'reserve-input--color_action reserve-input--date', 'date', '', 'Departure Date', 'dateTo', true)
+                    +reserve-input('rooms-modal__field', 'reserve-input--color_action reserve-input--date', 'number', '1', 'Number of Guests', 'guestsCount', false)
+                //- End fields wrapper
+
+                a.btn.btn--bg-fill.room-post__check-btn(href="/", target="_blank") Book now
+                //- +btn--type_fill('rooms-modal__form-submit', 'Book now')
+            //- End form
+            //- End lelft side content
+
+            //- .rooms-modal__right-side-content
+            .rooms-modal__amenities-wrapper
+                h4.rooms-modal__amenities_title Amenities
+                ul.rooms-modal__amenities_list
+                    each listItem in ['46” flat-screen TV', 'Individually-controlled heat and air conditioning', 'Hair dryer', 'Robes', 'Keurig coffeemaker', 'Minibar with select complimentary snacks and beverages', 'Iron and ironing board', 'In-room safe', 'Daily newspaper upon request']
+                        li.rooms-modal__amenities_list-item= listItem
+                    //- End loop
+            //- End right side content
+        //- End content
+    //- End inner
+//- End modal

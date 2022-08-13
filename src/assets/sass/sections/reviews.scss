@@ -1,0 +1,56 @@
+.reviews {
+    &__wrapper {
+        margin-top: 5.47vw;
+        display: grid;
+        width: 81.33vw;
+        margin-inline: auto;
+        grid-template-columns: 2.97vw 64.61vw 2.97vw;
+        grid-gap: 5.39vw;
+        overflow: hidden;
+    }
+
+    &__item {
+        width: 100% !important;
+    }
+
+    &__slider-arrow {
+        margin-top: 3.28vw;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        align-self: flex-start;
+        transition: $transition--general;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        &.swiper-button-disabled {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &--prev:hover {
+            transform: translateX(.5rem);
+        }
+
+        &--next:hover {
+            transform: translateX(-.5rem);
+        }
+    }
+}
+
+@include media-767 {
+    .reviews {
+        &__wrapper {
+            grid-template-columns: 6vw 69vw 6vw;
+            width: 100%;
+        }
+
+        &__slider {
+            max-width: 100%;
+        }
+    }
+}

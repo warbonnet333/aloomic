@@ -1,0 +1,20 @@
+//- - var roomItem__parentClass = 'swiper-slide rooms__slide'
+//- - var roomItem__slide = 'slide1'
+
+article(class= roomItem__parentClass + ' slide-hover-info')
+    picture.slide-hover-info__picture-tag
+        source.slide-hover-info__img(srcset="/assets/pics/rooms/" + slide + ".webp" type="image/webp")
+        img.slide-hover-info__img(
+            src="/asstes/pics/rooms/" + slide + ".jpg" alt="alt"
+            srcset="/asstes/pics/rooms/" + slide + "@2x.jpg 2x, /asstes/pics/rooms/" + slide + "@3x.jpg 3x"
+        )
+    //- End picture
+
+    .slide-hover-info__content-block
+        h4.slide-hover-info__title BARTO
+        a.btn.btn--bg-fill.slide-hover-info__btn-fill(href="#") Book now
+        a.slide-hover-info__read-more.link--regular.link--with-arrow(href="#")
+            span View room
+            +icon('button-arrow')
+    //- End content block
+//- End swiper slide

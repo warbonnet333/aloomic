@@ -1,0 +1,16 @@
+.lets-speak {
+    width: min(81.1rem, 63.36vw);
+    margin-inline: auto;
+    padding: 13.28vw 0 20.47vw;
+
+    &__form {
+        margin-top: 6.8vw;
+        margin-left: 3.36vw;
+    }
+}
+
+@include media-767 {
+    .lets-speak {
+        width: 100%;
+    }
+}

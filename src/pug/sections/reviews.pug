@@ -1,0 +1,25 @@
+section.section.reviews(data-scroll-section)
+    div(data-scroll data-scroll-call="reviews" data-scroll-offset="30%" data-scroll-speed="1")
+        +heading--section('reviews__heading', 'reviewsHeading', 'center', ['what', 'our'], '', 'clients', 'say')
+
+    .reviews__wrapper
+        button.reviews__slider-arrow.reviews__slider-arrow--prev#reviewsPrevSlide
+            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M39 18.4939L39 13.1018L10.9833 13.1018L22.9352 0.797852L15.5532 0.797852L4.69102 11.98L0.999998 15.7798L4.69102 19.5795L15.5532 30.7979L22.9352 30.7979L10.9833 18.4939L39 18.4939Z" stroke="white"/>
+            </svg>
+        // Slider main container
+        .swiper.reviews__slider#reviewsSlider
+            // Additional required wrapper
+            .swiper-wrapper
+                // Slides
+                +review-item('reviews__item', '“Aloomic was a real pleasure to work with and we look forward to working with them again. They definitely have the kind of designer you can trust with a project from start to finish.”')
+                +review-item('reviews__item', 'I had an excellent experience with Aloomic Web Design. They provided a fantastic design that exceeded my expectations and was very responsive to changes. Raj always provided me prompt action to all my change requests. I would highly recommend Aloomic, I must say they are the Best Web Designer in Adelaide.')
+                +review-item('reviews__item', 'It was very nice experience, I would like to work with your company again in the future. You guys rocked the Web Development service…! Very knowledgeable group and nominal charges. Much appreciated.')
+                +review-item('reviews__item', 'Best Mobile app developers in Australia. Amazing service.. easy to rely on and best outcomes one can expect from them. Really impressed with the way the founder Raj himself actively involving in all the discussions and providing insights to grow and develop.')
+                +review-item('reviews__item', '“Highly professional team that deliver the work on time. Affordable prices with the excellent service, I highly recommend these guys.”')
+            // If we need navigation buttons
+        button.reviews__slider-arrow.reviews__slider-arrow--next#reviewsNextSlide
+            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 13.1018L1 18.4939L29.0167 18.4939L17.0648 30.7979H24.4468L35.309 19.6157L39 15.8159L35.309 12.0162L24.4468 0.797852L17.0648 0.797852L29.0167 13.1018L1 13.1018Z" stroke="white"/>
+            </svg>
+    //- End wrapper

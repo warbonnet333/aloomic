@@ -1,0 +1,66 @@
+- var currentStatusDir = ''
+
+//- HEADER---------
+mixin logo(parentClass)
+	a(href="/" class=parentClass + " logo")
+		picture
+			img.logo__img(src="/assets/images/header-logo/header-logo.png" alt="logo alt")
+//- End logo
+
+mixin nav(parentClass, navArr)
+	nav(class=parentClass + ' nav')
+		ul.nav__list
+			each navItem in navArr
+				li.nav__item
+					a.nav__link(href= navItem.link)= navItem.name
+			//- End loop
+//- End nav
+//- END HEADER------
+
+//- Sprites
+mixin icon(name)
+	svg
+		use(xlink:href= currentStatusDir + "/assets/svg/sprite.svg#" + name)
+//- End sprites
+
+//- Checkbox
+mixin customCheck-label(size, parentClass, id, name, label)
+	div(class=parentClass +" custom-check custom-check--with-label custom-check--" + size + "")
+		.custom-check__field-wr
+			input.custom-check__field(id= id, type="checkbox", name= name)
+			.custom-check__customize
+				//- include ../../assets/svg/check.svg
+		//- End field
+		if label !== false
+			label.custom-check__label(for= id)= label
+	//- End check item
+
+//- Responsive image
+mixin responsiveImage(parentClass, imgClass, imgPath, imgType)
+	picture(class= parentClass + ' ' + imgClass)
+		source(class= imgClass + '__img', srcset= imgPath + ".webp", loading="lazy")
+		img(class= imgClass + '__img', srcset= imgPath + "." + imgType + " 1x, " + imgPath + "@2x." + imgType + " 2x, " + imgPath + "@3x." + imgType + " 3x", alt="alt", loading="lazy")
+//- End Responsive image
+
+//- include ../modules/page-heading
+include ../modules/heading
+include ../modules/portfolio-item
+include ../modules/we-do-item
+include ../modules/offer-item
+include ../modules/review-item
+include ../modules/blog-item
+include ../modules/faq-item
+include ../modules/advantage-mob-item
+//- include ../modules/blog-post-preview
+//- include ../modules/post-date
+//- include ../modules/link
+//- include ../modules/titles
+//- include ../modules/lists
+//- include ../modules/tabs
+//- include ../modules/room-post
+//- include ../modules/dropdown
+//- include ../modules/btn
+//- include ../modules/reserve-input
+//- include ../modules/contact-form
+//- include ../modules/custom-input
+//- include ../modules/custom-textarea

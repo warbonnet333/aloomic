@@ -1,0 +1,8 @@
+mixin blog-item(parentClass, img, title)
+    a(class= parentClass + ' blog-item', href="/")
+        .blog-item__img-wr
+            +responsiveImage('blog-item__img', 'responsive-img', '/assets/pics/blog/' + img, 'jpg')
+        .blog-item__title-wr
+            h4.blog-item__title= title
+        time.blog-item__date June 24, 2022
+    //- End blog item

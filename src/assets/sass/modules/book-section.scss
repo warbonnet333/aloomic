@@ -1,0 +1,127 @@
+.reserve-now {
+    background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.195) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(#fff, .1);
+
+    &__pallet {
+        position: relative;
+        width: 100%;
+        padding: 2.92vw 3.54vw;
+    }
+
+    &__pallet-inner {
+        max-width: 119rem;
+        margin: auto;
+    }
+
+    &__form {
+        // margin-top: 3.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__inputs-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4.8rem;
+        width: calc(100% - 27rem);    
+    }
+
+    &__field {
+        max-width: 25rem;
+    }
+
+    &__btn {
+        margin-left: auto;
+        padding: 1.2rem 3.2rem;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .reserve-now {
+        &__form {
+            display: block;
+        }
+
+        &__inputs-wrapper {
+            margin-inline: auto;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__field {
+            max-width: 100%;
+        }
+
+        &__btn {
+            margin: 4rem auto 0 auto;
+        }
+    }
+}
+
+@include media-1199 {
+    .reserve-now {
+        &__pallet {
+            width: 100%;
+            padding: 6vw 2vw 2.92vw;
+        }
+
+        &__inputs-wrapper {
+            width: calc(100% - 10rem);
+        }
+    }
+}
+
+@include media-991 {
+    .reserve-now {
+        &__pallet {
+            padding: 6vw 2vw 3vw;
+        }
+
+        &__pallet-inner {
+            max-width: 64rem;
+        }
+
+        &__inputs-wrapper {
+            grid-gap: 4rem 2rem;
+        }
+
+        &__form {
+            max-width: 63rem;
+        }
+
+        &__btn {
+            font-size: 1.4rem;
+            padding: 1rem 4rem;
+        }
+    }
+}
+
+@include media-575 {
+    .reserve-now {
+        margin-top: 5rem;
+
+        &__inputs-wrapper {
+            grid-template-columns: 1fr;
+            width: calc(100% - 5rem);
+        }
+
+        &__field {
+            padding: 6px 0;
+        }
+
+        &__inputs-wrapper {
+            grid-gap: 1.5rem;
+            width: 100%;
+        }
+
+        &__pallet {
+            padding: 9vw 10vw 8vw;
+        }
+
+        &__btn {
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+}

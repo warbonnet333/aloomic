@@ -1,0 +1,115 @@
+.dropdown--type_first {
+    position: relative;
+
+    .dropdown {
+        &__btn {
+            display: flex;
+            align-items: center;
+            grid-gap: 1.6rem;
+            color: var(--color-label);
+            text-transform: uppercase;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            letter-spacing: 0.1em;
+
+            &_icon-wrapper {
+                width: 1.2rem;
+                height: 0.6rem;
+                display: flex;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    transition: $transition--general;
+                }
+            }
+        }
+        // End button
+
+        &__list {
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            background: var(--color-action);
+            color: var(--color-bg);
+            border-radius: .2rem;
+            z-index: z('up-content');
+            padding: 1.5vw 1vw;
+            font-size: 1.4rem;
+            padding-left: 4.5rem;
+            transition: .3s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+
+            &_item {
+                width: 25rem;
+                position: relative;
+
+                &::before {
+                    @include pseudo;
+                    left: -1.8rem;
+                    top: 1.5rem;
+                    width: .4rem;
+                    height: 0.4rem;
+                    background: var(--color-bg);
+                    border-radius: 50%;
+                }
+
+                &:not(:first-child) {
+                    margin-top: .2rem;
+                }
+            }
+        }
+        // End list
+    }
+    // End inner
+
+    &:hover .dropdown {
+        &__btn {
+            &_icon-wrapper {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        // End button
+
+        &__list {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    // End hover inner
+}
+
+@include media-767 {
+    .dropdown {
+        &__list {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .dropdown--type_first {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@include media-575 {
+    .dropdown--type_first {
+
+        .dropdown {
+            &__list {
+                &_item {
+                    width: 100%;
+                }
+            }
+        }
+        // End inner
+    }
+}

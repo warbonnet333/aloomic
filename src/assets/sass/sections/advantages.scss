@@ -1,0 +1,74 @@
+
+  
+  .advantages {
+    padding: 85px 0 125px 0;
+
+    &__tabs {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__content-wr {
+        margin-top: 50px;
+        display: flex;
+        transition: $transition--general;
+    }
+
+    &__symbol {
+        width: 1.88vw;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content-inner {
+        margin-left: 4.92vw;
+        width: 67.66vw
+    }
+
+    &__content-item {
+        display: none;
+    }
+
+    &__content-title {
+        font-family: var(--font-secondary);
+        font-size: 4.22vw;
+        line-height: 111%;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    &__content-item p {
+        margin-top: 2.5rem;
+        font-weight: 400;
+        font-size: 1.88vw;
+        line-height: 167%;
+        letter-spacing: -0.02em;
+        margin-bottom: 0;
+    }
+
+    &__content-item--active {
+        display: block;
+    }
+
+    &__mobile {
+        display: none;
+    }
+}
+
+@include media-767 {
+    .advantages {
+        &__desktop {
+            display: none;
+        }
+
+        &__mobile {
+            display: grid;
+            grid-gap: 9.6vw;
+        }
+    }
+}

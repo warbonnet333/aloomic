@@ -1,0 +1,34 @@
+mixin we-do-item(parentClass, mods, img, title, desc, links, speed)
+    article(class= parentClass + ' we-do-item ' + mods)
+        .we-do-item__img-wr
+            +responsiveImage('we-do-item__img', 'responsive-img', '/assets/pics/we-do/' + img, '.jpg')
+        //- End image wrapper
+        .we-do-item__content
+            .we-do-item__title-block
+                h3.we-do-item__title= title
+                .we-do-item__title-arrow
+                    //- if mods == 'we-do-item--detailed' || mods == 'we-do-item--detailed we-do-item--detailed-two-cols'
+                    //-     include ../../assets/devSvg/we-do-arrows/bottom.svg
+                    //- else if mods == 'we-do-item--short'
+                    include ../../assets/devSvg/we-do-arrows/left.svg
+                //- End title arrow
+            //- End title block
+
+            .we-do-item__desc
+                p= desc
+
+            //- if mods == 'we-do-item--detailed' || mods == 'we-do-item--detailed we-do-item--detailed-two-cols'
+            .we-do-item__cat-links
+                each link in links
+                    if link !== ''
+                        a.we-do-item__cat-link.link.link--gray-arrow(href="/")
+                            span.link__name= link
+                            .link__arrow-wr
+                                include ../../assets/devSvg/link-arrow.svg
+                    else
+                        div
+                //- End links loop
+            //- End cat links block
+            //- End category links condition
+        //- End content
+    //- End item

@@ -1,0 +1,8 @@
+mixin contact-form(parentClass)
+    form(class= parentClass + ' contact-form')
+        +custom-input('contact-form__field', 'reserve-input--color_gray', 'text', 'Your Name', name = '', id = '')
+        +custom-input('contact-form__field', 'reserve-input--color_gray', 'email', 'Your Email', name = '', id = '')
+        +custom-textarea('contact-form__field contact-form__field--textarea', 'custom-textarea--color_gray', 'Your Message')
+        button.contact-form__btn.btn.btn--bg-transparent-border(type="submit") Submit
+        //- +btn--type_fill-transparent('contact-form__btn', 'submit')
+    //- End contact form

@@ -1,0 +1,15 @@
+mixin faq-item(parentClass, title)
+    article(class= parentClass + ' faq-item faq-item--closed')
+        .faq-item__title-wr
+            h4.faq-item__title= title
+            .faq-item__icon-wr
+                <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white" stroke-opacity="0.4" stroke-width="2"/>
+                </svg>
+        //- End title
+
+        .faq-item__content-wr
+            .faq-item__inner
+                p User experience is more than a capability for us. It’s at the core of everything we do here at Clay. We started in San Francisco as a UI/UX design agency and website design company focused on mobile apps but quickly expanded our offering to web applications, enterprise software, and emerging technologies such as AR/VR and wearables. The UX UI and web design projects we take on range from building a new product to redesigning an existing mobile app, website, or enterprise software. We do everything you might need to bring a successful digital product to life: user research, product strategy, user interface, and user experience design, usability testing, prototyping, web design and development.<br>It’s no surprise that our web design clients are often the same companies who hired us for UI/UX design projects, because who can explain the product better than the people who designed it? We’re a web design agency that believes a great website should efficiently convert visitors to customers while providing a delightful web experience that’s true to the brand. Good UX UI design of a digital product or website leads to higher conversion rates. That’s why unlike other web design agencies, we have UX designers collaborate with web designers on all website design projects.
+        //- End content wrapper
+    //- End item

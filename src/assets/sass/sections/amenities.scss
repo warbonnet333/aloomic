@@ -1,0 +1,57 @@
+.amenities {
+    padding: 7.5vw 6.93vw 6.72vw;
+
+    &__title-bg {
+        position: absolute;
+        @include push--center;
+        top: 3.62vw;
+        width: 9.9vw;
+        height: auto;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .heading {
+        position: relative;
+    }
+
+    &__wrapper {
+        margin-top: 5.03vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3.23vw;
+    }
+}
+
+@include media-991 {
+    .amenities {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@include media-575 {
+    .amenities {
+        padding: 12.5vw 6.93vw 20.72vw;
+        
+        &__title-bg {
+            width: 15vw;
+        }
+
+        &__wrapper {
+            margin-top: 15vw;
+            display: block;
+            columns: 2;
+            grid-gap: 5rem;
+            // grid-template-columns: 1fr;
+        }
+
+        &__item:not(:first-child) {
+            margin-top: 11.68vw;
+        }
+    }
+}

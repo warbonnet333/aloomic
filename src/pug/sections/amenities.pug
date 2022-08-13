@@ -1,0 +1,25 @@
+section.amenities.bg--down-angle.bg--down-angle-white.bg--gray
+    .amenities__title-bg
+        include ../../assets/devSvg/title-logo-1.svg
+
+    //- Section title
+    - var heading__title = ''
+    - var heading__mods = 'heading--df heading--icon-bg text-center'
+    - var heading__title3 = 'Hotel Amenities'
+    - var heading__subtitle = ''
+
+    include ../modules/heading
+    //- End section title
+
+    .amenities__wrapper
+        - var items = ['Coffee Bar', 'WI-FI', 'On site ice machine', 'Vending machines', 'Hot tub', 'Free parking', 'Business center', 'Laundry facilities']
+
+        each item, key in items
+            .amenities__item.logo-title-item.logo-title-item--with-desc
+                .logo-title-item__icon-wrapper
+                    img.amenities__icon(src="/assets/pics/amenities/parking.svg")
+                //- //- End icon wrapper
+                h4.logo-title-item__title= item
+                .logo-title-item__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        //- End loop
+    //- End wrapper

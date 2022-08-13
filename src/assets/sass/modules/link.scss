@@ -1,0 +1,42 @@
+.link {
+    transition: $transition--general;
+
+    &__arrow-wr {
+        width: 0.5rem;
+
+        svg {
+            width: 100%;
+            height: auto;
+            transition: $transition--general;
+        }
+    }
+}
+
+.link--gray-arrow {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+
+    .link {
+        &__name {
+            letter-spacing: -0.02em;
+            color: rgba(252, 252, 252, 0.48);
+            line-height: 130%;
+            transition: $transition--general;
+        }
+    }
+    // End inner
+
+    &:hover {
+        .link {
+            &__name {
+                color: #fff;
+            }
+
+            &__arrow-wr svg {
+                transform: translateX(.5rem);
+            }
+        }
+        // End inner
+    }
+}

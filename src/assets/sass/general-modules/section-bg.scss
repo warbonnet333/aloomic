@@ -1,0 +1,14 @@
+.section-bg {
+    position: absolute;
+    display: block;
+    @include push-full;
+
+    .section-bg {
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // General section bg
+}

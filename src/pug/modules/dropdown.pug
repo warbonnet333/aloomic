@@ -1,0 +1,17 @@
+mixin dropdown--type_first(parentClass, name, list)
+    div(class= parentClass + ' dropdown--type_first')
+        button.dropdown__btn
+            span.dropdown__btn_title Amenities
+        //- End dropdown button
+
+        ul.dropdown__list
+            if list
+                each listItem in list
+                    li.dropdown__list_item= listItem
+                //- End loop
+            else
+                each listItem in ['46” flat-screen TV', 'Individually-controlled heat and air conditioning', 'Hair dryer', 'Robes', 'Keurig coffeemaker', 'Minibar with select complimentary snacks and beverages', 'Iron and ironing board', 'In-room safe', 'Daily newspaper upon request']
+                    li.dropdown__list_item= listItem
+                //- End loop
+        //- End dropdown list
+    //- End dropdown wrapper

@@ -1,0 +1,7 @@
+section.section.portfolio(data-scroll-section)
+    .container.portfolio__container
+        - var portfolioItems = [{img: 1, title: 'Le Studio', cat: 'Branding, UI/UX', mod: 'xl'}, {img: 2, title: 'Qonto', cat: 'Branding, UI/UX', mod: 'sm'}, {img: 3, title: 'Brouilles', cat: 'UI/UX', mod: 'sm'}, {img: 4, title: 'Foodles', cat: 'Web development', mod: 'xl'}, {img: 5, title: 'Le Studio', cat: 'Branding, UI/UX', mod: 'xl'}, {img: 6, title: 'Qonto', cat: 'Branding, UI/UX', mod: 'sm'}]
+        each item in portfolioItems
+            +portfolioItem('portfolio__item', 'portfolio-item--' + item.mod, '/assets/pics/portfolio/' + item.img, item.title, item.cat)
+        //- End portfolio loop
+    //- End container

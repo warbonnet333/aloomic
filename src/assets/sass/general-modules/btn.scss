@@ -1,0 +1,47 @@
+// $btnBgFill-fz: var(--fz-button);
+// $btnBgFill-lh: var(--lh-button);
+$btnBgFill-pt: 7.5px;
+$btnBgFill-pb: 8.5px;
+$btnBgFill-bg: var(--color-logo);
+$btnBgFill--hover-bg: var(--color-bg-tranparent);
+$btnBgFill-color: var(--color-bg);
+
+.btn {
+    transition: .3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn--bg-fill {
+    display: block;
+    text-transform: uppercase;
+    background-color: var(--color-action);
+    color: var(--color-bg);
+    border: 1px solid var(--color-action);
+
+    &:hover {
+        background-color: darken(#FAB75C, 10%);
+        border-color: darken(#FAB75C, 10%);
+    }
+}
+
+.btn--bg-transparent-border {
+    display: block;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--color-action);
+    color: var(--color-action);
+
+    &:hover {
+        background-color: var(--color-action);
+        color: var(--color-bg);
+    }
+}
+
+@include media-767 {
+    .btn--bg-fill {
+        font-size: 1.6rem;
+        padding-top: 7.5px;
+        padding-bottom: 6.5px;
+    }
+}

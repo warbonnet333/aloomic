@@ -1,0 +1,38 @@
+.tabs--vertical {
+    .tabs {
+        &__item:not(:first-child) {
+            margin-top: 2.5vw;
+        }
+
+        &__link {
+            text-transform: uppercase;
+        }
+    }
+    // End tabs inner
+}
+
+@include media-991 {
+    .tabs--vertical {
+        display: flex;
+        justify-content: center;
+
+        .tabs {
+            &__item:not(:first-child) {
+                margin-top: 0;
+                margin-left: 2.5vw;
+            }
+        }
+        // End inner
+    }
+}
+
+@include media-767 {
+    .tabs--vertical {
+        .tabs {
+            &__item:not(:first-child) {
+                margin-left: 4vw;
+            } 
+        }
+        // End inner
+    }
+}

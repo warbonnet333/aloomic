@@ -1,0 +1,21 @@
+.portfolio {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4.69vw 7.27vw;
+    }
+
+    &__item {
+        opacity: 0;
+        transform: translate(2vw, 0) scale(.9);
+    }
+}
+
+@include media-575 {
+    .portfolio {
+        &__container {
+            grid-template-columns: 1fr;
+            grid-gap: 15vw;
+        }
+    }
+}

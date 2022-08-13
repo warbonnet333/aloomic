@@ -1,0 +1,15 @@
+section.section.we-know(data-scroll-section)
+    div(data-scroll data-scroll-call="we-know" data-scroll-offset="30%" data-scroll-speed="1")
+        +heading--section('we-know__heading', 'weKnowHeading', 'left', ['WE', 'ARE', 'KNOWN'], '', '', 'For')
+
+    .container.we-know__container
+        .we-know__content(data-scroll data-scroll-offset="30%" data-scroll-speed="3")
+            h3.we-know__title WEB AND APP DEVELOPMENT
+            .we-know__desc
+                p Our development experts are dedicated to providing a seamless development experience with best-in-class attractions for visitors on your web and mobile applications.
+                p At Aloomic we understand the importance of a good user experience and reliable development and our experts apply that knowledge to keep you ahead of the game and on top of the competition.
+        //- End content
+        .we-know__img-wr(data-scroll data-scroll-offset="30%" data-scroll-speed="5")
+            +responsiveImage('we-know__img', 'responsive-img', '/assets/pics/we-know', 'jpg')
+        //- End image wrapper
+    //- End container

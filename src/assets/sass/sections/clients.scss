@@ -1,0 +1,53 @@
+.clients {
+    padding-bottom: 6.64vw;
+
+    &__text {
+        margin-top: 2.34vw;
+        font-size: 1.88vw;
+        line-height: 145%;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+
+    &__items-wr {
+        margin-top: 9.69vw;
+        width: min(100%, 79rem);
+        margin-inline: auto;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4.69vw 6.25vw;
+        justify-items: center;
+    }
+
+    &__items--always-show {
+        margin-bottom: 4.69vw;
+    }
+
+    &__items--all {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+    }
+
+    &__item {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__more-btn {
+        margin: 2.19vw auto 0;
+    }
+}
+
+@include media-767 {
+    .clients {
+        &__text {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+section.blog-in-cat
+    +heading('text-center', 'Blogs in this category')
+    .blog-in-cat__posts.blog-grid
+        each item in [1,2,3, 4]
+            +blog-post-preview('blog-in-cat__post')
+        //- End loop
+    //- End blog posts

@@ -1,0 +1,69 @@
+// Transition
+$transition--general: .3s ease-in-out;
+
+:root {
+    --font-general: 'Epilogue', sans-serif;
+    --font-secondary: 'Playfair Display', sans-serif;
+
+    // Coors
+    --color-text: #fff;
+    --color-bg: #000;
+    --color-label: #B8AFB2;
+    --color-action: #FAB75C;
+    --color-accent: #518F5A;
+    --color-fresno: #4B142B;
+    --color-bg-dark: #F4F2F2;
+
+    // Font sizes and line height
+    --fz-h1: 3.33vw;
+    --lh-h1: 134%;
+
+    --fz-h2: 1.88vw;
+    --lh-h2: 178%;
+
+    --fz-title: 1.04vw;
+    --lh-title: 150%;
+
+    --fz-text: 1.6rem;
+    --lh-text: 150%;
+
+    --fz-button: 1.8rem;
+    --lh-button: 178%;
+
+    --fz-label: 1.2rem;
+    --lh-label: 150%;
+
+    --fz-button-small: 1.2rem;
+    --lh-button-small: 200%;
+
+    --fz-title: 2rem;
+    --lh-title: 150%;
+}
+
+@include media-1199 {
+    :root {
+        --fz-title: 1.3vw;
+    }
+}
+
+@include media-991 {
+    :root {
+        --fz-title: 1.5vw;
+        --fz-h2: 2.5vw;
+        --fz-text: 1.4rem;
+    }
+}
+
+@include media-767 {
+    :root {
+        --fz-title: 2vw;
+    }
+}
+
+@include media-575 {
+    :root {
+        --fz-h1: 4.8vw;
+        --fz-h2: 4.8vw;
+        --fz-title: 3.5vw;
+    }
+}

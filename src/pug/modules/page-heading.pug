@@ -1,0 +1,15 @@
+mixin page-heading(imgPath, title, desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit')
+    .page-heading.bg--down-angle.bg--down-angle-white
+        .page-heading__bg
+            +responsiveImage('page-heading__bg-img', 'responsive-img', imgPath, 'jpg')
+        //- End page heading
+
+        h1.page-heading__title= title
+        .page-heading__subtitle= desc
+
+mixin page-heading--gray
+    .page-heading.page-heading--theme_gray.bg--down-angle.bg--down-angle-white
+
+mixin heading--title(mods = '', title = '')
+    div(class="heading " + mods)
+        h2.title--first.heading__title= title

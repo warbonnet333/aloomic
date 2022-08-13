@@ -6956,6 +6956,7 @@ console.log('hello');
       el: document.querySelector('[data-scroll-container]'),
       smooth: !0,
     });
+    new ResizeObserver(() => B.update()).observe(document.querySelector("[data-scroll-container]"))
     function di(a, b, c) {
       return (
         b in a
@@ -7256,10 +7257,9 @@ console.log('hello');
                 }));
           }
         });
-    }),
-      document
-        .querySelector('.faq__arrow-icon')
-        .addEventListener('click', (a) => {
+    });
+    let icon = document.querySelector('.faq__arrow-icon');
+    icon && icon.addEventListener('click', (a) => {
           document
             .querySelector('.faq__items-wrapper')
             .classList.contains('closed')

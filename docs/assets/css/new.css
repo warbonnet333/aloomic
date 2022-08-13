@@ -2519,6 +2519,7 @@ h6 {
 
     .hero__heading-inner {
         padding: 0 7vw;
+        align-items: flex-start;
     }
 
     .heading--hero .heading__icon-wr {

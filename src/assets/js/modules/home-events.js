@@ -28,9 +28,8 @@ document.querySelector('.we-do__items-wr').addEventListener('click', e => {
 
 document.querySelector('.we-do__more-btn').addEventListener('click', e => {
     e.preventDefault()
-    document.querySelector('.we-do__items-wr').classList.add('active')
-    document.querySelector('.we-do__more-btn').style.opacity = 0
-    document.querySelector('.we-do__more-btn').style.visibility = 'hidden'
+    document.querySelector('.we-do__items-wr').classList.toggle('active')
+    document.querySelector('.we-do__more-btn').classList.toggle('active')
 })
 
 // ADVANTAGES TABS

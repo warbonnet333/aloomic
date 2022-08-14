@@ -1211,7 +1211,7 @@ h6 {
 
 .blog-item__title-wr {
     margin-top: 2.34vw;
-    height: 7.5vw;
+    /*height: 7.5vw;*/
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1220,7 +1220,7 @@ h6 {
 }
 
 .blog-item__title {
-    font-size: 1.88vw;
+    font-size: 1.66vw;
     line-height: 133%;
     letter-spacing: -0.02em;
     color: #fcfcfc;
@@ -2339,7 +2339,7 @@ h6 {
 
 .advantages__content-item p {
     font-weight: 400;
-    font-size: 1.88vw;
+    font-size: 1.66vw;
     line-height: 167%;
     letter-spacing: -0.02em;
 }

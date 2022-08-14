@@ -7019,6 +7019,7 @@ console.log('hello');
             smooth: !0,
         });
         new ResizeObserver(() => B.update()).observe(document.querySelector("[data-scroll-container]"))
+
         function di(a, b, c) {
             return (
                 b in a
@@ -7036,7 +7037,7 @@ console.log('hello');
         let scrollCheck;
         const scrollBrn = document.querySelector('.back_to_top');
 
-        scrollBrn.addEventListener('click', function(e) {
+        scrollBrn.addEventListener('click', function (e) {
             e.preventDefault();
             B.scrollTo('.lets-speak');
         })
@@ -7154,7 +7155,7 @@ console.log('hello');
                     );
             });
         let aw = document.getElementById('toggleClients');
-        aw.addEventListener('click', () => {
+        aw && aw.addEventListener('click', () => {
             let a = A.timeline();
             'hide' == aw.dataset.status
                 ? (a.to('.clients__items--all', {
@@ -7171,27 +7172,25 @@ console.log('hello');
                 }),
                     (aw.dataset.status = 'hide'),
                     (aw.innerText = 'See all our clients'));
-        }),
-            document
-                .querySelector('.we-do__items-wr')
-                .addEventListener('click', (a) => {
-                    a.target.closest('.we-do-item__title-arrow') &&
-                    (a.target
-                        .closest('.we-do-item__title-arrow')
-                        .parentElement.nextElementSibling.nextElementSibling.classList.toggle(
-                            'active'
-                        ),
-                        a.target
-                            .closest('.we-do-item__title-arrow')
-                            .classList.toggle('active'));
-                }),
-            document
-                .querySelector('.we-do__more-btn')
-                .addEventListener('click', (a) => {
-                    a.preventDefault(),
-                        document.querySelector('.we-do__items-wr').classList.toggle('active')
-                        document.querySelector('.we-do__more-btn').classList.toggle('active')
-                });
+        });
+        const weDoItemRw = document.querySelector('.we-do__items-wr');
+        weDoItemRw && weDoItemRw.addEventListener('click', (a) => {
+            a.target.closest('.we-do-item__title-arrow') &&
+            (a.target
+                .closest('.we-do-item__title-arrow')
+                .parentElement.nextElementSibling.nextElementSibling.classList.toggle(
+                    'active'
+                ),
+                a.target
+                    .closest('.we-do-item__title-arrow')
+                    .classList.toggle('active'));
+        });
+        const weDoMoreBtn = document.querySelector('.we-do__more-btn');
+        weDoMoreBtn && weDoMoreBtn.addEventListener('click', (a) => {
+            a.preventDefault(),
+                document.querySelector('.we-do__items-wr').classList.toggle('active')
+            document.querySelector('.we-do__more-btn').classList.toggle('active')
+        });
 
         class dj {
             constructor() {
@@ -7208,9 +7207,8 @@ console.log('hello');
                     });
                 }),
                     di(this, 'setActiveClassToSelectedTab', (a) => {
-                        document
-                            .querySelector('.advantages-tabs__item--active')
-                            .classList.remove('advantages-tabs__item--active'),
+                        const advantageTabsItem = document.querySelector('.advantages-tabs__item--active');
+                        advantageTabsItem && advantageTabsItem.classList.remove('advantages-tabs__item--active'),
                             a.classList.add('advantages-tabs__item--active');
                     }),
                     di(this, 'disableTabContent', () => {
@@ -7281,13 +7279,12 @@ console.log('hello');
             ) {
                 let a = new dj();
                 document.querySelector('.advantages-tabs__item--active') &&
-                a.setActiveLinePosition(),
-                    document
-                        .querySelector('.advantages-tabs')
-                        .addEventListener('click', (b) => {
-                            b.target.closest('.advantages-tabs__item') &&
-                            a.tabActivate(b.target.closest('.advantages-tabs__item'));
-                        });
+                a.setActiveLinePosition();
+                const advantagesTabs = document.querySelector('.advantages-tabs');
+                advantagesTabs && advantagesTabs.addEventListener('click', (b) => {
+                    b.target.closest('.advantages-tabs__item') &&
+                    a.tabActivate(b.target.closest('.advantages-tabs__item'));
+                });
             } else
                 document
                     .querySelector('.advantages__mobile')
@@ -7314,29 +7311,28 @@ console.log('hello');
                                     }));
                         }
                     });
-            document
-                .querySelector('.faq__items-wrapper')
-                .addEventListener('click', (c) => {
-                    let b = c.target;
-                    if (b.closest('.faq-item__title-wr')) {
-                        let a = b.closest('.faq-item__title-wr');
-                        a.parentElement.classList.contains('faq-item--closed')
-                            ? (a.parentElement.classList.remove('faq-item--closed'),
-                                A.timeline({}).to(a.nextElementSibling, {
-                                    opacity: 1,
-                                    visibility: 'visible',
-                                    maxHeight: '100%',
-                                    lineHeight: '180%',
-                                }))
-                            : (a.parentElement.classList.add('faq-item--closed'),
-                                A.timeline().to(a.nextElementSibling, {
-                                    opacity: 0,
-                                    visibility: 'hidden',
-                                    maxHeight: '0px',
-                                    lineHeight: '70%',
-                                }));
-                    }
-                });
+            const faqItemsWr = document.querySelector('.faq__items-wrapper');
+            faqItemsWr && faqItemsWr.addEventListener('click', (c) => {
+                let b = c.target;
+                if (b.closest('.faq-item__title-wr')) {
+                    let a = b.closest('.faq-item__title-wr');
+                    a.parentElement.classList.contains('faq-item--closed')
+                        ? (a.parentElement.classList.remove('faq-item--closed'),
+                            A.timeline({}).to(a.nextElementSibling, {
+                                opacity: 1,
+                                visibility: 'visible',
+                                maxHeight: '100%',
+                                lineHeight: '180%',
+                            }))
+                        : (a.parentElement.classList.add('faq-item--closed'),
+                            A.timeline().to(a.nextElementSibling, {
+                                opacity: 0,
+                                visibility: 'hidden',
+                                maxHeight: '0px',
+                                lineHeight: '70%',
+                            }));
+                }
+            });
         });
         let icon = document.querySelector('.faq__arrow-icon');
         icon && icon.addEventListener('click', (a) => {

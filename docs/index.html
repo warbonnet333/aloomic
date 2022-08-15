@@ -1,43 +1,116 @@
 <!DOCTYPE html>
-<html lang="en-EN">
-
+<html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-us">
     <title>Home page</title>
-    <!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE = edge"
-    /><![endif]-->
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="keywords" content=""/>
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script
-    ><![endif]-->
+    <link rel="alternate icon" type="image/png" href="./assets/img/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="./assets/css/new.css" rel="stylesheet"/>
+    <!--    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>-->
+    <!--    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css"/>-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/hamburgers.min.css">
+    <!--    <link rel="stylesheet" type="text/css" href="./assets/css/basic.css">-->
+    <!--    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/new.css"/>
 </head>
-
 <body>
-<header class="header">
-    <div class="container--big header__container">
-        <a class="header__logo" href="/">
-            <picture class="header__logo-pic def-img">
-                <source class="def-img__img" srcset="./assets/images/logo.webp" loading="lazy"/>
-                <img class="def-img__img" srcset="
-                ./assets/images/logo.png    1x,
-                ./assets/images/logo@2x.png 2x,
-                ./assets/images/logo@3x.png 3x
-              " alt="alt" loading="lazy"/>
-            </picture>
-        </a>
-        <button class="header__hamburger" id="hamburger" type="button">
-            <svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="7.4375" width="38.7812" height="2.125" rx="1.0625" fill="white"/>
-                <rect x="11.6875" width="23.9062" height="2.125" rx="1.0625" fill="white"/>
-                <rect x="3.1875" y="14.875" width="23.9062" height="2.125" rx="1.0625" fill="white"/>
-            </svg>
-        </button>
+<!-- Header beginning -->
+<header>
+    <div class="">
+        <div class="display-center header-content">
+            <div class="logo"><a href="./">
+                <img src="https://aloomic.com.au/wp-content/uploads/2022/02/logo-1.png" alt="logo" width="87"
+                     height="49">
+            </a>
+            </div>
+            <div class="menu-icon">
+                <button class="hamburger hamburger--emphatic js-hamburger menu-button">
+                  <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+            </div>
+            <!-- Nav Header beginning -->
+            <div class="nav-menu">
+                <div class="nav-content container" id="main-menu">
+                    <div class="nav-item">
+                        <a href="index.html"><span>home</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-1-1.webp" alt=""/>
+                            <p>Enterprise-level services to push your business forward, regardless of the industry you
+                                operate in, here at Aloomic.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a id="we-do-menu" href="#m"><span>what we do</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2.webp" alt=""/>
+                            <p>Check out an overview of our extensive services covering all the technical needs of a
+                                modern business.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html"><span>about</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-1.webp" alt=""/>
+                            <p>Learn more about Aloomic, an industry-leading service out of Adelaide, focused on your
+                                success.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="blog.html"><span>blog</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-3.webp" alt=""/>
+                            <p>Gain access to our collection of information and data, provided for the success of your
+                                company.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html"><span>contact</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-2.webp" alt=""/>
+                            <p>Have a great idea? Don’t hesitate to share it with us! We are always looking forward to
+                                hearing from you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-content container hidden" id="we-do-submenu">
+                    <div class="nav-item">
+                        <a href="#" class="back-to-mainmenu">
+                            <span><img src="assets/img/left_arrow.svg" alt="close submenu"></span>
+                        </a>
+                        <a href="#" class="back-to-mainmenu"><span>back</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="services.html#branding"><span>Branding</span></a><a href="services.html#designanduiux"><span>Design and UI/UX</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="services.html#webdevelopment"><span>Web Development</span></a><a
+                            href="services.html#digitalmarketing"><span>Digital Marketing</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="services.html#webdevelopmentbyplatform"><span>Web Development by Platform</span></a><a
+                            href="services.html#supportmaintenance"><span>Support maintenance</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="services.html#mobileapplicationdevelopment"><span>Mobile Application Development</span></a><a
+                            href="services.html#augmentedreality"><span>Augmented maintenance</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Nav Header content end-->
+        </div>
+        <!-- Nav Header end -->
+    </div>
     </div>
 </header>
+<!-- Header End -->
+<!-- Main contents beginning -->
 
 <main class="page-wrapper">
     <div data-scroll-container>
@@ -127,7 +200,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/1.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/1.png    1x,
+                        ./assets/pics/clients/1.png,
                         ./assets/pics/clients/1@2x.png 2x,
                         ./assets/pics/clients/1@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -137,7 +210,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/2.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/2.png    1x,
+                        ./assets/pics/clients/2.png,
                         ./assets/pics/clients/2@2x.png 2x,
                         ./assets/pics/clients/2@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -147,7 +220,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/3.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/3.webp    1x,
+                        ./assets/pics/clients/3.webp,
                         ./assets/pics/clients/3@2x.png 2x,
                         ./assets/pics/clients/3@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -157,7 +230,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/4.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/4.png    1x,
+                        ./assets/pics/clients/4.png,
                         ./assets/pics/clients/4@2x.png 2x,
                         ./assets/pics/clients/4@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -167,7 +240,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/5.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/5.png    1x,
+                        ./assets/pics/clients/5.png,
                         ./assets/pics/clients/5@2x.png 2x,
                         ./assets/pics/clients/5@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -177,7 +250,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/6.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/6.png    1x,
+                        ./assets/pics/clients/6.png,
                         ./assets/pics/clients/6@2x.png 2x,
                         ./assets/pics/clients/6@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -187,7 +260,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/7.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/7.png    1x,
+                        ./assets/pics/clients/7.png,
                         ./assets/pics/clients/7@2x.png 2x,
                         ./assets/pics/clients/7@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -197,7 +270,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/8.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/8.png    1x,
+                        ./assets/pics/clients/8.png,
                         ./assets/pics/clients/8@2x.png 2x,
                         ./assets/pics/clients/8@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -209,7 +282,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/1.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/1.png    1x,
+                        ./assets/pics/clients/1.png,
                         ./assets/pics/clients/1@2x.png 2x,
                         ./assets/pics/clients/1@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -219,7 +292,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/2.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/2.png    1x,
+                        ./assets/pics/clients/2.png,
                         ./assets/pics/clients/2@2x.png 2x,
                         ./assets/pics/clients/2@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -229,7 +302,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/3.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/3.webp    1x,
+                        ./assets/pics/clients/3.webp,
                         ./assets/pics/clients/3@2x.png 2x,
                         ./assets/pics/clients/3@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -239,7 +312,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/4.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/4.png    1x,
+                        ./assets/pics/clients/4.png,
                         ./assets/pics/clients/4@2x.png 2x,
                         ./assets/pics/clients/4@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -249,7 +322,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/5.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/5.png    1x,
+                        ./assets/pics/clients/5.png,
                         ./assets/pics/clients/5@2x.png 2x,
                         ./assets/pics/clients/5@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -259,7 +332,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/6.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/6.png    1x,
+                        ./assets/pics/clients/6.png,
                         ./assets/pics/clients/6@2x.png 2x,
                         ./assets/pics/clients/6@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -269,7 +342,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/7.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/7.png    1x,
+                        ./assets/pics/clients/7.png,
                         ./assets/pics/clients/7@2x.png 2x,
                         ./assets/pics/clients/7@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -279,7 +352,7 @@
                             <picture class="clients__item-img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/clients/8.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/clients/8.png    1x,
+                        ./assets/pics/clients/8.png,
                         ./assets/pics/clients/8@2x.png 2x,
                         ./assets/pics/clients/8@3x.png 3x
                       " alt="alt" loading="lazy"/>
@@ -301,9 +374,9 @@
                                 <source class="responsive-img__img" srcset="./assets/pics/portfolio/1.webp"
                                         loading="lazy"/>
                                 <img class="responsive-img__img" srcset="
-                        ./assets/pics/portfolio/1..jpg    1x,
-                        ./assets/pics/portfolio/1@2x..jpg 2x,
-                        ./assets/pics/portfolio/1@3x..jpg 3x
+                        ./assets/pics/portfolio/1.jpg,
+                        ./assets/pics/portfolio/1@2x.jpg 2x,
+                        ./assets/pics/portfolio/1@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
                             </picture>
                         </div>
@@ -317,9 +390,9 @@
                         <picture class="portfolio-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/portfolio/2.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/portfolio/2..jpg    1x,
-                        ./assets/pics/portfolio/2@2x..jpg 2x,
-                        ./assets/pics/portfolio/2@3x..jpg 3x
+                        ./assets/pics/portfolio/2.jpg,
+                        ./assets/pics/portfolio/2@2x.jpg 2x,
+                        ./assets/pics/portfolio/2@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
                         </picture>
                     </div>
@@ -333,9 +406,9 @@
                         <picture class="portfolio-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/portfolio/3.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/portfolio/3..jpg    1x,
-                        ./assets/pics/portfolio/3@2x..jpg 2x,
-                        ./assets/pics/portfolio/3@3x..jpg 3x
+                        ./assets/pics/portfolio/3.jpg,
+                        ./assets/pics/portfolio/3@2x.jpg 2x,
+                        ./assets/pics/portfolio/3@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
                         </picture>
                     </div>
@@ -349,9 +422,9 @@
                         <picture class="portfolio-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/portfolio/4.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/portfolio/4..jpg    1x,
-                        ./assets/pics/portfolio/4@2x..jpg 2x,
-                        ./assets/pics/portfolio/4@3x..jpg 3x
+                        ./assets/pics/portfolio/4.jpg,
+                        ./assets/pics/portfolio/4@2x.jpg 2x,
+                        ./assets/pics/portfolio/4@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
                         </picture>
                     </div>
@@ -365,9 +438,9 @@
                         <picture class="portfolio-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/portfolio/5.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/portfolio/5..jpg    1x,
-                        ./assets/pics/portfolio/5@2x..jpg 2x,
-                        ./assets/pics/portfolio/5@3x..jpg 3x
+                        ./assets/pics/portfolio/5.jpg,
+                        ./assets/pics/portfolio/5@2x.jpg 2x,
+                        ./assets/pics/portfolio/5@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
                         </picture>
                     </div>
@@ -381,9 +454,9 @@
                         <picture class="portfolio-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/portfolio/6.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/portfolio/6..jpg    1x,
-                        ./assets/pics/portfolio/6@2x..jpg 2x,
-                        ./assets/pics/portfolio/6@3x..jpg 3x
+                        ./assets/pics/portfolio/6.jpg,
+                        ./assets/pics/portfolio/6@2x.jpg 2x,
+                        ./assets/pics/portfolio/6@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
                         </picture>
                     </div>
@@ -398,7 +471,7 @@
         <section class="section video" data-scroll-section>
             <div class="container--big" data-scroll data-scroll-call="video" data-scroll-offset="10%"
                  data-scroll-speed="1">
-                <div class="video__heading heading heading--section heading--section-left" id="videoHeading">
+                <div class="video__heading heading heading--section heading--section-left" id="videoHeading1">
                     <div class="heading__icon-wr">
                         <svg width="43" height="68" viewBox="0 0 43 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_358_23)">
@@ -523,9 +596,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/1.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/1..jpg    1x,
-                          ./assets/pics/we-do/1@2x..jpg 2x,
-                          ./assets/pics/we-do/1@3x..jpg 3x
+                          ./assets/pics/we-do/1.jpg,
+                          ./assets/pics/we-do/1@2x.jpg 2x,
+                          ./assets/pics/we-do/1@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -619,9 +692,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/2.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/2..jpg    1x,
-                          ./assets/pics/we-do/2@2x..jpg 2x,
-                          ./assets/pics/we-do/2@3x..jpg 3x
+                          ./assets/pics/we-do/2.jpg,
+                          ./assets/pics/we-do/2@2x.jpg 2x,
+                          ./assets/pics/we-do/2@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -711,9 +784,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/3.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/3..jpg    1x,
-                          ./assets/pics/we-do/3@2x..jpg 2x,
-                          ./assets/pics/we-do/3@3x..jpg 3x
+                          ./assets/pics/we-do/3.jpg,
+                          ./assets/pics/we-do/3@2x.jpg 2x,
+                          ./assets/pics/we-do/3@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -802,9 +875,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/4.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/4..jpg    1x,
-                          ./assets/pics/we-do/4@2x..jpg 2x,
-                          ./assets/pics/we-do/4@3x..jpg 3x
+                          ./assets/pics/we-do/4.jpg,
+                          ./assets/pics/we-do/4@2x.jpg 2x,
+                          ./assets/pics/we-do/4@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -891,9 +964,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/1.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/1..jpg    1x,
-                          ./assets/pics/we-do/1@2x..jpg 2x,
-                          ./assets/pics/we-do/1@3x..jpg 3x
+                          ./assets/pics/we-do/1.jpg,
+                          ./assets/pics/we-do/1@2x.jpg 2x,
+                          ./assets/pics/we-do/1@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -987,9 +1060,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/2.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/2..jpg    1x,
-                          ./assets/pics/we-do/2@2x..jpg 2x,
-                          ./assets/pics/we-do/2@3x..jpg 3x
+                          ./assets/pics/we-do/2.jpg,
+                          ./assets/pics/we-do/2@2x.jpg 2x,
+                          ./assets/pics/we-do/2@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -1081,9 +1154,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/3.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/3..jpg    1x,
-                          ./assets/pics/we-do/3@2x..jpg 2x,
-                          ./assets/pics/we-do/3@3x..jpg 3x
+                          ./assets/pics/we-do/3.jpg,
+                          ./assets/pics/we-do/3@2x.jpg 2x,
+                          ./assets/pics/we-do/3@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -1172,9 +1245,9 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-do/4.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-do/4..jpg    1x,
-                          ./assets/pics/we-do/4@2x..jpg 2x,
-                          ./assets/pics/we-do/4@3x..jpg 3x
+                          ./assets/pics/we-do/4.jpg,
+                          ./assets/pics/we-do/4@2x.jpg 2x,
+                          ./assets/pics/we-do/4@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
                                 </picture>
                             </div>
@@ -1436,7 +1509,7 @@
                         <picture class="we-know__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/we-know.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                      ./assets/pics/we-know.jpg    1x,
+                      ./assets/pics/we-know.jpg,
                       ./assets/pics/we-know@2x.jpg 2x,
                       ./assets/pics/we-know@3x.jpg 3x
                     " alt="alt" loading="lazy"/>
@@ -1461,7 +1534,7 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-offer/1.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-offer/1.jpg    1x,
+                          ./assets/pics/we-offer/1.jpg,
                           ./assets/pics/we-offer/1@2x.jpg 2x,
                           ./assets/pics/we-offer/1@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
@@ -1476,7 +1549,7 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-offer/2.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-offer/2.jpg    1x,
+                          ./assets/pics/we-offer/2.jpg,
                           ./assets/pics/we-offer/2@2x.jpg 2x,
                           ./assets/pics/we-offer/2@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
@@ -1494,7 +1567,7 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-offer/3.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-offer/3.jpg    1x,
+                          ./assets/pics/we-offer/3.jpg,
                           ./assets/pics/we-offer/3@2x.jpg 2x,
                           ./assets/pics/we-offer/3@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
@@ -1512,7 +1585,7 @@
                                     <source class="responsive-img__img" srcset="./assets/pics/we-offer/4.webp"
                                             loading="lazy"/>
                                     <img class="responsive-img__img" srcset="
-                          ./assets/pics/we-offer/4.jpg    1x,
+                          ./assets/pics/we-offer/4.jpg,
                           ./assets/pics/we-offer/4@2x.jpg 2x,
                           ./assets/pics/we-offer/4@3x.jpg 3x
                         " alt="alt" loading="lazy"/>
@@ -1690,7 +1763,7 @@
                             <picture class="creative__img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/creative/1.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/creative/1.jpg    1x,
+                        ./assets/pics/creative/1.jpg,
                         ./assets/pics/creative/1@2x.jpg 2x,
                         ./assets/pics/creative/1@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
@@ -1709,7 +1782,7 @@
                             <picture class="creative__img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/creative/2.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/creative/2.jpg    1x,
+                        ./assets/pics/creative/2.jpg,
                         ./assets/pics/creative/2@2x.jpg 2x,
                         ./assets/pics/creative/2@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
@@ -1726,7 +1799,7 @@
                             <picture class="creative__img def-img">
                                 <source class="def-img__img" srcset="./assets/pics/creative/3.webp" loading="lazy"/>
                                 <img class="def-img__img" srcset="
-                        ./assets/pics/creative/3.jpg    1x,
+                        ./assets/pics/creative/3.jpg,
                         ./assets/pics/creative/3@2x.jpg 2x,
                         ./assets/pics/creative/3@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
@@ -1894,7 +1967,7 @@
                             <picture class="blog-item__img responsive-img">
                                 <source class="responsive-img__img" srcset="./assets/pics/blog/1.webp" loading="lazy"/>
                                 <img class="responsive-img__img" srcset="
-                        ./assets/pics/blog/1.jpg    1x,
+                        ./assets/pics/blog/1.jpg,
                         ./assets/pics/blog/1@2x.jpg 2x,
                         ./assets/pics/blog/1@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
@@ -1912,7 +1985,7 @@
                         <picture class="blog-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/blog/2.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/blog/2.jpg    1x,
+                        ./assets/pics/blog/2.jpg,
                         ./assets/pics/blog/2@2x.jpg 2x,
                         ./assets/pics/blog/2@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
@@ -1930,7 +2003,7 @@
                         <picture class="blog-item__img responsive-img">
                             <source class="responsive-img__img" srcset="./assets/pics/blog/3.webp" loading="lazy"/>
                             <img class="responsive-img__img" srcset="
-                        ./assets/pics/blog/3.jpg    1x,
+                        ./assets/pics/blog/3.jpg,
                         ./assets/pics/blog/3@2x.jpg 2x,
                         ./assets/pics/blog/3@3x.jpg 3x
                       " alt="alt" loading="lazy"/>
@@ -2432,13 +2505,12 @@
             <footer class="footer" data-scroll-section>
                 <div class="container--big">
                     <div class="footer__general">
-                        <a class="footer__general-item footer__logo" href="/">
+                        <a class="footer__general-item footer__logo" href="./">
                             <picture class="header__logo-pic def-img">
-                                <source class="def-img__img" srcset="./assets/images/logo.webp" loading="lazy"/>
+                                <source class="def-img__img" srcset="./assets/img/logo.webp"/>
                                 <img class="def-img__img" srcset="
-                                    ./assets/images/logo.png    1x,
-                                    ./assets/images/logo@2x.png 2x,
-                                    ./assets/images/logo@3x.png 3x"
+                                    ./assets/img/logo.png,
+                                    ./assets/img/logo@2x.png 2x"
                                      alt="alt" loading="lazy"
                                 />
                             </picture>
@@ -2446,13 +2518,12 @@
                         <div class="footer__general-item footer__nav-col">
                             <h5 class="footer__nav-title">Navigation</h5>
                             <ul>
-                                <li><a href="#">Navigation</a></li>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">What We Do</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./services.html">What We Do</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./sitemap.html">Sitemap</a></li>
                             </ul>
                         </div>
                         <div class="footer__general-item footer__nav-col">
@@ -2466,15 +2537,15 @@
                         <div class="footer__general-item footer__nav-col">
                             <h5 class="footer__nav-title">Services</h5>
                             <ul>
-                                <li><a href="#section4">Branding</a></li>
-                                <li><a href="/">Web design</a></li>
-                                <li><a href="/">Design and UI/UX</a></li>
-                                <li><a href="/">Mobile Application Development</a></li>
-                                <li><a href="/">Web Development by Platform</a></li>
-                                <li><a href="/">Web Development</a></li>
-                                <li><a href="/">Digital Marketing</a></li>
-                                <li><a href="/">Augmented Reality</a></li>
-                                <li><a href="/">Support maintenance</a></li>
+                                <li><a href="services.html#branding">Branding</a></li>
+                                <li><a href="services.html#designanduiux">Web design</a></li>
+                                <li><a href="services.html#designanduiux">Design and UI/UX</a></li>
+                                <li><a href="services.html#mobileapplicationdevelopment">Mobile Application Development</a></li>
+                                <li><a href="services.html#webdevelopmentbyplatform">Web Development by Platform</a></li>
+                                <li><a href="services.html#webdevelopment">Web Development</a></li>
+                                <li><a href="services.html#digitalmarketing">Digital Marketing</a></li>
+                                <li><a href="services.html#augmentedreality">Augmented Reality</a></li>
+                                <li><a href="services.html#supportmaintenance">Support maintenance</a></li>
                             </ul>
                         </div>
                         <div class="footer__general-item footer__form-wr">
@@ -2532,7 +2603,14 @@
         </div>
 </main>
 <a href="/" class="back_to_top" title="Get an offer">I'm Interested</a>
-<script type="text/javascript" src="./assets/js/home.js"></script>
+<!-- Main contents end -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<!--<script type="text/javascript" src="assets/js/function.js"></script>-->
+<!--<script type="text/javascript" src="assets/js/home-animations.js"></script>-->
+<script type="text/javascript" src="assets/js/swipe.js"></script>
+<script type="text/javascript" src="./assets/js/new/home.js"></script>
 </body>
-
 </html>

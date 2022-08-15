@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="content-language" content="en-us">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/basic.css">
+      <link rel="alternate icon" type="image/png" href="assets/img/icons/favicon.ico">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link href="assets/css/hamburgers.min.css" rel="stylesheet">
+      <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- <script type="text/javascript" src="./assets/js/slide.js"></script> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+      <script type="text/javascript" src="assets/js/function.js"></script>
+
+      <style type="text/css">.blog-details { text-transform: capitalize; }
+        .blog-details p { font-size: 17px; font-family:"Epilogue", sans-serif; margin: 10px 0; }
+        .next-blog-info-wrapper { justify-content: unset; }
+        #nextpreviouslinks a {  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 50%; display: inline-block; }
+        .btn-group a { margin: 0 10px 0 0; font-size: 30px; font-weight: normal; line-height: 40px; }
+        .blog-details .sub-title { line-height: 65px !important; font-weight: normal; font-size: 49px; }
+        .next-blog-panel { margin: 150px auto !important; }</style>
+   </head>
+   <body class="post-template-default single single-post postid-1544 single-format-standard logged-in wp-embed-responsive singular image-filters-enabled">
+      <!-- Header beginning -->
+      <!-- Header beginning -->
+      <header>
+         <div class="">
+            <div class="display-center header-content">
+               <div class="logo"><a href="https://aloomic.com.au/">
+                  <img src="https://aloomic.com.au/wp-content/uploads/2022/02/logo-1.png" alt="logo" width="87" height="49">
+                  </a>
+               </div>
+               <div class="menu-icon">
+                  <button class="hamburger hamburger--emphatic js-hamburger menu-button">
+                  <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                  </span>
+                  </button>
+               </div>
+               <!-- Nav Header beginning -->
+               <div class="nav-menu">
+                  <div class="nav-content container" id="main-menu">
+                     <div class="nav-item">
+                        <a id="" href="index.html"><span>home</span></a>
+                        <div class="menu-thumb hidden">
+                           <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-1-1.webp" alt="" />
+                           <p>Enterprise-level services to push your business forward, regardless of the industry you operate in, here at Aloomic.</p>
+                        </div>
+                     </div>
+                     <div class="nav-item">
+                        <a id="we-do-menu" href="#m"><span>what we do</span></a>
+                        <div class="menu-thumb hidden">
+                           <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2.webp" alt="" />
+                           <p>Check out an overview of our extensive services covering all the technical needs of a modern business.</p>
+                        </div>
+                     </div>
+                     <div class="nav-item">
+                        <a id="" href="about.html"><span>about</span></a>
+                        <div class="menu-thumb hidden">
+                           <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-1.webp" alt="" />
+                           <p>Learn more about Aloomic, an industry-leading service out of Adelaide, focused on your success.</p>
+                        </div>
+                     </div>
+                     <div class="nav-item">
+                        <a id="" href="blog.html"><span>blog</span></a>
+                        <div class="menu-thumb hidden">
+                           <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-3.webp" alt="" />
+                           <p>Gain access to our collection of information and data, provided for the success of your company.</p>
+                        </div>
+                     </div>
+                     <div class="nav-item">
+                        <a id="" href="contact.html"><span>contact</span></a>
+                        <div class="menu-thumb hidden">
+                           <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-2.webp" alt="" />
+                           <p>Have a great idea? Don’t hesitate to share it with us! We are always looking forward to hearing from you.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="nav-content container hidden" id="we-do-submenu">
+                     <div class="nav-item">
+                        <a href="#" class="back-to-mainmenu">
+                        <span><img src="assets/img/left_arrow.svg" alt="close submenu"></span>
+                        </a>
+                        <a href="#" class="back-to-mainmenu"><span>back</span></a>
+                     </div>
+                     <div class="nav-item">
+                        <a href="wedo.html#branding"><span>Branding</span></a><a href="wedo.html#designanduiux"><span>Design and UI/UX</span></a>
+                     </div>
+                     <div class="nav-item">
+                        <a href="wedo.html#webdevelopment"><span>Web Development</span></a><a href="wedo.html#digitalmarketing"><span>Digital Marketing</span></a>
+                     </div>
+                     <div class="nav-item">
+                        <a href="wedo.html#webdevelopmentbyplatform"><span>Web Development by Platform</span></a><a href="wedo.html#supportmaintenance"><span>Support maintenance</span></a>
+                     </div>
+                     <div class="nav-item">
+                        <a href="wedo.html#mobileapplicationdevelopment"><span>Mobile Application Development</span></a><a href="wedo.html#augmentedreality"><span>Augmented maintenance</span></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Nav Header content end-->
+            </div>
+            <!-- Nav Header end -->
+         </div>
+         </div>
+      </header>
+      <!-- Header End -->    <!-- Header End -->
+      <!-- Main contents beginning -->
+      <div class="full-screen">
+         <div class="home-banner home-banner-blog-detailed display-center">
+            <div class="container" id="headingFadeOut">
+               <h1 class="text-1 flex">
+                  <span class="explosion-icon" id="exp-icon-one">
+                  <img src="assets/img/explosion.svg" alt="">
+                  </span>
+                  <div class="fade-in-1">What Programming Language is used for</div>
+               </h1>
+               <h2 class="text-1-italic flex">
+                  <div class="fade-in-2 text-gradient-3">Mobile App Development?</div>
+               </h2>
+            </div>
+         </div>
+         <div class="home-banner blog-detaile-page" style="margin-top: 0;">
+            <div class="container" style="position: relative;">
+               <!-- <div class="blog-title">
+                  <span>
+                      Blog about life <br />
+                      and design
+                  </span>
+                  </div> -->
+               <div class="blog-img">
+                  <img src="https://aloomic.com.au/wp-content/uploads/2022/05/Post-6.webp">
+               </div>
+               <div class="blog-details">
+                  <p><span style="font-weight: 400;">When it comes to app development for both Android and iOS apps, the design stage which involves coding the application is the stage where the app finally begins to come to life. To this, the developer will have to expertly employ a suitable programming language. Several programming languages can be used for coding. </span></p>
+                  <p><span style="font-weight: 400;">The average Android or iOS app developer may have their personal preferences for which programming language they use when providing mobile application development services, while some developers employ whatever language best suits their needs for a project. Whatever the case may be, certain programming languages are best suited for certain types of applications. Different programming languages have a variety of features and benefits which show in the apps they are used to create.</span></p>
+                  <p><span style="font-weight: 400;">Here are 10 great programming languages an Android and<a href="https://aloomic.com.au/service/ios-app-development/"> iOS app development</a> company can use to code an app.</span></p>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">JavaScript</h2>
+                     <p><span style="font-weight: 400;">JavaScript is hands down the most popular programming language out there. It is excellent for cross-platform development which is a feature to look out for in a programming language. JavaScript is extremely flexible and can run outside of browsers. JavaScript can also be compiled using other programming languages which is one of the features that keep it on top of the game.</span></p>
+                     <p><span style="font-weight: 400;">JavaScript has many features benefits for users such as:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is platform-independent.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">JavaScript can validate user input.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">By using Node.js, JavaScript can be used in versatile ways.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It has date and time functions built-in.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">Kotlin</h2>
+                     <p><span style="font-weight: 400;">Kotlin is often referred to as an improved version of Java. It is a programming language used to design Android applications specifically. Kotlin programming language is an open-source language that offers unique benefits to apps programmed with it. Its syntax is compact and efficient and it also supports operator overloading.</span></p>
+                     <p><span style="font-weight: 400;">Some pros and features of Kotlin include:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Kotlin is easy to adapt and supports Java.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is suitable for multi-platform development.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Kotlin's lazy-loading feature bumps up startup time.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Presence of data classes.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">Objective- C </h2>
+                     <p><span style="font-weight: 400;">Objective C is an extension of the C programming language. It is used for developing iOS applications and is general-purpose. Objective- C is object-oriented and mature. This programming language supports static and dynamic typing and is easy to use.</span></p>
+                     <p><span style="font-weight: 400;">Objective-C offers features like:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The Smalltalk feature makes its syntax the same as normal language.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The garbage collector feature.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Its classes are objects.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">Swift</h2>
+                     <p><span style="font-weight: 400;">Swift is another programming language designed for the programming of iOS applications. This language is very popular and innovative. It is scalable and easily adaptable to ensure safety while programming. It is also very flexible and easy to use. Swift can be used to develop interactive apps and some examples of applications designed with Swift are LinkedIn and Lyft.</span></p>
+                     <p><span style="font-weight: 400;">Swift’s best features include:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It contains functional programming patterns.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Swift employs ARC to offer memory management automatically.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It works cross-device.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">PHP</h2>
+                     <p><span style="font-weight: 400;">PHP is the programming language that is most ideal for applications that require database access. This programming language is open source and loosely typed and can be used for command-line and server-side scripting. PHP is used most popularly for the development of eCommerce applications.</span></p>
+                     <p><span style="font-weight: 400;">PHP has features such as:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is platform-independent.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Its users have access to real-time logs.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">PHP has the feature of generating error messages.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">Java</h2>
+                     <p><span style="font-weight: 400;">Java is an object-oriented programming language. It is used for developing Android applications. Java is an easy to handle language and easy to use. It is known for its excellent community support and a wide array of exciting features. It can be used to develop cross-platform applications, websites, games, and more.</span></p>
+                     <p><span style="font-weight: 400;">Java’s features include:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">In-built and open-source libraries.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is an interpreted language.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Java is a platform-independent and portable programming language.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">Python</h2>
+                     <p><span style="font-weight: 400;">Python is a classic programming language. It is used to develop web apps that usually accompany mobile applications, alongside many other types of applications and tools. Python is the high-level programming language responsible for some of the most popular applications out today such as Instagram and Youtube. It is quick and easy to learn and use.</span></p>
+                     <p><span style="font-weight: 400;">Some features of Python include:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is an expressive and interpretive language.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Python can be used for cross-platform development.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is an open-source language.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">C#</h2>
+                     <p><span style="font-weight: 400;">C# or C-sharp is a general-purpose programming language. While it is mostly used for cross-platform development, it is also popularly used for windows app development. It can be used for app development for both Android and iOS. C# is known for being used to develop highly interactive game applications.</span></p>
+                     <p><span style="font-weight: 400;">C# has many key features such as:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is an object-oriented programming language.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is simple to use and type-safe.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">C# is updatable and scalable.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">C++</h2>
+                     <p><span style="font-weight: 400;">C++ is a programming language used to develop android apps and native apps. This language can be used to develop apps with functions ranging from mobile games to banking. It is quick and easy to use thanks to the built-in libraries and compilers.  C++ is a high-level language and is also object-oriented.</span></p>
+                     <p><span style="font-weight: 400;">Some key features of C++ include:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">It is machine-independent.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">C++ is a case-sensitive programming language.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The dynamic memory allocation feature.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">HTML 5</h2>
+                     <p><span style="font-weight: 400;">HTML stands for HyperText Markup Language and HTML 5 is the fifth version of this programming language. It is used widely for developing location-based and web-fronted applications. HTML 5 is a markup language that is used to code for the contents of a webpage. This latest version of HTML comes with some features that greatly improve on previous versions such as:</span></p>
+                     <ul>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">HTML 5 has vector graphic support which is ideal for creating websites.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The ‘type’ attribute from previous versions was removed.</span></li>
+                        <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">New video and audio tags allow users to add videos to websites.</span></li>
+                     </ul>
+                  </div>
+                  <div class="blog-sub-detail">
+                     <h2 class="h2 sub-title text-gradient-3">Conclusion</h2>
+                     <p><span style="font-weight: 400;">These are just some programming languages that can be used by an Android and iOS app development company to create high-quality applications. The choice of programming language to use when developing an application is fully dependent on the developers' preferences and the specifications of the app.</span></p>
+                     <p><span style="font-weight: 400;">Whether the application is native or hybrid or being designed for Android or iOS, these programming languages can get the job done.</span></p>
+                  </div>
+                  <div class="next-blog-info-wrapper">
+                     <div class="next-blog-panel">
+                        <div class="next-blog-info">
+                           <span style='font-family: "Epilogue", sans-serif; font-size: 22px;'>
+                           Next blog
+                           </span>
+                           <!-- Previous and Next Post -->
+                           <!-- Para pantallas grandes -->
+                           <div class="btn-group text-gradient-3 next-blog-title btn-group-justified hidden-sm hidden-xs" role="group" aria-label="..." id="nextpreviouslinks">
+                              <div class="btn-group" role="group" style="display: inline;">
+                                 <a href="https://aloomic.com.au/why-is-mobile-application-development-important/" rel="prev">Why is Mobile Application</a>                                  
+                              </div>
+                              <div class="btn-group" role="group" style="display: inline;">
+                              </div>
+                              <div class="chkdot" style="display: inline;"><img style="width: 70px; animation: bounceLeft 2s 3s ease infinite;" src="assets/img/right_arrow.svg" alt=""></div>
+                           </div>
+                           <!-- /Previous and Next Post -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="LetsSpeak0"></div>
+         </div>
+         <!-- Input box begin -->
+         <div class="input-panel">
+            <div class="container">
+               <h1 class="h1 flex">
+                  <span>
+                  <img src="./assets/img/explosion.svg" alt="" width="74" height="120">
+                  </span>
+                  <div id="LetsSpeak1" class="title-mr">lets</div>
+                  <div id="LetsSpeak2" class="title-mr">speak</div>
+               </h1>
+               <h2 class="h2 text-2 flex">
+                  <div id="LetsSpeak3" class="title-mr text-gradient-2">fill</div>
+                  <div id="LetsSpeak4" class="title-mr text-gradient-2">this</div>
+                  <div id="LetsSpeak5" class="text-gradient-3">form</div>
+               </h2>
+               <div class="input-section">
+                  <input type="text" placeholder="your name">
+                  <span>
+                  <img src="./assets/img/right_arrow.svg">
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="floating-panel">
+            <div class="">
+               <marquee behavior="scroll" direction="left" scrollamount="5" scrolldelay=0 style="position: relative;">
+                  <span>lets work together</span>
+                  <span class="spot"></span>
+                  <span>lets work together</span>
+               </marquee>
+            </div>
+         </div>
+         <footer>
+            <div class="">
+               <div class="footer">
+                  <a class="btn-to-buttom" href="#LetsSpeak0">
+                     <span>I'm Interested</span>
+                     <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="white" stroke-width="2.667" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                           <path d="M13.333 20L20 26.667 26.667 20"></path>
+                           <path d="M5.333 5.333h9.334A5.333 5.333 0 0120 10.667v16"></path>
+                        </g>
+                     </svg>
+                  </a>
+                  <div class="footer-section1">
+                     <div class="icon-wrapper">
+                        <img src="https://aloomic.com.au/wp-content/uploads/2022/04/Icononly-1.webp">
+                     </div>
+                     <div class="navigation-wrapper">
+                           <div class="list">
+                              <a>
+                              Navigation
+                              </a>
+                              <a href="index.html">
+                              Home                                    </a>
+                              <a href="about.html">
+                              About                                    </a>
+                              <a href="wedo.html">
+                              What We Do                                    </a>
+                              <a href="blog.html">
+                              Blog                                    </a>
+                              <a href="contact.html">
+                              Contact                                    </a>
+                           </div>
+                        </div>
+                     <div class="contact-wrapper">
+                        <div class="list">
+                           <a>Tell us your needs</a>
+                           <a href="mailto:hello@aloomic.com.au">hello@aloomic.com.au</a>
+                           <a href="tel:+61432749417">+61432749417</a>
+                           <a href="#">3/12 Victoria Street Prospect, SA, 5082</a>                            
+                        </div>
+                     </div>
+                     <div class="services-wrapper">
+                        <div class="list">
+                           <a>Services</a>
+                           <a href="wedo.html#branding">Branding</a>
+                           <a href="wedo.html#webdevelopment">Web Development</a>
+                           <a href="wedo.html#webdevelopmentbyplatform">Web Development by Platform</a>
+                           <a href="wedo.html#mobileapplicationdevelopment">Mobile Application Development</a>
+                           <a href="wedo.html#designanduiux">Design and UI/UX</a>
+                           <a href="wedo.html#digitalmarketing">Digital Marketing</a>
+                           <a href="wedo.html#supportmaintenance">Support maintenance</a>
+                           <a href="wedo.html#augmentedreality">Augmented Reality</a>
+                        </div>
+                     </div>
+                     <div class="email-input-wrapper">
+                        <p>Sign up to newsletter</p>
+                        <div class="input-section">
+                           <input type="email" placeholder="YOUR EMAIL" />
+                           <span>
+                           <img src="./assets/img/right_arrow.svg" />
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <div class="footer-section2">
+                     <div class="section1">
+                        <span><a href="https://www.facebook.com/Aloomic-142762157957363">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a></span>
+                        <span><a href="https://twitter.com/aloomic">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a></span>
+                        <span><a href="https://www.linkedin.com/company/aloomic">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a></span>
+                        <span><a href="https://www.instagram.com/aloomic_digital/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a></span>
+                        <span><a href="https://www.pinterest.com.au/aloomiccomau/">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </a></span>
+                     </div>
+                     <div class="section2">
+                        <span><a href=""></a></span>
+                     </div>
+                     <div class="section3">
+                        <span>Copyright 2022 - Designed and Developed by Aloomic Pty Ltd.</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      </div>
+      <span id="device-ruler"></span>
+      <!-- Main contents end -->
+   </body>
+</html>

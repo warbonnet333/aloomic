@@ -490,9 +490,18 @@ h3, h4, h5, h6 {
     }
 
     img {
+      width: 300px;
+      height: auto;
       -o-object-fit: cover;
       object-fit: cover;
       opacity: 0.5;
+    }
+  }
+
+  .back-to-mainmenu {
+    img {
+      width: 40px;
+      height: auto;
     }
   }
 }
@@ -598,6 +607,14 @@ header.fix {
       }
     }
   }
+
+
+  .nav-item .back-to-mainmenu {
+    img {
+      width: 30px;
+    }
+  }
+
 }
 
 /*FROM OLD VERSION END*/
@@ -3526,7 +3543,7 @@ header.fix {
   }
 
   .development-page h1.heading__h1-title {
-    font-size: 4.5rem !important;
+    font-size: 4rem !important;
   }
 
   .development-page h1.heading__h1-title span {

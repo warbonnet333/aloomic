@@ -480,9 +480,15 @@ h3, h4, h5, h6 {
   -webkit-text-fill-color: #FCFCFC;
 }
 .nav-item .menu-thumb img {
+  width: 300px;
+  height: auto;
   -o-object-fit: cover;
   object-fit: cover;
   opacity: 0.5;
+}
+.nav-item .back-to-mainmenu img {
+  width: 40px;
+  height: auto;
 }
 
 .display-center {
@@ -574,6 +580,9 @@ header.fix {
   #we-do-submenu .nav-item a:last-child {
     text-align: left;
     border-top: 1px solid #575757;
+  }
+  .nav-item .back-to-mainmenu img {
+    width: 30px;
   }
 }
 /*FROM OLD VERSION END*/
@@ -3393,7 +3402,7 @@ header.fix {
     border-color: hsla(0deg, 0%, 98.8%, 0.48);
   }
   .development-page h1.heading__h1-title {
-    font-size: 4.5rem !important;
+    font-size: 4rem !important;
   }
   .development-page h1.heading__h1-title span {
     padding-right: 5vw;

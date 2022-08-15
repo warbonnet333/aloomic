@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="en-us">
+    <title>Responsive development</title>
+    <link rel="alternate icon" type="image/png" href="./assets/img/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/new.css"/>
+</head>
+<body class="development-page">
+<!-- Header beginning -->
+<header>
+    <div class="">
+        <div class="display-center header-content">
+            <div class="logo"><a href="./">
+                <img src="https://aloomic.com.au/wp-content/uploads/2022/02/logo-1.png" alt="logo" width="87"
+                     height="49">
+            </a>
+            </div>
+            <div class="menu-icon">
+                <button class="hamburger hamburger--emphatic js-hamburger menu-button">
+                  <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+            </div>
+            <!-- Nav Header beginning -->
+            <div class="nav-menu">
+                <div class="nav-content container" id="main-menu">
+                    <div class="nav-item">
+                        <a href="index.html"><span>home</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-1-1.webp" alt=""/>
+                            <p>Enterprise-level services to push your business forward, regardless of the industry you
+                                operate in, here at Aloomic.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a id="we-do-menu" href="#m"><span>what we do</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2.webp" alt=""/>
+                            <p>Check out an overview of our extensive services covering all the technical needs of a
+                                modern business.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html"><span>about</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-1.webp" alt=""/>
+                            <p>Learn more about Aloomic, an industry-leading service out of Adelaide, focused on your
+                                success.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="blog.html"><span>blog</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-3.webp" alt=""/>
+                            <p>Gain access to our collection of information and data, provided for the success of your
+                                company.</p>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html"><span>contact</span></a>
+                        <div class="menu-thumb hidden">
+                            <img src="https://aloomic.com.au/wp-content/uploads/2022/05/thumb2-2.webp" alt=""/>
+                            <p>Have a great idea? Don’t hesitate to share it with us! We are always looking forward to
+                                hearing from you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-content container hidden" id="we-do-submenu">
+                    <div class="nav-item">
+                        <a href="#" class="back-to-mainmenu">
+                            <span><img src="assets/img/left_arrow.svg" alt="close submenu"></span>
+                        </a>
+                        <a href="#" class="back-to-mainmenu"><span>back</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#branding"><span>Branding</span></a><a
+                            href="#designanduiux"><span>Design and UI/UX</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#webdevelopment"><span>Web Development</span></a><a href="#digitalmarketing"><span>Digital Marketing</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#webdevelopmentbyplatform"><span>Web Development by Platform</span></a><a
+                            href="#supportmaintenance"><span>Support maintenance</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#mobileapplicationdevelopment"><span>Mobile Application Development</span></a><a
+                            href="#augmentedreality"><span>Augmented maintenance</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Nav Header content end-->
+        </div>
+        <!-- Nav Header end -->
+    </div>
+    </div>
+</header>
+<!-- Header End --><!-- Header End -->
+<!-- Main contents beginning -->
+
+<main class="page-wrapper">
+    <div data-scroll-container>
+        <div class="container--big">
+            <section class="hero" data-scroll-section>
+                <div class="hero__heading" id="heading" data-scroll data-scroll-speed="-3" data-scroll-call="homeHero"
+                     data-scroll-id="homeHero" data-scroll-repeat>
+                    <div class="hero__heading-inner heading heading--hero" id="headingInner">
+                        <div class="heading__icon-wr">
+                            <svg width="76" height="120" viewBox="0 0 76 120" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_358_13)">
+                                    <path
+                                            d="M15.9802 121C15.691 120.995 15.4084 120.913 15.1613 120.763C14.9142 120.612 14.7116 120.399 14.5742 120.145C14.4368 119.89 14.3695 119.604 14.3794 119.315C14.3892 119.026 14.4758 118.744 14.6302 118.5L33.6602 89.0999L1.75018 86.5799C1.42225 86.5519 1.11049 86.4253 0.855897 86.2167C0.601306 86.0081 0.415816 85.7274 0.323829 85.4114C0.231843 85.0954 0.237669 84.7589 0.340542 84.4463C0.443415 84.1337 0.638516 83.8595 0.900176 83.6599L29.7102 61.8999L0.460176 31.8099C0.222736 31.5652 0.0680132 31.2522 0.0177847 30.9149C-0.0324438 30.5777 0.0243513 30.2332 0.180176 29.9299C0.336359 29.6253 0.584986 29.3781 0.890395 29.2236C1.1958 29.0691 1.5423 29.0153 1.88018 29.0699L26.4302 33.1199L14.6602 13.0999C14.4825 12.7961 14.4079 12.443 14.4476 12.0933C14.4872 11.7436 14.639 11.4162 14.8802 11.1599C15.1223 10.9057 15.4405 10.7371 15.7868 10.6794C16.133 10.6217 16.4887 10.678 16.8002 10.8399L51.3502 28.9299L55.2702 2.38988C55.1159 2.17396 55.017 1.92345 54.9823 1.66037C54.9475 1.39729 54.9779 1.1297 55.0708 0.881122C55.1637 0.63254 55.3162 0.410581 55.5149 0.234755C55.7137 0.0589298 55.9526 -0.0653779 56.2107 -0.12724C56.4687 -0.189103 56.738 -0.186626 56.9949 -0.120026C57.2518 -0.0534274 57.4883 0.0752541 57.6838 0.254706C57.8793 0.434158 58.0277 0.658886 58.116 0.909134C58.2043 1.15938 58.2298 1.42749 58.1902 1.68988L75.7002 26.3199C75.8236 26.4932 75.9117 26.6892 75.9594 26.8966C76.0071 27.104 76.0135 27.3187 75.9782 27.5286C75.9429 27.7384 75.8667 27.9393 75.7538 28.1197C75.6409 28.3001 75.4935 28.4564 75.3202 28.5799C75.1468 28.7033 74.9509 28.7914 74.7435 28.8391C74.5361 28.8868 74.3213 28.8932 74.1115 28.8579C73.9016 28.8227 73.7008 28.7464 73.5204 28.6335C73.34 28.5206 73.1836 28.3732 73.0602 28.1999L57.8802 6.84988L54.2202 31.6599C54.1824 31.9153 54.0841 32.1579 53.9335 32.3676C53.7829 32.5773 53.5843 32.748 53.3544 32.8654C53.1244 32.9828 52.8698 33.0436 52.6116 33.0426C52.3534 33.0417 52.0992 32.979 51.8702 32.8599L20.3302 16.3499L30.9902 34.4599C31.3102 35.0099 31.2902 35.6899 30.9302 36.2099C30.7557 36.4636 30.5125 36.6623 30.2291 36.7827C29.9457 36.9031 29.6339 36.9403 29.3302 36.8899L6.22018 33.0899L33.3202 60.9699C33.4799 61.1358 33.6027 61.3336 33.6804 61.5504C33.7581 61.7672 33.789 61.998 33.7711 62.2276C33.7531 62.4572 33.6867 62.6803 33.5763 62.8824C33.4658 63.0845 33.3138 63.2608 33.1302 63.3999L6.27018 83.6699L36.6302 86.0799C36.909 86.1047 37.1768 86.2009 37.4077 86.3592C37.6386 86.5175 37.8248 86.7327 37.9484 86.9839C38.072 87.2351 38.1288 87.5139 38.1133 87.7934C38.0979 88.073 38.0107 88.3438 37.8602 88.5799L17.3502 120.26C17.0402 120.74 16.5202 121 15.9802 121Z"
+                                            fill="#518F5A"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_358_13">
+                                        <rect width="76" height="120" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h1 class="heading__h1-title">
+                            <div class="heading_first">Responsive</div>
+                            <br/>
+
+                            <div class="heading_first heading__words--gradient heading__words--gradient-second">
+                                <span>development</span>
+                            </div>
+                        </h1>
+                        <p class="heading__words we__do__para">Our extensive range of services cover the needs of all
+                            business
+                            verticals, propelling you ahead
+                            of the competition and
+                            increasing customer satisfaction.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container--big">
+            <div data-scroll-section>
+                <div class="section development-descr">
+                    <picture class="development-descr__banner responsive-img__img">
+                        <source media="(max-width: 768px)" srcset="./assets/pics/development/development@0.5x.png"/>
+                        <img class="responsive-img__img"
+                             src="./assets/pics/development/development.png"
+                             srcset="./assets/pics/development/development@2x.png 2x"
+                             alt="alt" loading="lazy"/>
+                    </picture>
+                    <div class="development-descr__content">
+                        <div class="development-descr__title">
+                            WE CREATE <br>
+                            BEAUTIFUL THINGS
+                        </div>
+                        <div class="development-descr__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus
+                                venenatis, lectus magna fringilla urna, porttitor rhoncus dolor lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
+                                magna fringilla urna, porttitor rhoncus dolor
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus
+                                venenatis, lectus magna fringilla urna, porttitor rhoncus dolor lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
+                                magna fringilla urna, porttitor rhoncus dolor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section creative">
+                    <div class="creative__bgs"></div>
+                    <div class="creative__content">
+                        <div class="creative__line creative__line--first">
+                            <span class="creative__word creative__word--first">Creative</span>
+                            <div class="creative__img-block creative__img-block--first">
+                                <picture class="creative__img def-img">
+                                    <source class="def-img__img" srcset="./assets/pics/creative/1.webp" loading="lazy"/>
+                                    <img class="def-img__img" srcset="
+                        ./assets/pics/creative/1.jpg    1x,
+                        ./assets/pics/creative/1@2x.jpg 2x,
+                        ./assets/pics/creative/1@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                                </picture>
+                            </div>
+                            <span class="creative__word creative__word--second">better</span>
+                            <div class="creative__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                                    aliquam, purus sit amet luctus venenatis, lectus
+                                </p>
+                            </div>
+                        </div>
+                        <div class="creative__line creative__line--second">
+                            <div class="creative__img-block creative__img-block--second">
+                                <picture class="creative__img def-img">
+                                    <source class="def-img__img" srcset="./assets/pics/creative/2.webp" loading="lazy"/>
+                                    <img class="def-img__img" srcset="
+                        ./assets/pics/creative/2.jpg    1x,
+                        ./assets/pics/creative/2@2x.jpg 2x,
+                        ./assets/pics/creative/2@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                                </picture>
+                            </div>
+                            <span class="creative__word creative__word--third">reasonable</span><span
+                                class="creative__star"><svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                           <path
+                                   d="M21.862 16.736C23.1847 17.5213 23.846 18.41 23.846 19.402C23.846 19.774 23.7427 20.1253 23.536 20.456C23.164 21.1173 22.5853 21.448 21.8 21.448C21.18 21.448 20.436 21.2 19.568 20.704C18.948 20.332 18.266 19.8153 17.522 19.154C16.778 18.4927 16.0133 17.7487 15.228 16.922L12.438 14.194C12.686 15.2687 12.996 16.426 13.368 17.666C14.1533 20.518 14.5667 22.502 14.608 23.618C14.5667 24.7753 14.3187 25.6227 13.864 26.16C13.4093 26.6973 12.8513 26.966 12.19 26.966C11.57 26.966 11.0533 26.6973 10.64 26.16C10.2267 25.6227 10.02 24.7753 10.02 23.618C10.02 22.9153 10.1233 22.0473 10.33 21.014C10.578 19.9807 10.8673 18.8647 11.198 17.666C11.4873 16.7567 11.7973 15.5993 12.128 14.194C12.128 14.194 11.3013 15.0207 9.648 16.674C8.78 17.542 7.93267 18.348 7.106 19.092C6.32067 19.836 5.618 20.394 4.998 20.766C4.21267 21.2207 3.48933 21.448 2.828 21.448C1.91867 21.448 1.278 21.0967 0.906 20.394C0.740667 20.1047 0.658 19.7947 0.658 19.464C0.658 18.5547 1.34 17.666 2.704 16.798C3.324 16.426 4.04733 16.116 4.874 15.868C5.70067 15.5787 6.83733 15.248 8.284 14.876C9.56533 14.5867 10.764 14.2767 11.88 13.946C10.02 13.4087 8.80067 13.078 8.222 12.954C7.106 12.6233 6.052 12.3133 5.06 12.024C4.068 11.6933 3.262 11.3627 2.642 11.032C1.31933 10.2467 0.658 9.358 0.658 8.366C0.658 7.994 0.761334 7.64266 0.968 7.312C1.34 6.65066 1.91867 6.32 2.704 6.32C3.324 6.32 4.068 6.568 4.936 7.064C5.556 7.436 6.25867 7.97333 7.044 8.676C7.82933 9.37866 8.63533 10.164 9.462 11.032C10.206 11.8173 11.074 12.6853 12.066 13.636L11.136 10.164C10.7227 8.676 10.4127 7.498 10.206 6.63C10.0407 5.72067 9.958 4.894 9.958 4.15C9.958 2.99267 10.1853 2.14533 10.64 1.608C11.0947 1.07066 11.632 0.801998 12.252 0.801998C12.872 0.801998 13.3887 1.07066 13.802 1.608C14.2567 2.14533 14.484 2.99267 14.484 4.15C14.484 4.85266 14.36 5.72066 14.112 6.754C13.9053 7.78733 13.6367 8.90333 13.306 10.102C13.0167 11.0113 12.7067 12.1687 12.376 13.574C12.376 13.574 13.2027 12.7473 14.856 11.094C15.724 10.226 16.5507 9.42 17.336 8.676C18.1627 7.932 18.886 7.374 19.506 7.002C20.2913 6.54733 21.0147 6.32 21.676 6.32C22.6267 6.32 23.2673 6.67133 23.598 7.374C23.7633 7.66333 23.846 7.97333 23.846 8.304C23.846 9.296 23.164 10.1847 21.8 10.97C21.18 11.342 20.4567 11.6727 19.63 11.962C18.8033 12.21 17.6667 12.52 16.22 12.892C14.9387 13.1813 13.74 13.4913 12.624 13.822C14.5253 14.3593 15.7447 14.69 16.282 14.814C17.398 15.1447 18.452 15.4753 19.444 15.806C20.436 16.0953 21.242 16.4053 21.862 16.736Z"
+                                   fill="white" fill-opacity="0.19"/>
+                        </svg></span><span class="creative__word creative__word--fourth">for</span>
+                            <div class="creative__img-block creative__img-block--third">
+                                <picture class="creative__img def-img">
+                                    <source class="def-img__img" srcset="./assets/pics/creative/3.webp" loading="lazy"/>
+                                    <img class="def-img__img" srcset="
+                        ./assets/pics/creative/3.jpg    1x,
+                        ./assets/pics/creative/3@2x.jpg 2x,
+                        ./assets/pics/creative/3@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="creative__line creative__line--third">
+                            <span class="creative__word creative__word--fifth">every business.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section responsive-development">
+                    <div data-scroll data-scroll-call="our-blog" data-scroll-offset="10%" data-scroll-speed="1">
+                        <div class="heading heading--section heading--section-left" id="ourBlogHeading">
+                            <div class="heading__icon-wr">
+                                <svg width="43" height="68" viewBox="0 0 43 68" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_358_23)">
+                                        <path
+                                                d="M9.04141 68.4605C8.87781 68.4577 8.71791 68.4114 8.57811 68.3263C8.43832 68.2413 8.32366 68.1206 8.24592 67.9766C8.16817 67.8326 8.13013 67.6706 8.1357 67.507C8.14126 67.3435 8.19024 67.1844 8.2776 67.046L19.0446 50.4118L0.990231 48.986C0.804695 48.9702 0.628302 48.8986 0.484257 48.7806C0.340212 48.6625 0.235264 48.5037 0.183219 48.3249C0.131174 48.1461 0.134471 47.9558 0.192675 47.7789C0.25088 47.602 0.361265 47.4469 0.50931 47.3339L16.8097 35.0224L0.260363 17.9977C0.126022 17.8593 0.0384811 17.6822 0.0100624 17.4914C-0.0183564 17.3006 0.0137777 17.1057 0.101942 16.9341C0.190308 16.7617 0.330979 16.6219 0.503776 16.5344C0.676572 16.447 0.872616 16.4166 1.06378 16.4475L14.9539 18.7389L8.29457 7.41182C8.19405 7.23995 8.15185 7.04015 8.17429 6.84231C8.19672 6.64446 8.28259 6.45919 8.41905 6.31419C8.55605 6.17039 8.73606 6.07498 8.93198 6.04232C9.1279 6.00967 9.32912 6.04154 9.50536 6.13314L29.0534 16.3683L31.2713 1.35222C31.184 1.23005 31.1281 1.08832 31.1084 0.939469C31.0887 0.790621 31.1059 0.639221 31.1585 0.498576C31.211 0.357931 31.2973 0.232349 31.4098 0.132869C31.5222 0.0333885 31.6574 -0.0369435 31.8034 -0.0719446C31.9494 -0.106946 32.1018 -0.105544 32.2471 -0.0678631C32.3924 -0.0301821 32.5263 0.0426246 32.6369 0.144157C32.7475 0.245689 32.8315 0.372837 32.8814 0.514425C32.9314 0.656013 32.9458 0.807704 32.9234 0.956164L42.8304 14.8916C42.9002 14.9896 42.95 15.1005 42.977 15.2178C43.004 15.3352 43.0076 15.4567 42.9877 15.5754C42.9677 15.6942 42.9246 15.8078 42.8607 15.9099C42.7968 16.0119 42.7134 16.1004 42.6154 16.1702C42.5173 16.2401 42.4064 16.2899 42.2891 16.3169C42.1717 16.3439 42.0502 16.3475 41.9315 16.3276C41.8127 16.3076 41.6991 16.2645 41.597 16.2006C41.495 16.1367 41.4065 16.0533 41.3367 15.9552L32.748 3.87564L30.6772 17.9129C30.6558 18.0574 30.6002 18.1947 30.515 18.3133C30.4298 18.432 30.3174 18.5285 30.1873 18.595C30.0572 18.6614 29.9132 18.6958 29.7671 18.6952C29.621 18.6947 29.4772 18.6592 29.3476 18.5918L11.5026 9.25064L17.5339 19.4971C17.715 19.8083 17.7036 20.193 17.5 20.4872C17.4012 20.6307 17.2636 20.7432 17.1033 20.8113C16.943 20.8794 16.7666 20.9005 16.5947 20.872L3.51931 18.722L18.8522 34.4962C18.9426 34.59 19.012 34.702 19.056 34.8246C19.1 34.9473 19.1175 35.0779 19.1073 35.2078C19.0972 35.3377 19.0596 35.4639 18.9971 35.5783C18.9346 35.6926 18.8486 35.7924 18.7447 35.871L3.5476 47.3396L20.725 48.7031C20.8827 48.7172 21.0343 48.7716 21.1649 48.8612C21.2955 48.9508 21.4009 49.0725 21.4708 49.2146C21.5407 49.3568 21.5729 49.5145 21.5641 49.6727C21.5554 49.8308 21.5061 49.9841 21.4209 50.1176L9.81655 68.0418C9.64115 68.3134 9.34694 68.4605 9.04141 68.4605Z"
+                                                fill="#518F5A"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_358_23">
+                                            <rect width="43" height="67.8948" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="heading__h2-title">
+                                <div class="heading__words">our process of</div>
+                                <br/>
+                                <div class="heading__words heading__words--gradient heading__words--gradient-second">
+                                    <span>responsive </span>
+                                </div>
+                                <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                    <span>development</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="development-list">
+                        <div class="development-list__item">
+                            <div class="development-list__item-title">
+                                <span class="development-list__item-count">01</span>
+                                <span class="development-list__item-name">starting</span>
+                            </div>
+                            <div class="development-list__item-text">
+                                <p>
+                                    At Aloomic, we have a cross-functional team comprising web designers, developers, UX
+                                    and UI experts, branding experts, digital marketers, AR experts, and graphic
+                                    designers. Our in-house team ensures tailored solutions, and we deliver on time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="development-list__item">
+                            <div class="development-list__item-title">
+                                <span class="development-list__item-count">02</span>
+                                <span class="development-list__item-name">developing</span>
+                            </div>
+                            <div class="development-list__item-text">
+                                <p>
+                                    At Aloomic, we have a cross-functional team comprising web designers, developers, UX
+                                    and UI experts, branding experts, digital marketers, AR experts, and graphic
+                                    designers.
+                                </p>
+                                <p>
+                                    Our in-house team ensures tailored solutions, and we deliver on time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="development-list__item">
+                            <div class="development-list__item-title">
+                                <span class="development-list__item-count">03</span>
+                                <span class="development-list__item-name">Finishing</span>
+                            </div>
+                            <div class="development-list__item-text">
+                                <p>
+                                    At Aloomic, we have a cross-functional team comprising web designers, developers, UX
+                                    and UI experts, branding experts, digital marketers, AR experts, and graphic
+                                    designers. Our in-house team ensures tailored solutions, and we deliver on time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="development-list__item">
+                            <div class="development-list__item-title">
+                                <span class="development-list__item-count">04</span>
+                                <span class="development-list__item-name">launching</span>
+                            </div>
+                            <div class="development-list__item-text">
+                                <p>
+                                    At Aloomic, we have a cross-functional team comprising web designers, developers, UX
+                                    and UI experts, branding experts, digital marketers, AR experts, and graphic
+                                    designers. Our in-house team ensures tailored solutions, and we deliver on time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="development-list__item">
+                            <div class="development-list__item-title">
+                                <span class="development-list__item-count">05</span>
+                                <span class="development-list__item-name">launching</span>
+                            </div>
+                            <div class="development-list__item-text">
+                                <p>
+                                    At Aloomic, we have a cross-functional team comprising web designers, developers, UX
+                                    and UI experts, branding experts, digital marketers, AR experts, and graphic
+                                    designers. Our in-house team ensures tailored solutions, and we deliver on time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="advantages">
+                    <div class="advantages__desktop">
+                        <div class="advantages__tabs advantages-tabs">
+                            <a class="advantages-tabs__item advantages-tabs__item--active"
+                               href="#transparency">Transparency</a><a class="advantages-tabs__item"
+                                                                       href="#communication">Communication</a><a
+                                class="advantages-tabs__item"
+                                href="#project-management">Project Management</a>
+                            <div class="advantages-tabs__line">
+                                <div class="advantages-tabs__line-active"></div>
+                            </div>
+                        </div>
+                        <div class="advantages__content-wr">
+                            <div class="advantages__symbol">
+                                <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M17.2422 12.3359C18.2734 12.9297 18.7891 13.6172 18.7891 14.3984C18.7891 14.6797 18.7109 14.9531 18.5547 15.2187C18.2734 15.7187 17.8281 15.9687 17.2187 15.9687C16.7031 15.9687 16.1172 15.7812 15.4609 15.4062C14.9766 15.125 14.4844 14.7656 13.9844 14.3281C13.5 13.8906 12.8281 13.2422 11.9687 12.3828C11.125 11.5234 10.4531 10.8516 9.95312 10.3672C10.1406 11.0859 10.3906 12.0391 10.7031 13.2266C11.0312 14.4141 11.2656 15.3281 11.4062 15.9687C11.5469 16.5937 11.625 17.1641 11.6406 17.6797C11.625 18.5703 11.4375 19.2266 11.0781 19.6484C10.7187 20.0547 10.2812 20.2578 9.76562 20.2578C9.29687 20.2578 8.89844 20.0547 8.57031 19.6484C8.24219 19.2422 8.07812 18.5859 8.07812 17.6797C8.07812 17.1328 8.14062 16.5469 8.26562 15.9219C8.40625 15.2812 8.63281 14.375 8.94531 13.2031C9.27344 12.0312 9.53125 11.0859 9.71875 10.3672C9.1875 10.8672 8.48437 11.5625 7.60937 12.4531C6.75 13.3281 6.07812 13.9844 5.59375 14.4219C5.10937 14.8437 4.64062 15.1875 4.1875 15.4531C3.5625 15.8125 2.99219 15.9922 2.47656 15.9922C1.80469 15.9922 1.32031 15.7187 1.02344 15.1719C0.882812 14.9219 0.8125 14.6797 0.8125 14.4453C0.8125 13.7109 1.34375 13.0234 2.40625 12.3828C2.875 12.1172 3.40625 11.8906 4 11.7031C4.59375 11.5 5.47656 11.25 6.64844 10.9531C7.83594 10.6406 8.79687 10.375 9.53125 10.1562C8.84375 9.95312 7.89844 9.69531 6.69531 9.38281C5.50781 9.07031 4.60156 8.8125 3.97656 8.60937C3.36719 8.40625 2.82812 8.17969 2.35937 7.92969C1.34375 7.32031 0.835937 6.63281 0.835937 5.86719C0.835937 5.58594 0.914062 5.3125 1.07031 5.04687C1.32031 4.54687 1.75781 4.29687 2.38281 4.29687C2.89844 4.29687 3.48437 4.48437 4.14062 4.85937C4.625 5.14062 5.10937 5.5 5.59375 5.9375C6.07812 6.375 6.74219 7.03125 7.58594 7.90625C8.44531 8.76562 9.14062 9.44531 9.67187 9.94531C9.51562 9.27344 9.27344 8.34375 8.94531 7.15625C8.61719 5.95312 8.38281 5.03125 8.24219 4.39062C8.10156 3.73437 8.03125 3.14062 8.03125 2.60937C8.03125 1.71875 8.20312 1.0625 8.54687 0.640624C8.89062 0.218749 9.3125 0.00781149 9.8125 0.00781149C10.2969 0.00781149 10.7031 0.218749 11.0312 0.640624C11.375 1.0625 11.5469 1.71875 11.5469 2.60937C11.5469 3.15625 11.4766 3.75 11.3359 4.39062C11.2109 5.01562 10.9844 5.91406 10.6562 7.08594C10.3437 8.24219 10.0937 9.17969 9.90625 9.89844C10.4375 9.39844 11.1328 8.71094 11.9922 7.83594C12.8672 6.96094 13.5391 6.30469 14.0078 5.86719C14.4922 5.42969 14.9609 5.07812 15.4141 4.8125C16.0703 4.45312 16.6406 4.27344 17.125 4.27344C17.8125 4.27344 18.3047 4.54687 18.6016 5.09375C18.7422 5.34375 18.8125 5.58594 18.8125 5.82031C18.8125 6.58594 18.2734 7.27344 17.1953 7.88281C16.7266 8.14844 16.1953 8.38281 15.6016 8.58594C15.0078 8.77344 14.1172 9.02344 12.9297 9.33594C11.7578 9.63281 10.8047 9.89062 10.0703 10.1094C10.7734 10.3125 11.7187 10.5781 12.9062 10.9062C14.1094 11.2187 15.0156 11.4766 15.625 11.6797C16.2344 11.8672 16.7734 12.0859 17.2422 12.3359Z"
+                                            fill="#FCFCFC"/>
+                                </svg>
+                            </div>
+                            <div class="advantages__content-inner">
+                                <div class="advantages__content-item advantages__content-item--active"
+                                     id="advantage-transparency">
+                                    <h4 class="advantages__content-title">
+                                        We offer End-to-End Solutions1.
+                                    </h4>
+                                    <p>
+                                        With tens of skilled and experienced developers,
+                                        designers, engineers, experts, and project managers on
+                                        your case, you can trigger sustainable growth after
+                                        launch. We focus on pushing your business forward in any
+                                        industry.
+                                    </p>
+                                </div>
+                                <div class="advantages__content-item" id="advantage-communication">
+                                    <h4 class="advantages__content-title">
+                                        We offer End-to-End Solutions2.
+                                    </h4>
+                                    <p>
+                                        Our clients love our services because of our transparent
+                                        and customer-centric approach. While working on your
+                                        project, we ensure that you&rsquo;re always in the loop
+                                        and do everything with your approval.
+                                    </p>
+                                </div>
+                                <div class="advantages__content-item" id="advantage-project-management">
+                                    <h4 class="advantages__content-title">
+                                        We offer End-to-End Solutions3.
+                                    </h4>
+                                    <p>
+                                        At Aloomic, we believe in delivering your services on time
+                                        without cutting back on quality. Our experts complete your
+                                        project within the deadline and still leave time for
+                                        adjustments and upgrades.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__mobile">
+                        <div class="advantages__mob-item adv-mob-item adv-mob-item--closed">
+                            <div class="adv-mob-item__title">Transparency</div>
+                            <div class="adv-mob-item__content">
+                                <div class="adv-mob-item__content-inner">
+                                    <h4 class="adv-mob-item__content-title">
+                                        We offer End-to-End Solutions.
+                                    </h4>
+                                    <div class="adv-mob-item__text">
+                                        <p>
+                                            With tens of skilled and experienced developers,
+                                            designers, engineers, experts, and project managers on
+                                            your case, you can trigger sustainable growth after
+                                            launch. We focus on pushing your business forward in any
+                                            industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__mob-item adv-mob-item adv-mob-item--closed">
+                            <div class="adv-mob-item__title">Communication</div>
+                            <div class="adv-mob-item__content">
+                                <div class="adv-mob-item__content-inner">
+                                    <h4 class="adv-mob-item__content-title">
+                                        We offer End-to-End Solutions.
+                                    </h4>
+                                    <div class="adv-mob-item__text">
+                                        <p>
+                                            With tens of skilled and experienced developers,
+                                            designers, engineers, experts, and project managers on
+                                            your case, you can trigger sustainable growth after
+                                            launch. We focus on pushing your business forward in any
+                                            industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__mob-item adv-mob-item adv-mob-item--closed">
+                            <div class="adv-mob-item__title">Project Management</div>
+                            <div class="adv-mob-item__content">
+                                <div class="adv-mob-item__content-inner">
+                                    <h4 class="adv-mob-item__content-title">
+                                        We offer End-to-End Solutions.
+                                    </h4>
+                                    <div class="adv-mob-item__text">
+                                        <p>
+                                            With tens of skilled and experienced developers,
+                                            designers, engineers, experts, and project managers on
+                                            your case, you can trigger sustainable growth after
+                                            launch. We focus on pushing your business forward in any
+                                            industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section beautiful-things">
+                    <div data-scroll data-scroll-call="our-blog" data-scroll-offset="10%" data-scroll-speed="1">
+                        <div class="heading heading--section heading--section-left" id="beautifulThings">
+                            <div class="heading__icon-wr">
+                                <svg width="43" height="68" viewBox="0 0 43 68" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_358_23)">
+                                        <path
+                                                d="M9.04141 68.4605C8.87781 68.4577 8.71791 68.4114 8.57811 68.3263C8.43832 68.2413 8.32366 68.1206 8.24592 67.9766C8.16817 67.8326 8.13013 67.6706 8.1357 67.507C8.14126 67.3435 8.19024 67.1844 8.2776 67.046L19.0446 50.4118L0.990231 48.986C0.804695 48.9702 0.628302 48.8986 0.484257 48.7806C0.340212 48.6625 0.235264 48.5037 0.183219 48.3249C0.131174 48.1461 0.134471 47.9558 0.192675 47.7789C0.25088 47.602 0.361265 47.4469 0.50931 47.3339L16.8097 35.0224L0.260363 17.9977C0.126022 17.8593 0.0384811 17.6822 0.0100624 17.4914C-0.0183564 17.3006 0.0137777 17.1057 0.101942 16.9341C0.190308 16.7617 0.330979 16.6219 0.503776 16.5344C0.676572 16.447 0.872616 16.4166 1.06378 16.4475L14.9539 18.7389L8.29457 7.41182C8.19405 7.23995 8.15185 7.04015 8.17429 6.84231C8.19672 6.64446 8.28259 6.45919 8.41905 6.31419C8.55605 6.17039 8.73606 6.07498 8.93198 6.04232C9.1279 6.00967 9.32912 6.04154 9.50536 6.13314L29.0534 16.3683L31.2713 1.35222C31.184 1.23005 31.1281 1.08832 31.1084 0.939469C31.0887 0.790621 31.1059 0.639221 31.1585 0.498576C31.211 0.357931 31.2973 0.232349 31.4098 0.132869C31.5222 0.0333885 31.6574 -0.0369435 31.8034 -0.0719446C31.9494 -0.106946 32.1018 -0.105544 32.2471 -0.0678631C32.3924 -0.0301821 32.5263 0.0426246 32.6369 0.144157C32.7475 0.245689 32.8315 0.372837 32.8814 0.514425C32.9314 0.656013 32.9458 0.807704 32.9234 0.956164L42.8304 14.8916C42.9002 14.9896 42.95 15.1005 42.977 15.2178C43.004 15.3352 43.0076 15.4567 42.9877 15.5754C42.9677 15.6942 42.9246 15.8078 42.8607 15.9099C42.7968 16.0119 42.7134 16.1004 42.6154 16.1702C42.5173 16.2401 42.4064 16.2899 42.2891 16.3169C42.1717 16.3439 42.0502 16.3475 41.9315 16.3276C41.8127 16.3076 41.6991 16.2645 41.597 16.2006C41.495 16.1367 41.4065 16.0533 41.3367 15.9552L32.748 3.87564L30.6772 17.9129C30.6558 18.0574 30.6002 18.1947 30.515 18.3133C30.4298 18.432 30.3174 18.5285 30.1873 18.595C30.0572 18.6614 29.9132 18.6958 29.7671 18.6952C29.621 18.6947 29.4772 18.6592 29.3476 18.5918L11.5026 9.25064L17.5339 19.4971C17.715 19.8083 17.7036 20.193 17.5 20.4872C17.4012 20.6307 17.2636 20.7432 17.1033 20.8113C16.943 20.8794 16.7666 20.9005 16.5947 20.872L3.51931 18.722L18.8522 34.4962C18.9426 34.59 19.012 34.702 19.056 34.8246C19.1 34.9473 19.1175 35.0779 19.1073 35.2078C19.0972 35.3377 19.0596 35.4639 18.9971 35.5783C18.9346 35.6926 18.8486 35.7924 18.7447 35.871L3.5476 47.3396L20.725 48.7031C20.8827 48.7172 21.0343 48.7716 21.1649 48.8612C21.2955 48.9508 21.4009 49.0725 21.4708 49.2146C21.5407 49.3568 21.5729 49.5145 21.5641 49.6727C21.5554 49.8308 21.5061 49.9841 21.4209 50.1176L9.81655 68.0418C9.64115 68.3134 9.34694 68.4605 9.04141 68.4605Z"
+                                                fill="#518F5A"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_358_23">
+                                            <rect width="43" height="67.8948" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2 class="heading__h2-title">
+                                <div class="heading__words">We Create</div>
+                                <br/>
+                                <div class="heading__words heading__words--gradient heading__words--gradient-second">
+                                    <span>Beautiful </span>
+                                </div>
+                                <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                    <span>Things</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="beautiful-list">
+                        <div class="beautiful-list__item" data-scroll="data-scroll"
+                             data-scroll-call="beautiful" data-scroll-offset="10%">
+                            <div class="beautiful-list__item-img">
+                                <img class="responsive-img__img"
+                                     src="./assets/pics/beautiful/thing.png"
+                                     srcset="./assets/pics/beautiful/thing@2x.png 2x"
+                                     alt="alt" loading="lazy"/>
+                            </div>
+                            <div class="beautiful-list__item-content">
+                                <div class="beautiful-list__item-title">Increased Conversions</div>
+                                <div class="beautiful-list__item-text">At Aloomic, we have a cross-functional team
+                                    comprising web designers, developers, UX and UI experts, branding experts, digital
+                                    marketers, AR experts, and graphic designers. Our in-house team ensures tailored
+                                    solutions, and we deliver on time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="beautiful-list__item" data-scroll="data-scroll"
+                             data-scroll-call="beautiful" data-scroll-offset="10%">
+                            <div class="beautiful-list__item-img">
+                                <img class="responsive-img__img"
+                                     src="./assets/pics/beautiful/thing2.png"
+                                     srcset="./assets/pics/beautiful/thing2@2x.png 2x"
+                                     alt="alt" loading="lazy"/>
+                            </div>
+                            <div class="beautiful-list__item-content">
+                                <div class="beautiful-list__item-title">Increased Customer Enquires</div>
+                                <div class="beautiful-list__item-text">
+                                    At Aloomic, we have a cross-functional team comprising web designers, developers, UX
+                                    and UI experts, branding experts, digital marketers, AR experts, and graphic
+                                    designers. Our in-house team ensures tailored solutions, and we deliver on time.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section portfolio">
+                    <div data-scroll data-scroll-call="our-blog" data-scroll-offset="10%" data-scroll-speed="1">
+                        <div class="heading heading--section heading--section-left" id="portfolio">
+                            <h2 class="heading__h2-title">
+                                <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                    <span>RECENT WORKS</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="container portfolio__container">
+                        <a class="portfolio__item portfolio-item portfolio-item--xl" href="/" data-scroll="data-scroll"
+                           data-scroll-call="portfolio" data-scroll-offset="10%">
+                            <div class="portfolio-item__img-wr">
+                                <picture class="portfolio-item__img responsive-img">
+                                    <source class="responsive-img__img" srcset="./assets/pics/portfolio/1.webp"
+                                            loading="lazy"/>
+                                    <img class="responsive-img__img"
+                                         srcset="./assets/pics/portfolio/1.jpg,
+                                        ./assets/pics/portfolio/1@2x.jpg 2x,
+                                        ./assets/pics/portfolio/1@3x.jpg 3x"
+                                         alt="alt" loading="lazy"/>
+                                </picture>
+                            </div>
+                            <div class="portfolio-item__content">
+                                <h4 class="portfolio-item__title">Le Studio</h4>
+                                <p class="portfolio-item__cat">Branding, UI/UX</p>
+                            </div>
+                        </a><a class="portfolio__item portfolio-item portfolio-item--sm" href="/"
+                               data-scroll="data-scroll"
+                               data-scroll-call="portfolio" data-scroll-offset="10%">
+                        <div class="portfolio-item__img-wr">
+                            <picture class="portfolio-item__img responsive-img">
+                                <source class="responsive-img__img" srcset="./assets/pics/portfolio/2.webp"
+                                        loading="lazy"/>
+                                <img class="responsive-img__img" srcset="
+                        ./assets/pics/portfolio/2.jpg    1x,
+                        ./assets/pics/portfolio/2@2x.jpg 2x,
+                        ./assets/pics/portfolio/2@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                            </picture>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h4 class="portfolio-item__title">Qonto</h4>
+                            <p class="portfolio-item__cat">Branding, UI/UX</p>
+                        </div>
+                    </a><a class="portfolio__item portfolio-item portfolio-item--sm" href="/" data-scroll="data-scroll"
+                           data-scroll-call="portfolio" data-scroll-offset="10%">
+                        <div class="portfolio-item__img-wr">
+                            <picture class="portfolio-item__img responsive-img">
+                                <source class="responsive-img__img" srcset="./assets/pics/portfolio/3.webp"
+                                        loading="lazy"/>
+                                <img class="responsive-img__img" srcset="
+                        ./assets/pics/portfolio/3.jpg    1x,
+                        ./assets/pics/portfolio/3@2x.jpg 2x,
+                        ./assets/pics/portfolio/3@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                            </picture>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h4 class="portfolio-item__title">Brouilles</h4>
+                            <p class="portfolio-item__cat">UI/UX</p>
+                        </div>
+                    </a><a class="portfolio__item portfolio-item portfolio-item--xl" href="/" data-scroll="data-scroll"
+                           data-scroll-call="portfolio" data-scroll-offset="10%">
+                        <div class="portfolio-item__img-wr">
+                            <picture class="portfolio-item__img responsive-img">
+                                <source class="responsive-img__img" srcset="./assets/pics/portfolio/4.webp"
+                                        loading="lazy"/>
+                                <img class="responsive-img__img" srcset="
+                        ./assets/pics/portfolio/4.jpg    1x,
+                        ./assets/pics/portfolio/4@2x.jpg 2x,
+                        ./assets/pics/portfolio/4@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                            </picture>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h4 class="portfolio-item__title">Foodles</h4>
+                            <p class="portfolio-item__cat">Web development</p>
+                        </div>
+                    </a><a class="portfolio__item portfolio-item portfolio-item--xl" href="/" data-scroll="data-scroll"
+                           data-scroll-call="portfolio" data-scroll-offset="10%">
+                        <div class="portfolio-item__img-wr">
+                            <picture class="portfolio-item__img responsive-img">
+                                <source class="responsive-img__img" srcset="./assets/pics/portfolio/5.webp"
+                                        loading="lazy"/>
+                                <img class="responsive-img__img" srcset="
+                        ./assets/pics/portfolio/5.jpg    1x,
+                        ./assets/pics/portfolio/5@2x.jpg 2x,
+                        ./assets/pics/portfolio/5@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                            </picture>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h4 class="portfolio-item__title">Le Studio</h4>
+                            <p class="portfolio-item__cat">Branding, UI/UX</p>
+                        </div>
+                    </a><a class="portfolio__item portfolio-item portfolio-item--sm" href="/" data-scroll="data-scroll"
+                           data-scroll-call="portfolio" data-scroll-offset="10%">
+                        <div class="portfolio-item__img-wr">
+                            <picture class="portfolio-item__img responsive-img">
+                                <source class="responsive-img__img" srcset="./assets/pics/portfolio/6.webp"
+                                        loading="lazy"/>
+                                <img class="responsive-img__img" srcset="
+                        ./assets/pics/portfolio/6.jpg    1x,
+                        ./assets/pics/portfolio/6@2x.jpg 2x,
+                        ./assets/pics/portfolio/6@3x.jpg 3x
+                      " alt="alt" loading="lazy"/>
+                            </picture>
+                        </div>
+                        <div class="portfolio-item__content">
+                            <h4 class="portfolio-item__title">Qonto</h4>
+                            <p class="portfolio-item__cat">Branding, UI/UX</p>
+                        </div>
+                    </a>
+                    </div>
+                </section>
+
+                <section class="section faq active" id="faq-section">
+                    <div data-scroll data-scroll-call="our-blog" data-scroll-offset="10%" data-scroll-speed="1">
+                        <div class="heading heading--section heading--section-left" id="faq">
+                            <h2 class="heading__h2-title">
+                                <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                    <span>Frequently Asked</span>
+                                </div>
+                                <br>
+                                <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                    <span>Questions</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="faq__items-wrapper">
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    What are your areas of focus as a UI/UX and web design
+                                    agency?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    What separates Aloomic from other top UX and web design
+                                    agencies?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    Can your UX design agency help me with web design?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    Do you do branding or should I hire a separate branding
+                                    agency?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    How much does it cost to hire you for a UI/UX design
+                                    project?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    Do you work with startups? If so, how can my early‑stage
+                                    company afford you?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    Can you help us redesign our legacy enterprise/B2B software?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    What process should I expect from your UX agency?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">
+                                    How can I get a proposal for my project?
+                                </h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.6914 0.797852L10.6836 9.79785L0.675781 0.797851" stroke="white"
+                                              stroke-opacity="0.4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <p>
+                                        User experience is more than a capability for us. It’s at
+                                        the core of everything we do here at Clay. We started in
+                                        San Francisco as a UI/UX design agency and website design
+                                        company focused on mobile apps but quickly expanded our
+                                        offering to web applications, enterprise software, and
+                                        emerging technologies such as AR/VR and wearables. The UX
+                                        UI and web design projects we take on range from building
+                                        a new product to redesigning an existing mobile app,
+                                        website, or enterprise software. We do everything you
+                                        might need to bring a successful digital product to life:
+                                        user research, product strategy, user interface, and user
+                                        experience design, usability testing, prototyping, web
+                                        design and development.<br/>It’s no surprise that our web
+                                        design clients are often the same companies who hired us
+                                        for UI/UX design projects, because who can explain the
+                                        product better than the people who designed it? We’re a
+                                        web design agency that believes a great website should
+                                        efficiently convert visitors to customers while providing
+                                        a delightful web experience that’s true to the brand. Good
+                                        UX UI design of a digital product or website leads to
+                                        higher conversion rates. That’s why unlike other web
+                                        design agencies, we have UX designers collaborate with web
+                                        designers on all website design projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section other-services active" id="other-services">
+                    <div data-scroll data-scroll-call="our-blog" data-scroll-offset="10%" data-scroll-speed="1">
+                        <div class="heading heading--section heading--section-left" id="otherServices">
+                            <h2 class="heading__h2-title">
+                                <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                    <span>other services</span>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="faq__items-wrapper">
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">MOBILE APPLICATION DEVELOPMENT</h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="40" height="32" viewBox="0 0 40 32" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M39 18.696L39 13.304L10.9833 13.304L22.9352 1L15.5532 1L4.69102 12.1821L0.999998 15.9819L4.69102 19.7817L15.5532 31L22.9352 31L10.9833 18.696L39 18.696Z"
+                                                stroke="url(#paint0_linear_358_822)"/>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_358_822" x1="39" y1="31" x2="-11.0654"
+                                                            y2="27.714" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FCFCFC"/>
+                                                <stop offset="1" stop-color="#FCFCFC" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <a href="#" class="faq-item__inner-item">UI/UX for Web App</a>
+                                    <a href="#" class="faq-item__inner-item">UIUX for Mobile Apps</a>
+                                    <a href="#" class="faq-item__inner-item">Prototyping - FIGMA & Adobe XD</a>
+                                    <a href="#" class="faq-item__inner-item">Wireframing</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">DESIGN AND UI/UX</h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="40" height="32" viewBox="0 0 40 32" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M39 18.696L39 13.304L10.9833 13.304L22.9352 1L15.5532 1L4.69102 12.1821L0.999998 15.9819L4.69102 19.7817L15.5532 31L22.9352 31L10.9833 18.696L39 18.696Z"
+                                                stroke="url(#paint0_linear_358_822)"/>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_358_822" x1="39" y1="31" x2="-11.0654"
+                                                            y2="27.714" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FCFCFC"/>
+                                                <stop offset="1" stop-color="#FCFCFC" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <a href="#" class="faq-item__inner-item">UI/UX for Web App</a>
+                                    <a href="#" class="faq-item__inner-item">UIUX for Mobile Apps</a>
+                                    <a href="#" class="faq-item__inner-item">Prototyping - FIGMA & Adobe XD</a>
+                                    <a href="#" class="faq-item__inner-item">Wireframing</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">WEB DEVELOPMENT</h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="40" height="32" viewBox="0 0 40 32" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M39 18.696L39 13.304L10.9833 13.304L22.9352 1L15.5532 1L4.69102 12.1821L0.999998 15.9819L4.69102 19.7817L15.5532 31L22.9352 31L10.9833 18.696L39 18.696Z"
+                                                stroke="url(#paint0_linear_358_822)"/>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_358_822" x1="39" y1="31" x2="-11.0654"
+                                                            y2="27.714" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FCFCFC"/>
+                                                <stop offset="1" stop-color="#FCFCFC" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <a href="#" class="faq-item__inner-item">UI/UX for Web App</a>
+                                    <a href="#" class="faq-item__inner-item">UIUX for Mobile Apps</a>
+                                    <a href="#" class="faq-item__inner-item">Prototyping - FIGMA & Adobe XD</a>
+                                    <a href="#" class="faq-item__inner-item">Wireframing</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq__item faq-item faq-item--closed">
+                            <div class="faq-item__title-wr">
+                                <h4 class="faq-item__title">WEB DEVELOPMENT BY PLATFORM</h4>
+                                <div class="faq-item__icon-wr">
+                                    <svg width="40" height="32" viewBox="0 0 40 32" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M39 18.696L39 13.304L10.9833 13.304L22.9352 1L15.5532 1L4.69102 12.1821L0.999998 15.9819L4.69102 19.7817L15.5532 31L22.9352 31L10.9833 18.696L39 18.696Z"
+                                                stroke="url(#paint0_linear_358_822)"/>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_358_822" x1="39" y1="31" x2="-11.0654"
+                                                            y2="27.714" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FCFCFC"/>
+                                                <stop offset="1" stop-color="#FCFCFC" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="faq-item__content-wr">
+                                <div class="faq-item__inner">
+                                    <a href="#" class="faq-item__inner-item">UI/UX for Web App</a>
+                                    <a href="#" class="faq-item__inner-item">UIUX for Mobile Apps</a>
+                                    <a href="#" class="faq-item__inner-item">Prototyping - FIGMA & Adobe XD</a>
+                                    <a href="#" class="faq-item__inner-item">Wireframing</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+
+        <div class="container--big">
+            <div class="lets-speak" data-scroll-section>
+                <div data-scroll data-scroll-call="lets-speak" data-scroll-offset="0" data-scroll-speed="1">
+                    <div class="lets-speak__heading heading heading--section heading--section-left"
+                         id="letsSpeakHeading">
+                        <div class="heading__icon-wr">
+                            <svg width="43" height="68" viewBox="0 0 43 68" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_358_23)">
+                                    <path
+                                            d="M9.04141 68.4605C8.87781 68.4577 8.71791 68.4114 8.57811 68.3263C8.43832 68.2413 8.32366 68.1206 8.24592 67.9766C8.16817 67.8326 8.13013 67.6706 8.1357 67.507C8.14126 67.3435 8.19024 67.1844 8.2776 67.046L19.0446 50.4118L0.990231 48.986C0.804695 48.9702 0.628302 48.8986 0.484257 48.7806C0.340212 48.6625 0.235264 48.5037 0.183219 48.3249C0.131174 48.1461 0.134471 47.9558 0.192675 47.7789C0.25088 47.602 0.361265 47.4469 0.50931 47.3339L16.8097 35.0224L0.260363 17.9977C0.126022 17.8593 0.0384811 17.6822 0.0100624 17.4914C-0.0183564 17.3006 0.0137777 17.1057 0.101942 16.9341C0.190308 16.7617 0.330979 16.6219 0.503776 16.5344C0.676572 16.447 0.872616 16.4166 1.06378 16.4475L14.9539 18.7389L8.29457 7.41182C8.19405 7.23995 8.15185 7.04015 8.17429 6.84231C8.19672 6.64446 8.28259 6.45919 8.41905 6.31419C8.55605 6.17039 8.73606 6.07498 8.93198 6.04232C9.1279 6.00967 9.32912 6.04154 9.50536 6.13314L29.0534 16.3683L31.2713 1.35222C31.184 1.23005 31.1281 1.08832 31.1084 0.939469C31.0887 0.790621 31.1059 0.639221 31.1585 0.498576C31.211 0.357931 31.2973 0.232349 31.4098 0.132869C31.5222 0.0333885 31.6574 -0.0369435 31.8034 -0.0719446C31.9494 -0.106946 32.1018 -0.105544 32.2471 -0.0678631C32.3924 -0.0301821 32.5263 0.0426246 32.6369 0.144157C32.7475 0.245689 32.8315 0.372837 32.8814 0.514425C32.9314 0.656013 32.9458 0.807704 32.9234 0.956164L42.8304 14.8916C42.9002 14.9896 42.95 15.1005 42.977 15.2178C43.004 15.3352 43.0076 15.4567 42.9877 15.5754C42.9677 15.6942 42.9246 15.8078 42.8607 15.9099C42.7968 16.0119 42.7134 16.1004 42.6154 16.1702C42.5173 16.2401 42.4064 16.2899 42.2891 16.3169C42.1717 16.3439 42.0502 16.3475 41.9315 16.3276C41.8127 16.3076 41.6991 16.2645 41.597 16.2006C41.495 16.1367 41.4065 16.0533 41.3367 15.9552L32.748 3.87564L30.6772 17.9129C30.6558 18.0574 30.6002 18.1947 30.515 18.3133C30.4298 18.432 30.3174 18.5285 30.1873 18.595C30.0572 18.6614 29.9132 18.6958 29.7671 18.6952C29.621 18.6947 29.4772 18.6592 29.3476 18.5918L11.5026 9.25064L17.5339 19.4971C17.715 19.8083 17.7036 20.193 17.5 20.4872C17.4012 20.6307 17.2636 20.7432 17.1033 20.8113C16.943 20.8794 16.7666 20.9005 16.5947 20.872L3.51931 18.722L18.8522 34.4962C18.9426 34.59 19.012 34.702 19.056 34.8246C19.1 34.9473 19.1175 35.0779 19.1073 35.2078C19.0972 35.3377 19.0596 35.4639 18.9971 35.5783C18.9346 35.6926 18.8486 35.7924 18.7447 35.871L3.5476 47.3396L20.725 48.7031C20.8827 48.7172 21.0343 48.7716 21.1649 48.8612C21.2955 48.9508 21.4009 49.0725 21.4708 49.2146C21.5407 49.3568 21.5729 49.5145 21.5641 49.6727C21.5554 49.8308 21.5061 49.9841 21.4209 50.1176L9.81655 68.0418C9.64115 68.3134 9.34694 68.4605 9.04141 68.4605Z"
+                                            fill="#518F5A"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_358_23">
+                                        <rect width="43" height="67.8948" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="heading__h2-title">
+                            <div class="heading__words">Lets</div>
+                            <div class="heading__words">speak</div>
+                            <br/>
+                            <div class="heading__words heading__words--gradient heading__words--gradient-first">
+                                <span>fill</span>
+                            </div>
+                            <div class="heading__words heading__words--gradient heading__words--gradient-second">
+                                <span>this</span>
+                            </div>
+                            <div class="heading__words heading__words--gradient heading__words--gradient-third">
+                                <span>form</span>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+                <form class="lets-speak__form custom-input custom-input--type_form custom-input--size_xxl"
+                      method="GET" action="/" data-scroll data-scroll-call="our-blog" data-scroll-offset="10%"
+                      data-scroll-speed="3">
+                    <input class="custom-input__field" type="text" placeholder="your name"/>
+                    <button class="custom-input__submit" type="submit">
+                        <svg width="41" height="32" viewBox="0 0 41 32" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M1 13.0643V18.4398H29.7539L17.4875 30.7062H25.0638L36.2118 19.5582L40 15.7701L36.2118 11.9819L25.0638 0.797852H17.4875L29.7539 13.0643H1Z"
+                                    stroke="white"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="floating-panel" data-scroll-section>
+            <div>
+                <marquee behavior="scroll" direction="left" scrollamount="5" scrolldelay="0" style="position: relative">
+                    <span>lets work together</span><span class="spot"></span><span>lets work together</span>
+                </marquee>
+            </div>
+        </div>
+
+        <footer class="footer" data-scroll-section>
+            <div class="container--big">
+                <div class="footer__general">
+                    <a class="footer__general-item footer__logo" href="./">
+                        <picture class="header__logo-pic def-img">
+                            <source class="def-img__img" srcset="./assets/img/logo.webp" loading="lazy"/>
+                            <img class="def-img__img" srcset="
+                                    ./assets/img/logo.png    1x,
+                                    ./assets/img/logo@2x.png 2x,
+                                    ./assets/img/logo@3x.png 3x"
+                                 alt="alt" loading="lazy"
+                            />
+                        </picture>
+                    </a>
+                    <div class="footer__general-item footer__nav-col">
+                        <h5 class="footer__nav-title">Navigation</h5>
+                        <ul>
+                            <li><a href="./">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./services.html">What We Do</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./sitemap.html">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__general-item footer__nav-col">
+                        <h5 class="footer__nav-title">Tell us your needs</h5>
+                        <ul>
+                            <li><a href="mailto:email@gmail.com">email@gmail.com</a></li>
+                            <li><a href="tel:+7(916)3445522">+7 (916) 344-55-22</a></li>
+                            <li><a href="#">3/12 Victoria Street Prospect, SA, 5082</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__general-item footer__nav-col">
+                        <h5 class="footer__nav-title">Services</h5>
+                        <ul>
+                            <li><a href="services.html#branding">Branding</a></li>
+                            <li><a href="services.html#designanduiux">Web design</a></li>
+                            <li><a href="services.html#designanduiux">Design and UI/UX</a></li>
+                            <li><a href="services.html#mobileapplicationdevelopment">Mobile Application Development</a></li>
+                            <li><a href="services.html#webdevelopmentbyplatform">Web Development by Platform</a></li>
+                            <li><a href="services.html#webdevelopment">Web Development</a></li>
+                            <li><a href="services.html#digitalmarketing">Digital Marketing</a></li>
+                            <li><a href="services.html#augmentedreality">Augmented Reality</a></li>
+                            <li><a href="services.html#supportmaintenance">Support maintenance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__general-item footer__form-wr">
+                        <div class="footer__form-title">Sign up to newsletter</div>
+                        <form class="footer__form custom-input custom-input--type_form custom-input--size_sm"
+                              method="GET" action="/">
+                            <input class="custom-input__field" type="text" placeholder="your name"/>
+                            <button class="custom-input__submit" type="submit">
+                                <svg width="41" height="32" viewBox="0 0 41 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M1 13.0643V18.4398H29.7539L17.4875 30.7062H25.0638L36.2118 19.5582L40 15.7701L36.2118 11.9819L25.0638 0.797852H17.4875L29.7539 13.0643H1Z"
+                                            stroke="white"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom-row">
+                    <div class="footer__terms-col socials">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/Aloomic-142762157957363"><i
+                                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/aloomic"><i class="fa fa-twitter"
+                                                                                         aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/company/aloomic"><i
+                                        class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/aloomic_digital/"><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.pinterest.com.au/aloomiccomau/"><i
+                                        class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__terms-col">
+                        <ul>
+                            <li><a href="/">Terms and Conditions</a></li>
+                            <li><a href="/">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyrigth">Copyright 2022 - Designed and Developed by Aloomic Pty Ltd.</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</main>
+
+<a href="/" class="back_to_top" title="Get an offer">I'm Interested</a>
+<!-- Main contents end -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/new/home.js"></script>
+</body>
+</html>

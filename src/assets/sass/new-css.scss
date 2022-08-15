@@ -3015,6 +3015,10 @@ $px: 0.078125;
 
 //DEVELOPMENT PAGE
 .development-page {
+  h1.heading__h1-title span {
+    padding-right: 2vw;
+  }
+
   .hero__heading {
     align-items: flex-start;
 

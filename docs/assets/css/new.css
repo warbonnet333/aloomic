@@ -2714,6 +2714,9 @@ h3, h4, h5, h6 {
   margin-top: 7.8125vw;
 }
 
+.development-page h1.heading__h1-title span {
+  padding-right: 2vw;
+}
 .development-page .hero__heading {
   align-items: flex-start;
 }

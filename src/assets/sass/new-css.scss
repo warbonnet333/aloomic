@@ -1315,7 +1315,7 @@ h3, h4, h5, h6 {
   border: none;
   color: var(--color-text);
 
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+  &::placeholder {
     font-weight: 700;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -2865,7 +2865,7 @@ $px: 0.078125;
       transform: none;
 
       .blog-item__title {
-        font-size: 24vw * $px;
+        font-size: 20vw * $px;
         line-height: 1.3;
       }
 
@@ -2937,7 +2937,7 @@ $px: 0.078125;
 
     &__content {
       display: flex;
-      font-size: 28vw * $px;
+      font-size: 22vw * $px;
       line-height: 1.3;
       letter-spacing: -0.02em;
 
@@ -3010,6 +3010,111 @@ $px: 0.078125;
 
   .section.our-blog {
     margin-top: 100vw * $px;
+  }
+}
+
+//DEVELOPMENT PAGE
+.development-page {
+  .hero__heading {
+    align-items: flex-start;
+
+    &-inner {
+      justify-content: initial;
+    }
+  }
+
+  .we__do__para {
+    max-width: 435vw * $px;
+    font-size: 16vw * $px;
+    line-height: 1.78;
+    letter-spacing: -0.02em;
+  }
+
+  .heading__icon-wr,
+  .heading__words {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.development-descr {
+  &__banner {
+    display: block;
+    margin-bottom: 50vw * $px;
+  }
+
+  &__content {
+    margin-left: 110vw * $px;
+    max-width: 810vw * $px;
+    border-bottom: 1px solid #3C3C3C;
+    padding-bottom: 70vw * $px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -110vw * $px;
+      transform: translateY(-50%);
+      width: 38vw * $px;
+      height: 38vw * $px;
+      display: block;
+      background-image: url("../img/icons/star.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+  &__title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 77vw * $px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 25vw * $px;
+  }
+
+  &__text {
+    max-width: 647vw * $px;
+    font-size: 16vw * $px;
+    line-height: 1.78;
+    letter-spacing: -0.02em;
+
+    p {
+      margin-bottom: 28vw * $px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.responsive-development {
+  .heading {
+    margin-bottom: 100vw * $px;
+  }
+
+  .development-list {
+    display: flex;
+    flex-flow: column;
+
+    &__item {
+      max-width: 535vw * $px;
+       &-title {
+         padding: 30vw * $px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         font-family: 'Playfair Display', sans-serif;
+         font-size: 32vw * $px;
+         line-height: 1.3;
+         letter-spacing: -0.02em;
+         text-transform: uppercase;
+       }
+    }
   }
 }
 

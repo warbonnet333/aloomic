@@ -7039,7 +7039,10 @@ console.log('hello');
 
         scrollBrn.addEventListener('click', function (e) {
             e.preventDefault();
-            B.scrollTo('.lets-speak');
+            const options = {
+                offset: window.innerWidth < 768 ? -Math.round(window.innerHeight / 3): 0,
+            }
+            B.scrollTo('.lets-speak', options);
         })
 
         B.on('scroll', (a) => {

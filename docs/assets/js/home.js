@@ -7072,8 +7072,8 @@ console.log('hello');
                         {opacity: 1, y: 0, stagger: '.2', duration: 0.9},
                         '-.1'
                     ),
-                'portfolio' === a &&
-                A.timeline().to(b.el, {opacity: 1, y: 0, scale: 1}),
+                'portfolio' === a && A.timeline().to(b.el, {opacity: 1, y: 0, scale: 1}),
+                'beautiful' === a && A.timeline().to(b.el, {opacity: 1, y: 0, scale: 1}),
                 'video' === a &&
                 A.timeline()
                     .to('.video__heading .heading__icon-wr', {
@@ -7314,8 +7314,31 @@ console.log('hello');
                                     }));
                         }
                     });
-            const faqItemsWr = document.querySelector('.faq__items-wrapper');
+            const faqItemsWr = document.querySelector('.faq .faq__items-wrapper');
             faqItemsWr && faqItemsWr.addEventListener('click', (c) => {
+                let b = c.target;
+                if (b.closest('.faq-item__title-wr')) {
+                    let a = b.closest('.faq-item__title-wr');
+                    a.parentElement.classList.contains('faq-item--closed')
+                        ? (a.parentElement.classList.remove('faq-item--closed'),
+                            A.timeline({}).to(a.nextElementSibling, {
+                                opacity: 1,
+                                visibility: 'visible',
+                                maxHeight: '100%',
+                                lineHeight: '180%',
+                            }))
+                        : (a.parentElement.classList.add('faq-item--closed'),
+                            A.timeline().to(a.nextElementSibling, {
+                                opacity: 0,
+                                visibility: 'hidden',
+                                maxHeight: '0px',
+                                lineHeight: '70%',
+                            }));
+                }
+            });
+
+            const servicesItemsWr = document.querySelector('.other-services .faq__items-wrapper');
+            servicesItemsWr && servicesItemsWr.addEventListener('click', (c) => {
                 let b = c.target;
                 if (b.closest('.faq-item__title-wr')) {
                     let a = b.closest('.faq-item__title-wr');

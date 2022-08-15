@@ -5,6 +5,10 @@ function blogPage() {
     const currentString = document.querySelector('.js-current-page')
     const pageCount = paginationItems.length;
 
+    if(!pageCount) {
+        return;
+    }
+
     pageCount === 1 && document.querySelector('.pagination').remove();
     paginationPrev.addEventListener('click', () => onPaginationClick());
     paginationNext.addEventListener('click', () => onPaginationClick(true));

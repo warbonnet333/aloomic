@@ -1,5 +1,5 @@
 (function( $ ){
-
+    console.log('est')
     function calculateResults(startX, startY, endX, endY, tresholdX, tresholdY){
         var swipeDirection = {up:false, right:false, down: false, left:false};
         if(startX > endX && startX - endX >= tresholdX)
@@ -16,6 +16,7 @@
 
     }
     $.fn.onSwipe = function(f, timeTreshold, tresholdX, tresholdY){
+        console.log('onSwipe');
         if(jQuery.isFunction(f)){ //We are only going to do our thing if the user passed a function
 
         if(typeof timeTreshold === 'undefined' || timeTreshold === null)
@@ -36,7 +37,7 @@
         //When a touch starts on this element.
             //We can start a timer, and start getting coordinates.
         $(this).on("touchstart", function(e){
-
+            console.log(2);
             //Let's get our touch coordinates
             startX = e.touches[0].clientX; //This is where touchstart coordinates are stored
             startY = e.touches[0].clientY;

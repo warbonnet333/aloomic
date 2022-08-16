@@ -3790,6 +3790,44 @@ ul.bestwork-slides li img:nth-child(2) {
   margin-bottom: 7.8125vw;
 }
 
+.preloader__img {
+  width: min(50vw, 30rem);
+}
+.preloader__img .def-img__img {
+  width: 100%;
+  animation: 1.5s linear infinite pulse;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.with-custom-scroll {
+  overflow: hidden;
+  position: relative;
+  cursor: none;
+}
+.with-custom-scroll > * {
+  cursor: none;
+}
+.with-custom-scroll-inner {
+  position: fixed;
+  left: -100vw;
+  top: -100vh;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  user-select: none;
+  background: transparent;
+  font-size: 15px;
+  color: #fff;
+  animation: 4s linear infinite rotate;
+}
+
 @media only screen and (max-width: 768px) {
   .our-blog-page .our-blog__items {
     grid-template-columns: repeat(1, 1fr);

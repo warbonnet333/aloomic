@@ -121,9 +121,9 @@ jQuery(window).scroll(function () {
     // }
 });
 let isHomePage = false;
-if (document.getElementById("vid")) {
+if (document.querySelector(".vid")) {
     isHomePage = true;
-    var vid = document.getElementById("vid");
+    var vid = document.querySelector(".vid");
     
     jQuery(vid).prop('muted', true);
     setTimeout(function(){
@@ -370,7 +370,7 @@ jQuery(document).ready(function() {
     let activeSlideNumber = jQuery('.parts__slider-item--active').data('slide');
 
     let slideWIdth;
-    
+
     // Set slides width
     if (jQuery( window ).width() > 660) {
         slideWidth = sliderWrapperWidth/2;
@@ -404,11 +404,11 @@ jQuery(document).ready(function() {
 
     if (isHomePage) {
         jQuery('.parts__slider-inner').onSwipe(function(results){
-          
+
             if(results.right == true) toPrev()
-          
+
             if(results.left == true) toNext()
-          
+
         });
     }
 
@@ -489,7 +489,7 @@ jQuery(document).ready(function() {
     jQuery('a[href^="#"]').on('click', function(event) {
 
         var target = jQuery(this.getAttribute('href'));
-      
+
         if (target.length) {
           event.preventDefault();
           jQuery('html, body').stop().animate({
@@ -515,7 +515,7 @@ jQuery(document).ready(function() {
 
     jQuery(window).resize(function() {
         const tabs = new Tabs();
-    
+
     // Set init active line position
     if(document.querySelector('.advantages-tabs__item--active')) tabs.setActiveLinePosition();
 
@@ -532,7 +532,7 @@ jQuery(document).ready(function() {
         allTabs.forEach((tab, key) => {
             if (tab.classList.contains('advantages-tabs__item--active')) currentTabIndex = key + 1
         });
-        
+
         // if tab is first - move to last
         if (currentTabIndex == 1) tabs.tabActivate(allTabs[tabsCount - 1])
         // else - move to next
@@ -544,7 +544,7 @@ jQuery(document).ready(function() {
     const ourContentTabs = document.querySelectorAll('.our-thoughts__content-item');
 
     let ourTabsMaxH = 0;
-    
+
     jQuery(ourContentTabs).map((key,tab) => {
         jQuery(tab).height() > ourTabsMaxH && (ourTabsMaxH = jQuery(tab).height())
     });
@@ -553,7 +553,7 @@ jQuery(document).ready(function() {
     jQuery('.our-thoughts__content-item.advantages__content-item--active').show();
 
     if (jQuery( window ).width() > 767) jQuery('.our-thoughts__tabs-content-inner').css('min-height', `${ourTabsMaxH}px`);
-    
+
     jQuery('.advantages-tabs__arrow--right').click(function() {
         // Check current tab number
         const allTabs = document.querySelectorAll('.advantages-tabs__item'),
@@ -563,7 +563,7 @@ jQuery(document).ready(function() {
         allTabs.forEach((tab, key) => {
             if (tab.classList.contains('advantages-tabs__item--active')) currentTabIndex = key + 1
         });
-        
+
         // if tab is first - move to last
         if (currentTabIndex == tabsCount) tabs.tabActivate(allTabs[0])
         // else - move to next
@@ -578,7 +578,7 @@ jQuery(document).ready(function() {
             jQuery(e.target).addClass('why-us__title-item--active');
 
             const hash = jQuery(e.target).prop('hash').substr(1);
-            
+
             jQuery('.why-us__content-item').hide();
             jQuery(`#why-us-${hash}`).show();
         }
@@ -589,7 +589,7 @@ jQuery(document).ready(function() {
     jQuery('.principles__tab-btn').click((e) => {
         const clickedLink = e.target.closest('.principles__tab-btn'),
             toSlide = clickedLink.dataset.key;
-        
+
         const xOffseet = toSlide * 100,
             xMargin = toSlide * 30;
 

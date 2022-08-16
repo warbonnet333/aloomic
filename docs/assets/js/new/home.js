@@ -15,6 +15,21 @@ function toggleMute() {
     video.muted = !video.muted;
 }
 
+// Why us tabs
+jQuery('.why-us__title-item').click(e => {
+    if (!e.target.closest('.why-us__title-item').classList.contains('why-us__title-item--active')) {
+        // Tab title activate
+        jQuery('.why-us__title-item--active').removeClass('why-us__title-item--active');
+        jQuery(e.target).addClass('why-us__title-item--active');
+
+        const hash = jQuery(e.target).prop('hash').substr(1);
+
+        jQuery('.why-us__content-item').hide();
+        jQuery(`#why-us-${hash}`).show();
+    }
+})
+// End why us tabs
+
 
 jQuery(function () {
     var $hamburger = jQuery(".hamburger");
@@ -7464,8 +7479,8 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         document.addEventListener('DOMContentLoaded', () => {
             if (
                 Math.max(
-                    document.body.scrollWidth,
-                    document.documentElement.scrollWidth,
+                    // document.body.scrollWidth,
+                    // document.documentElement.scrollWidth,
                     document.body.offsetWidth,
                     document.documentElement.offsetWidth,
                     document.documentElement.clientWidth
@@ -7480,8 +7495,10 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
                     a.tabActivate(b.target.closest('.advantages-tabs__item'));
                 });
             } else {
+                console.log('start')
                 const advantagesMobile = document.querySelector('.advantages__mobile');
                 advantagesMobile && advantagesMobile.addEventListener('click', (c) => {
+                    console.log('click');
                     let b = c.target;
                     if (b.closest('.adv-mob-item__title')) {
                         let a = b.closest('.adv-mob-item__title');

@@ -7434,7 +7434,7 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
                     .classList.toggle('active'));
         });
 
-        const weDoImg = document.querySelector('.we-do-item__img-wr');
+        const weDoImg = document.querySelector('.we-do__items-wr');
         weDoImg && weDoImg.addEventListener('click', (a) => {
             a.target.closest('.we-do-item__img-wr') &&
             (a.target

@@ -7394,6 +7394,14 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
                     .closest('.we-do-item__title-arrow')
                     .classList.toggle('active'));
         });
+
+        const weDoImg = document.querySelector('.we-do-item__img-wr');
+        weDoImg && weDoImg.addEventListener('click', (a) => {
+            a.target.closest('.we-do-item__img-wr') &&
+            (a.target
+                .closest('.we-do-item__img-wr')
+                .parentElement.querySelector('.we-do-item__title-arrow').click());
+        });
         const weDoMoreBtn = document.querySelector('.we-do__more-btn');
         weDoMoreBtn && weDoMoreBtn.addEventListener('click', (a) => {
             a.preventDefault(),

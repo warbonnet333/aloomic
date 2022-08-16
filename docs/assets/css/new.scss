@@ -1652,13 +1652,11 @@ h3, h4, h5, h6 {
 .footer__bottom-row li, .footer__bottom-row li a {
   display: flex;
   align-items: center;
-  width: 23px;
-  height: 23px;
 }
 
 .footer__bottom-row li a svg {
-  width: 100%;
-  height: 100%;
+  width: 23px;
+  height: 23px;
   object-fit: contain;
 }
 
@@ -1722,6 +1720,9 @@ h3, h4, h5, h6 {
 }
 
 .footer__terms-col {
+  display: flex;
+  align-items: center;
+
   ul a {
     font-size: 1.5rem;
     line-height: 1;

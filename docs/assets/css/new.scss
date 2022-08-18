@@ -3638,12 +3638,17 @@ ul.bestwork-slides {
 
 .contact-info-wrapper {
   padding: 245vw * $px 120vw * $px 320vw * $px;
-  color: white;
+  color: #fff;
 
   .contact-item {
     display: flex;
     flex-direction: column;
     margin-bottom: 46vw * $px;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
   }
 }
 
@@ -4672,6 +4677,7 @@ ul.bestwork-slides {
       .our-blog__item {
         .blog-item__title {
           font-size: 4vw;
+          line-height: 1.2;
         }
 
         &-wr:nth-of-type(even) {

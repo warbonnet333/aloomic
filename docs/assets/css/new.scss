@@ -781,10 +781,12 @@ h3, h4, h5, h6 {
 }
 
 .heading__h1-title {
-  font-size: 6.7vw;
+  font-size: 5.7vw;
   line-height: 100%;
   font-weight: 500;
   color: #fcfcfc;
+  max-width: 65vw;
+
 }
 
 .heading__h2-title {
@@ -2887,6 +2889,7 @@ h3, h4, h5, h6 {
 
   h1.heading__h1-title {
     font-size: 5rem !important;
+    max-width: 100%;
   }
 }
 

@@ -34,8 +34,98 @@ jQuery('.why-us__title-item').click(e => {
 });
 // End why us tabs
 
+function parseAndStartGradient(e, t) {
+    var n, r = e.getAttribute("data-colors");
+    if (!r || !r.length)
+        return "";
+    if (!(r = r.split(",")).length)
+        return "";
+    var i = e.getAttribute("data-angle");
+    i || (i = 20);
+    try {
+        i = parseInt(i),
+        isNaN(i) && (i = 20)
+    } catch (e) {
+        i = 20
+    }
+    i > 90 && i < -90 && (i = 20);
+    var a = i * Math.PI / 180
+        , o = e.getAttribute("data-timing");
+    o || (o = 5);
+    try {
+        o = parseFloat(o),
+        isNaN(o) && (o = 5)
+    } catch (e) {
+        o = 5
+    }
+    o <= 0 && (o = 5),
+        o *= 1e3;
+    var s = e.getAttribute("data-scale");
+    s || (s = 1);
+    try {
+        s = parseFloat(s),
+        isNaN(s) && (s = 1)
+    } catch (e) {
+        s = 1
+    }
+    var l = r.length
+        , u = document.createElement("div");
+    u.className = "bbgx---gradient__wrap";
+    var c = e.clientHeight
+        , d = e.clientWidth
+        , p = Math.max(c, d)
+        , f = document.createElement("canvas");
+    if (f.className = "bbgx---gradient__canvas",
+        f.setAttribute("height", c),
+        f.setAttribute("width", d),
+    void 0 === f.getContext)
+        return "";
+    var h = f.getContext("2d", {
+        alpha: !1
+    });
+    for (n = 0; n < l; n++)
+        r[n] = r[n].trim();
+    var v = h.createLinearGradient(0, 0, 4 * s * p * Math.cos(a), 4 * s * p * Math.sin(a));
+    for (n = 0; n < 4 * l + 1; n++)
+        v.addColorStop(n / (4 * l), r[n % l]);
+
+    function m() {
+        var e = (new Date).getTime() % o
+            , n = -1 * s * (p * Math.cos(a) - e / o * (p * Math.cos(a)))
+            , r = -1 * s * (p * Math.sin(a) - e / o * (p * Math.sin(a)));
+        h.fillStyle = v,
+            h.setTransform(1, 0, 0, 1, 0, 0),
+            h.translate(n, r),
+            h.fillRect(0, 0, 4 * s * p, 4 * s * p),
+        t && window.requestAnimationFrame(m)
+    }
+    function g() {
+        for (c = e.clientHeight,
+                 d = e.clientWidth,
+                 p = Math.max(c, d),
+                 f.setAttribute("height", c),
+                 f.setAttribute("width", d),
+                 v = h.createLinearGradient(0, 0, 4 * s * p * Math.cos(a), 4 * s * p * Math.sin(a)),
+                 n = 0; n < 4 * l + 1; n++)
+            v.addColorStop(n / (4 * l), r[n % l])
+    }
+    t ? window.requestAnimationFrame(m) : setInterval(m, 10),
+        window.addEventListener("resize", g),
+        window.addEventListener("orientationchange", g),
+        u.appendChild(f),
+        e.insertBefore(u, e.firstChild)
+}
+
+var eeee, tttt = void 0 !== window.requestAnimationFrame, nnnn = document.querySelectorAll(".bbgx---gradient");
+for (eeee = 0; eeee < nnnn.length; eeee++) {
+    parseAndStartGradient(nnnn[eeee], tttt)
+};
+
 // cursor function
 window.onload = function () {
+
+    const navBar = document.querySelector(".navigation-bar");
+    navBar.classList.add('show');
 
     const { gsap, CircleType } = window;
     const cursorWrapper = document.querySelector(".cursor");
@@ -7379,13 +7469,23 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
         let scrollCheck;
         const scrollBrn = document.querySelector('.back_to_top');
+        const scrollNavBtn = document.querySelector('.js-scroll-to-form');
+        const whatWeDoBtn = document.querySelector('.js-scroll-to-we-do');
         const options = {
             offset: window.innerWidth < 768 ? -Math.round(window.innerHeight / 3) : 0,
         }
-        scrollBrn.addEventListener('click', function (e) {
+
+        function scrollToForm(e) {
             e.preventDefault();
             B.scrollTo('.lets-speak', options);
-        })
+        }
+
+        whatWeDoBtn && whatWeDoBtn.addEventListener('click', e => {
+            e.preventDefault();
+            B.scrollTo('.section.we-do', options);
+        });
+        scrollBrn && scrollBrn.addEventListener('click', scrollToForm);
+        scrollNavBtn && scrollNavBtn.addEventListener('click', scrollToForm);
 
         if (scrollTo) {
             B.scrollTo(scrollTo, options);
@@ -7448,6 +7548,18 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
                     })
                     .to(
                         '.video__heading .heading__words',
+                        {opacity: 1, y: 0, stagger: '.2', duration: 0.9},
+                        '-.1'
+                    ),
+                'communication' === a &&
+                A.timeline()
+                    .to('.communication .heading__icon-wr', {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.9,
+                    })
+                    .to(
+                        '.communication .heading__words',
                         {opacity: 1, y: 0, stagger: '.2', duration: 0.9},
                         '-.1'
                     ),

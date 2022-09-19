@@ -5236,6 +5236,10 @@ ul.bestwork-slides {
       height: auto;
       min-height: 100vh;
 
+      .heading--hero .heading__words--gradient span {
+        position: relative;
+      }
+
       &__heading {
         height: auto;
         min-height: 100vh;

@@ -3189,7 +3189,7 @@ h3, h4, h5, h6 {
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   transition: .3s ease-in-out;
   width: 100%;
@@ -4041,7 +4041,13 @@ ul.bestwork-slides {
 // INDEX PAGE
 .index-page {
   .hero {
-    padding: 0 85vw * $px;
+    padding: 95px 85vw * $px 30vw * $px;
+    max-height: 70vw;
+    height: initial;
+
+    .hero__heading {
+      height: 100%;
+    }
 
     .heading__h1-title {
       font-size: 65vw * $px;
@@ -5223,9 +5229,10 @@ ul.bestwork-slides {
 
   .index-page {
     .hero {
-      padding: 50px 1.5rem 0;
+      padding: 110px 1.5rem 0;
       height: auto;
       min-height: 100vh;
+      max-height: initial;
 
       .heading--hero .heading__words--gradient span {
         position: relative;

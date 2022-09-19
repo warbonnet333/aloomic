@@ -68,7 +68,7 @@ body {
 }
 
 header {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
     /* position: absolute; */
     position: fixed;
     transition: .3s ease-in-out;
@@ -76,6 +76,10 @@ header {
     left: 0;
     top: 0;
     z-index: 3;
+}
+
+header.fix {
+    background-color: #000;
 }
 
 .header--scroll {
@@ -114,6 +118,7 @@ i {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 50px;
+    height: 93px;
 }
 
 .only-mobile {
@@ -2324,7 +2329,8 @@ ul.bestwork-slides li img:nth-child(2) {
 }
 
 .btn-to-buttom {
-    display: flex;
+    /*display: flex;*/
+    display: none !important;
     align-items: center;
     border: none;
     outline: none;
@@ -6245,6 +6251,118 @@ body {
 
     .we-do-detail-txt .etc .col-6 {
         width: 100%;
+    }
+}
+
+.navigation-bar {
+    z-index: 1;
+    font-family: "Epilogue", sans-serif;
+    position: fixed;
+    bottom: 1.953125vw;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: 0.46875vw;
+    display: flex;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.7);
+    box-shadow: 0px 0px 90px -12px rgba(0, 0, 0, 0.5);
+    border-radius: 2.5vw;
+    opacity: 0;
+    transition: all 0.3s ease 1s;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+}
+
+.navigation-bar.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.navigation-bar__left {
+    display: flex;
+    align-items: center;
+    grid-gap: 1.015625vw;
+    margin-right: 1.953125vw;
+    padding: 0 1.5625vw;
+}
+
+.navigation-bar__link {
+    font-size: 1.40625vw;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: -0.234375vw;
+}
+
+.navigation-bar__phone {
+    font-size: 1.25vw;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 1.875vw;
+    position: relative;
+}
+
+.navigation-bar__phone::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url("../img/icons/phone-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.40625vw;
+    height: 1.40625vw;
+}
+
+.navigation-bar__scroll {
+    font-weight: 600;
+    font-size: 1.25vw;
+    color: #4D8554;
+    background: #FFFFFF;
+    border-radius: 2.3046875vw;
+    padding: 1.25vw 1.5625vw 1.09375vw;
+    margin-left: 1.40625vw;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-bar {
+        bottom: 2rem;
+        padding: 5px 5px 5px 20px;
+        border-radius: 32px;
+    }
+
+    .navigation-bar__left {
+        display: none;
+    }
+
+    .navigation-bar__link {
+        font-size: 18px;
+        margin-bottom: -3px;
+        width: max-content;
+    }
+
+    .navigation-bar__phone {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+
+    .navigation-bar__phone::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .navigation-bar__scroll {
+        font-size: 16px;
+        border-radius: 29px;
+        padding: 16px 20px 14px;
+        margin-left: 18px;
+        margin-bottom: 0;
     }
 }
 

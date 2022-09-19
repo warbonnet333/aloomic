@@ -7471,6 +7471,8 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         const scrollBrn = document.querySelector('.back_to_top');
         const scrollNavBtn = document.querySelector('.js-scroll-to-form');
         const whatWeDoBtn = document.querySelector('.js-scroll-to-we-do');
+        const navBar = document.querySelector(".navigation-bar");
+        const footerSection = document.querySelector(".footer");
         const options = {
             offset: window.innerWidth < 768 ? -Math.round(window.innerHeight / 3) : 0,
         }
@@ -7523,6 +7525,14 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
             scrollCheck = setTimeout(function () {
                 scrollBrn.style.cssText = 'opacity:1;visibility:visible;transform:translateX(0);';
             }, 250);
+
+            if (navBar) {
+                const {top: topNav} = navBar.getBoundingClientRect();
+                const {top: topFooter} = footerSection.getBoundingClientRect();
+                topFooter <= topNav
+                    ? navBar.classList.remove('show')
+                    : navBar.classList.add('show');
+            }
         }),
             B.on('call', (a, c, b) => {
                 'clients' === a &&

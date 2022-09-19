@@ -1,3 +1,19 @@
+window.onload = function () {
+    const navBar = document.querySelector(".navigation-bar");
+    const footerSection = document.querySelector("footer");
+    navBar && navBar.classList.add('show');
+
+    window.onscroll = function () {
+        if (navBar) {
+            const {top: topNav} = navBar.getBoundingClientRect();
+            const {top: topFooter} = footerSection.getBoundingClientRect();
+            topFooter <= topNav
+                ? navBar.classList.remove('show')
+                : navBar.classList.add('show');
+        }
+    }
+}
+
 jQuery(function () {
     var $hamburger = jQuery(".hamburger");
     var $body = jQuery("body");

@@ -4030,17 +4030,16 @@ ul.bestwork-slides {
 
 /*FROM OLD VERSION END*/
 
+.header-content {
+  height: 90px;
+}
+
+.back_to_top {
+  display: none !important;
+}
+
 // INDEX PAGE
 .index-page {
-
-  .header-content {
-    height: 90px;
-  }
-
-  .back_to_top {
-    display: none !important;
-  }
-
   .hero {
     padding: 0 85vw * $px;
 
@@ -4884,27 +4883,10 @@ ul.bestwork-slides {
   & > * {
     cursor: none;
   }
-
-
-  //&-inner {
-  //  position: fixed;
-  //  left: -100vw;
-  //  top: -100vh;
-  //  transform: translate(-50%, -50%);
-  //  border-radius: 50%;
-  //  width: 88px;
-  //  height: 88px;
-  //  mix-blend-mode: difference;
-  //  pointer-events: none;
-  //  user-select: none;
-  //  background: transparent;
-  //  font-size: 15px;
-  //  color: #fff;
-  //  animation: 4s linear infinite rotate;
-  //}
 }
 
 .navigation-bar {
+  z-index: 1;
   position: fixed;
   bottom: 25vw * $px;
   left: 50%;

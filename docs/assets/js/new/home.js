@@ -33,6 +33,9 @@ jQuery('.why-us__title-item').click(e => {
 // cursor function
 window.onload = function () {
 
+    const navBar = document.querySelector(".navigation-bar");
+    navBar.classList.add('show');
+
     const { gsap, CircleType } = window;
     const cursorWrapper = document.querySelector(".cursor");
 
@@ -7375,13 +7378,20 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
         let scrollCheck;
         const scrollBrn = document.querySelector('.back_to_top');
+        const scrollNavBtn = document.querySelector('.js-scroll-to-form');
+        const navBar = document.querySelector(".navigation-bar");
+        const footerSection = document.querySelector(".footer");
         const options = {
             offset: window.innerWidth < 768 ? -Math.round(window.innerHeight / 3) : 0,
         }
-        scrollBrn.addEventListener('click', function (e) {
+
+        function scrollToForm(e) {
             e.preventDefault();
             B.scrollTo('.lets-speak', options);
-        })
+        }
+
+        scrollBrn && scrollBrn.addEventListener('click', scrollToForm);
+        scrollNavBtn && scrollNavBtn.addEventListener('click', scrollToForm);
 
         if (scrollTo) {
             B.scrollTo(scrollTo, options);
@@ -7419,6 +7429,14 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
             scrollCheck = setTimeout(function () {
                 scrollBrn.style.cssText = 'opacity:1;visibility:visible;transform:translateX(0);';
             }, 250);
+
+            if (navBar) {
+                const {top: topNav} = navBar.getBoundingClientRect();
+                const {top: topFooter} = footerSection.getBoundingClientRect();
+                topFooter <= topNav
+                    ? navBar.classList.remove('show')
+                    : navBar.classList.add('show');
+            }
         }),
             B.on('call', (a, c, b) => {
                 'clients' === a &&

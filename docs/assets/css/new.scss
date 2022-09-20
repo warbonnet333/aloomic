@@ -4040,6 +4040,24 @@ ul.bestwork-slides {
 
 // INDEX PAGE
 .index-page {
+
+  .gradiented {
+    position: relative;
+    display: block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 110%;
+      height: 110%;
+      z-index: 1;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
+    }
+  }
+
   .hero {
     padding: 95px 85vw * $px 30vw * $px;
     max-height: 70vw;
@@ -4184,8 +4202,8 @@ ul.bestwork-slides {
 
     &.italic-font {
       &:after {
-        bottom: 72%;
-        left: 35%;
+        bottom: 74%;
+        left: 40%;
       }
     }
 
@@ -4226,6 +4244,7 @@ ul.bestwork-slides {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      z-index: 2;
     }
   }
 
@@ -5152,6 +5171,7 @@ ul.bestwork-slides {
   .communication {
     &-item {
       margin: 3rem 0;
+
       &:nth-of-type(even) {
         .communication-item__text {
           padding: 0 1rem;
@@ -5228,6 +5248,15 @@ ul.bestwork-slides {
   }
 
   .index-page {
+
+    .gradiented {
+      margin: -2vw 0 3vw;
+
+      &::after {
+        height: 105%;
+      }
+    }
+
     .hero {
       padding: 110px 1.5rem 0;
       height: auto;
@@ -5244,6 +5273,8 @@ ul.bestwork-slides {
       }
 
       .heading__h1-title {
+        line-height: 1.1;
+
         .heading__h1-wrap {
           display: inline;
         }

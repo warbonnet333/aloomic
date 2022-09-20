@@ -4045,8 +4045,7 @@ ul.bestwork-slides {
     position: relative;
     display: block;
 
-    &::after {
-      content: '';
+    &--inner {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -4054,7 +4053,7 @@ ul.bestwork-slides {
       width: 110%;
       height: 110%;
       z-index: 1;
-      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
+      background: linear-gradient(92.97deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.99) 125.8%);
     }
   }
 
@@ -4215,14 +4214,6 @@ ul.bestwork-slides {
       &:after {
         width: 56vw * $px;
         height: 46vw * $px;
-      }
-
-      &.italic-font {
-        background: linear-gradient(92.97deg, #FCFCFC 0%, rgba(252, 252, 252, 0) 125.8%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
       }
     }
 
@@ -5154,11 +5145,6 @@ ul.bestwork-slides {
       .communication-item__text {
         font-style: italic;
         font-family: var(--font-secondary);
-        background: linear-gradient(92.97deg, #FCFCFC 0%, rgba(252, 252, 252, 0) 125.8%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
         margin-bottom: 33vw * $px;
         padding: 0 2rem;
       }
@@ -5248,23 +5234,19 @@ ul.bestwork-slides {
   }
 
   .index-page {
-
-    .gradiented {
-      margin: -2vw 0 3vw;
-
-      &::after {
-        height: 105%;
-      }
-    }
-
     .hero {
       padding: 110px 1.5rem 0;
       height: auto;
       min-height: 100vh;
       max-height: initial;
 
-      .heading--hero .heading__words--gradient span {
-        position: relative;
+
+      .gradiented {
+        margin: -2vw 0 3vw;
+
+        &::after {
+          height: 105%;
+        }
       }
 
       &__heading {
